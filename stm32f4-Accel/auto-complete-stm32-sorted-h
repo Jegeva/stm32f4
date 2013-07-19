@@ -1,0 +1,7801 @@
+ACR_BYTE0_ADDRESS
+ADC1                ((ADC_TypeDef *)
+ADC1_BASE             (APB2PERIPH_BASE + 0x2000)
+ADC2                ((ADC_TypeDef *)
+ADC2_BASE             (APB2PERIPH_BASE + 0x2100)
+ADC3                ((ADC_TypeDef *)
+ADC3_BASE             (APB2PERIPH_BASE + 0x2200)
+ADC                 ((ADC_Common_TypeDef *)
+ADC_AnalogWatchdog_AllInjecEnable
+ADC_AnalogWatchdog_AllRegAllInjecEnable
+ADC_AnalogWatchdog_AllRegEnable
+ADC_AnalogWatchdogCmd(ADC_TypeDef* ADCx, uint32_t ADC_AnalogWatchdog);
+ADC_AnalogWatchdog_None
+ADC_AnalogWatchdogSingleChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel);
+ADC_AnalogWatchdog_SingleInjecEnable
+ADC_AnalogWatchdog_SingleRegEnable
+ADC_AnalogWatchdog_SingleRegOrInjecEnable
+ADC_AnalogWatchdogThresholdsConfig(ADC_TypeDef* ADCx, uint16_t HighThreshold,uint16_t LowThreshold);
+ADC_AutoInjectedConvCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_BASE              (APB2PERIPH_BASE + 0x2300)
+ADC_CCR_ADCPRE
+ADC_CCR_ADCPRE_0
+ADC_CCR_ADCPRE_1
+ADC_CCR_DDS
+ADC_CCR_DELAY
+ADC_CCR_DELAY_0
+ADC_CCR_DELAY_1
+ADC_CCR_DELAY_2
+ADC_CCR_DELAY_3
+ADC_CCR_DMA
+ADC_CCR_DMA_0
+ADC_CCR_DMA_1
+ADC_CCR_MULTI
+ADC_CCR_MULTI_0
+ADC_CCR_MULTI_1
+ADC_CCR_MULTI_2
+ADC_CCR_MULTI_3
+ADC_CCR_MULTI_4
+ADC_CCR_TSVREFE
+ADC_CCR_VBATE
+ADC_CDR_DATA1
+ADC_CDR_DATA2
+ADC_Channel_0
+ADC_Channel_1
+ADC_Channel_10
+ADC_Channel_11
+ADC_Channel_12
+ADC_Channel_13
+ADC_Channel_14
+ADC_Channel_15
+ADC_Channel_16
+ADC_Channel_17
+ADC_Channel_18
+ADC_Channel_2
+ADC_Channel_3
+ADC_Channel_4
+ADC_Channel_5
+ADC_Channel_6
+ADC_Channel_7
+ADC_Channel_8
+ADC_Channel_9
+ADC_Channel_TempSensor
+ADC_Channel_Vbat
+ADC_Channel_Vrefint
+ADC_ClearFlag(ADC_TypeDef* ADCx, uint8_t ADC_FLAG);
+ADC_ClearITPendingBit(ADC_TypeDef* ADCx, uint16_t ADC_IT);
+ADC_Cmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_CommonInit(ADC_CommonInitTypeDef* ADC_CommonInitStruct);
+ADC_CommonStructInit(ADC_CommonInitTypeDef* ADC_CommonInitStruct);
+ADC_ContinuousModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_CR1_AWDCH
+ADC_CR1_AWDCH_0
+ADC_CR1_AWDCH_1
+ADC_CR1_AWDCH_2
+ADC_CR1_AWDCH_3
+ADC_CR1_AWDCH_4
+ADC_CR1_AWDEN
+ADC_CR1_AWDIE
+ADC_CR1_AWDSGL
+ADC_CR1_DISCEN
+ADC_CR1_DISCNUM
+ADC_CR1_DISCNUM_0
+ADC_CR1_DISCNUM_1
+ADC_CR1_DISCNUM_2
+ADC_CR1_EOCIE
+ADC_CR1_JAUTO
+ADC_CR1_JAWDEN
+ADC_CR1_JDISCEN
+ADC_CR1_JEOCIE
+ADC_CR1_OVRIE
+ADC_CR1_RES
+ADC_CR1_RES_0
+ADC_CR1_RES_1
+ADC_CR1_SCAN
+ADC_CR2_ADON
+ADC_CR2_ALIGN
+ADC_CR2_CONT
+ADC_CR2_DDS
+ADC_CR2_DMA
+ADC_CR2_EOCS
+ADC_CR2_EXTEN
+ADC_CR2_EXTEN_0
+ADC_CR2_EXTEN_1
+ADC_CR2_EXTSEL
+ADC_CR2_EXTSEL_0
+ADC_CR2_EXTSEL_1
+ADC_CR2_EXTSEL_2
+ADC_CR2_EXTSEL_3
+ADC_CR2_JEXTEN
+ADC_CR2_JEXTEN_0
+ADC_CR2_JEXTEN_1
+ADC_CR2_JEXTSEL
+ADC_CR2_JEXTSEL_0
+ADC_CR2_JEXTSEL_1
+ADC_CR2_JEXTSEL_2
+ADC_CR2_JEXTSEL_3
+ADC_CR2_JSWSTART
+ADC_CR2_SWSTART
+ADC_CSR_AWD1
+ADC_CSR_AWD2
+ADC_CSR_AWD3
+ADC_CSR_DOVR1
+ADC_CSR_DOVR2
+ADC_CSR_DOVR3
+ADC_CSR_EOC1
+ADC_CSR_EOC2
+ADC_CSR_EOC3
+ADC_CSR_JEOC1
+ADC_CSR_JEOC2
+ADC_CSR_JEOC3
+ADC_CSR_JSTRT1
+ADC_CSR_JSTRT2
+ADC_CSR_JSTRT3
+ADC_CSR_STRT1
+ADC_CSR_STRT2
+ADC_CSR_STRT3
+ADC_DataAlign_Left
+ADC_DataAlign_Right
+ADC_DeInit(void);
+ADC_DiscModeChannelCountConfig(ADC_TypeDef* ADCx, uint8_t Number);
+ADC_DiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_DMAAccessMode_1
+ADC_DMAAccessMode_2
+ADC_DMAAccessMode_3
+ADC_DMAAccessMode_Disabled
+ADC_DMACmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_DMARequestAfterLastTransferCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_DR_ADC2DATA
+ADC_DR_DATA
+ADC_DualMode_AlterTrig
+ADC_DualMode_InjecSimult
+ADC_DualMode_Interl
+ADC_DualMode_RegSimult
+ADC_DualMode_RegSimult_AlterTrig
+ADC_DualMode_RegSimult_InjecSimult
+ADC_EOCOnEachRegularChannelCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_ExternalTrigConvEdge_Falling
+ADC_ExternalTrigConvEdge_None
+ADC_ExternalTrigConvEdge_Rising
+ADC_ExternalTrigConvEdge_RisingFalling
+ADC_ExternalTrigConv_Ext_IT11
+ADC_ExternalTrigConv_T1_CC1
+ADC_ExternalTrigConv_T1_CC2
+ADC_ExternalTrigConv_T1_CC3
+ADC_ExternalTrigConv_T2_CC2
+ADC_ExternalTrigConv_T2_CC3
+ADC_ExternalTrigConv_T2_CC4
+ADC_ExternalTrigConv_T2_TRGO
+ADC_ExternalTrigConv_T3_CC1
+ADC_ExternalTrigConv_T3_TRGO
+ADC_ExternalTrigConv_T4_CC4
+ADC_ExternalTrigConv_T5_CC1
+ADC_ExternalTrigConv_T5_CC2
+ADC_ExternalTrigConv_T5_CC3
+ADC_ExternalTrigConv_T8_CC1
+ADC_ExternalTrigConv_T8_TRGO
+ADC_ExternalTrigInjecConvEdge_Falling
+ADC_ExternalTrigInjecConvEdge_None
+ADC_ExternalTrigInjecConvEdge_Rising
+ADC_ExternalTrigInjecConvEdge_RisingFalling
+ADC_ExternalTrigInjecConv_Ext_IT15
+ADC_ExternalTrigInjecConv_T1_CC4
+ADC_ExternalTrigInjecConv_T1_TRGO
+ADC_ExternalTrigInjecConv_T2_CC1
+ADC_ExternalTrigInjecConv_T2_TRGO
+ADC_ExternalTrigInjecConv_T3_CC2
+ADC_ExternalTrigInjecConv_T3_CC4
+ADC_ExternalTrigInjecConv_T4_CC1
+ADC_ExternalTrigInjecConv_T4_CC2
+ADC_ExternalTrigInjecConv_T4_CC3
+ADC_ExternalTrigInjecConv_T4_TRGO
+ADC_ExternalTrigInjecConv_T5_CC4
+ADC_ExternalTrigInjecConv_T5_TRGO
+ADC_ExternalTrigInjecConv_T8_CC2
+ADC_ExternalTrigInjecConv_T8_CC3
+ADC_ExternalTrigInjecConv_T8_CC4
+ADC_ExternalTrigInjectedConvConfig(ADC_TypeDef* ADCx, uint32_t ADC_ExternalTrigInjecConv);
+ADC_ExternalTrigInjectedConvEdgeConfig(ADC_TypeDef* ADCx, uint32_t ADC_ExternalTrigInjecConvEdge);
+ADC_FLAG_AWD
+ADC_FLAG_EOC
+ADC_FLAG_JEOC
+ADC_FLAG_JSTRT
+ADC_FLAG_OVR
+ADC_FLAG_STRT
+ADC_GetConversionValue(ADC_TypeDef* ADCx);
+ADC_GetFlagStatus(ADC_TypeDef* ADCx, uint8_t ADC_FLAG);
+ADC_GetInjectedConversionValue(ADC_TypeDef* ADCx, uint8_t ADC_InjectedChannel);
+ADC_GetITStatus(ADC_TypeDef* ADCx, uint16_t ADC_IT);
+ADC_GetMultiModeConversionValue(void);
+ADC_GetSoftwareStartConvStatus(ADC_TypeDef* ADCx);
+ADC_GetSoftwareStartInjectedConvCmdStatus(ADC_TypeDef* ADCx);
+ADC_HTR_HT
+ADC_Init(ADC_TypeDef* ADCx, ADC_InitTypeDef* ADC_InitStruct);
+ADC_InjectedChannel_1
+ADC_InjectedChannel_2
+ADC_InjectedChannel_3
+ADC_InjectedChannel_4
+ADC_InjectedChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime);
+ADC_InjectedDiscModeCmd(ADC_TypeDef* ADCx, FunctionalState NewState);
+ADC_InjectedSequencerLengthConfig(ADC_TypeDef* ADCx, uint8_t Length);
+ADC_IT_AWD
+ADC_ITConfig(ADC_TypeDef* ADCx, uint16_t ADC_IT, FunctionalState NewState);
+ADC_IT_EOC
+ADC_IT_JEOC
+ADC_IT_OVR
+ADC_JDR1_JDATA
+ADC_JDR2_JDATA
+ADC_JDR3_JDATA
+ADC_JDR4_JDATA
+ADC_JOFR1_JOFFSET1
+ADC_JOFR2_JOFFSET2
+ADC_JOFR3_JOFFSET3
+ADC_JOFR4_JOFFSET4
+ADC_JSQR_JL
+ADC_JSQR_JL_0
+ADC_JSQR_JL_1
+ADC_JSQR_JSQ1
+ADC_JSQR_JSQ1_0
+ADC_JSQR_JSQ1_1
+ADC_JSQR_JSQ1_2
+ADC_JSQR_JSQ1_3
+ADC_JSQR_JSQ1_4
+ADC_JSQR_JSQ2
+ADC_JSQR_JSQ2_0
+ADC_JSQR_JSQ2_1
+ADC_JSQR_JSQ2_2
+ADC_JSQR_JSQ2_3
+ADC_JSQR_JSQ2_4
+ADC_JSQR_JSQ3
+ADC_JSQR_JSQ3_0
+ADC_JSQR_JSQ3_1
+ADC_JSQR_JSQ3_2
+ADC_JSQR_JSQ3_3
+ADC_JSQR_JSQ3_4
+ADC_JSQR_JSQ4
+ADC_JSQR_JSQ4_0
+ADC_JSQR_JSQ4_1
+ADC_JSQR_JSQ4_2
+ADC_JSQR_JSQ4_3
+ADC_JSQR_JSQ4_4
+ADC_LTR_LT
+ADC_Mode_Independent
+ADC_MultiModeDMARequestAfterLastTransferCmd(FunctionalState NewState);
+ADC_Prescaler_Div2
+ADC_Prescaler_Div4
+ADC_Prescaler_Div6
+ADC_Prescaler_Div8
+ADC_RegularChannelConfig(ADC_TypeDef* ADCx, uint8_t ADC_Channel, uint8_t Rank, uint8_t ADC_SampleTime);
+ADC_Resolution_10b
+ADC_Resolution_12b
+ADC_Resolution_6b
+ADC_Resolution_8b
+ADC_SampleTime_112Cycles
+ADC_SampleTime_144Cycles
+ADC_SampleTime_15Cycles
+ADC_SampleTime_28Cycles
+ADC_SampleTime_3Cycles
+ADC_SampleTime_480Cycles
+ADC_SampleTime_56Cycles
+ADC_SampleTime_84Cycles
+ADC_SetInjectedOffset(ADC_TypeDef* ADCx, uint8_t ADC_InjectedChannel, uint16_t Offset);
+ADC_SMPR1_SMP10
+ADC_SMPR1_SMP10_0
+ADC_SMPR1_SMP10_1
+ADC_SMPR1_SMP10_2
+ADC_SMPR1_SMP11
+ADC_SMPR1_SMP11_0
+ADC_SMPR1_SMP11_1
+ADC_SMPR1_SMP11_2
+ADC_SMPR1_SMP12
+ADC_SMPR1_SMP12_0
+ADC_SMPR1_SMP12_1
+ADC_SMPR1_SMP12_2
+ADC_SMPR1_SMP13
+ADC_SMPR1_SMP13_0
+ADC_SMPR1_SMP13_1
+ADC_SMPR1_SMP13_2
+ADC_SMPR1_SMP14
+ADC_SMPR1_SMP14_0
+ADC_SMPR1_SMP14_1
+ADC_SMPR1_SMP14_2
+ADC_SMPR1_SMP15
+ADC_SMPR1_SMP15_0
+ADC_SMPR1_SMP15_1
+ADC_SMPR1_SMP15_2
+ADC_SMPR1_SMP16
+ADC_SMPR1_SMP16_0
+ADC_SMPR1_SMP16_1
+ADC_SMPR1_SMP16_2
+ADC_SMPR1_SMP17
+ADC_SMPR1_SMP17_0
+ADC_SMPR1_SMP17_1
+ADC_SMPR1_SMP17_2
+ADC_SMPR1_SMP18
+ADC_SMPR1_SMP18_0
+ADC_SMPR1_SMP18_1
+ADC_SMPR1_SMP18_2
+ADC_SMPR2_SMP0
+ADC_SMPR2_SMP0_0
+ADC_SMPR2_SMP0_1
+ADC_SMPR2_SMP0_2
+ADC_SMPR2_SMP1
+ADC_SMPR2_SMP1_0
+ADC_SMPR2_SMP1_1
+ADC_SMPR2_SMP1_2
+ADC_SMPR2_SMP2
+ADC_SMPR2_SMP2_0
+ADC_SMPR2_SMP2_1
+ADC_SMPR2_SMP2_2
+ADC_SMPR2_SMP3
+ADC_SMPR2_SMP3_0
+ADC_SMPR2_SMP3_1
+ADC_SMPR2_SMP3_2
+ADC_SMPR2_SMP4
+ADC_SMPR2_SMP4_0
+ADC_SMPR2_SMP4_1
+ADC_SMPR2_SMP4_2
+ADC_SMPR2_SMP5
+ADC_SMPR2_SMP5_0
+ADC_SMPR2_SMP5_1
+ADC_SMPR2_SMP5_2
+ADC_SMPR2_SMP6
+ADC_SMPR2_SMP6_0
+ADC_SMPR2_SMP6_1
+ADC_SMPR2_SMP6_2
+ADC_SMPR2_SMP7
+ADC_SMPR2_SMP7_0
+ADC_SMPR2_SMP7_1
+ADC_SMPR2_SMP7_2
+ADC_SMPR2_SMP8
+ADC_SMPR2_SMP8_0
+ADC_SMPR2_SMP8_1
+ADC_SMPR2_SMP8_2
+ADC_SMPR2_SMP9
+ADC_SMPR2_SMP9_0
+ADC_SMPR2_SMP9_1
+ADC_SMPR2_SMP9_2
+ADC_SoftwareStartConv(ADC_TypeDef* ADCx);
+ADC_SoftwareStartInjectedConv(ADC_TypeDef* ADCx);
+ADC_SQR1_L
+ADC_SQR1_L_0
+ADC_SQR1_L_1
+ADC_SQR1_L_2
+ADC_SQR1_L_3
+ADC_SQR1_SQ13
+ADC_SQR1_SQ13_0
+ADC_SQR1_SQ13_1
+ADC_SQR1_SQ13_2
+ADC_SQR1_SQ13_3
+ADC_SQR1_SQ13_4
+ADC_SQR1_SQ14
+ADC_SQR1_SQ14_0
+ADC_SQR1_SQ14_1
+ADC_SQR1_SQ14_2
+ADC_SQR1_SQ14_3
+ADC_SQR1_SQ14_4
+ADC_SQR1_SQ15
+ADC_SQR1_SQ15_0
+ADC_SQR1_SQ15_1
+ADC_SQR1_SQ15_2
+ADC_SQR1_SQ15_3
+ADC_SQR1_SQ15_4
+ADC_SQR1_SQ16
+ADC_SQR1_SQ16_0
+ADC_SQR1_SQ16_1
+ADC_SQR1_SQ16_2
+ADC_SQR1_SQ16_3
+ADC_SQR1_SQ16_4
+ADC_SQR2_SQ10
+ADC_SQR2_SQ10_0
+ADC_SQR2_SQ10_1
+ADC_SQR2_SQ10_2
+ADC_SQR2_SQ10_3
+ADC_SQR2_SQ10_4
+ADC_SQR2_SQ11
+ADC_SQR2_SQ11_0
+ADC_SQR2_SQ11_1
+ADC_SQR2_SQ11_2
+ADC_SQR2_SQ11_3
+ADC_SQR2_SQ11_4
+ADC_SQR2_SQ12
+ADC_SQR2_SQ12_0
+ADC_SQR2_SQ12_1
+ADC_SQR2_SQ12_2
+ADC_SQR2_SQ12_3
+ADC_SQR2_SQ12_4
+ADC_SQR2_SQ7
+ADC_SQR2_SQ7_0
+ADC_SQR2_SQ7_1
+ADC_SQR2_SQ7_2
+ADC_SQR2_SQ7_3
+ADC_SQR2_SQ7_4
+ADC_SQR2_SQ8
+ADC_SQR2_SQ8_0
+ADC_SQR2_SQ8_1
+ADC_SQR2_SQ8_2
+ADC_SQR2_SQ8_3
+ADC_SQR2_SQ8_4
+ADC_SQR2_SQ9
+ADC_SQR2_SQ9_0
+ADC_SQR2_SQ9_1
+ADC_SQR2_SQ9_2
+ADC_SQR2_SQ9_3
+ADC_SQR2_SQ9_4
+ADC_SQR3_SQ1
+ADC_SQR3_SQ1_0
+ADC_SQR3_SQ1_1
+ADC_SQR3_SQ1_2
+ADC_SQR3_SQ1_3
+ADC_SQR3_SQ1_4
+ADC_SQR3_SQ2
+ADC_SQR3_SQ2_0
+ADC_SQR3_SQ2_1
+ADC_SQR3_SQ2_2
+ADC_SQR3_SQ2_3
+ADC_SQR3_SQ2_4
+ADC_SQR3_SQ3
+ADC_SQR3_SQ3_0
+ADC_SQR3_SQ3_1
+ADC_SQR3_SQ3_2
+ADC_SQR3_SQ3_3
+ADC_SQR3_SQ3_4
+ADC_SQR3_SQ4
+ADC_SQR3_SQ4_0
+ADC_SQR3_SQ4_1
+ADC_SQR3_SQ4_2
+ADC_SQR3_SQ4_3
+ADC_SQR3_SQ4_4
+ADC_SQR3_SQ5
+ADC_SQR3_SQ5_0
+ADC_SQR3_SQ5_1
+ADC_SQR3_SQ5_2
+ADC_SQR3_SQ5_3
+ADC_SQR3_SQ5_4
+ADC_SQR3_SQ6
+ADC_SQR3_SQ6_0
+ADC_SQR3_SQ6_1
+ADC_SQR3_SQ6_2
+ADC_SQR3_SQ6_3
+ADC_SQR3_SQ6_4
+ADC_SR_AWD
+ADC_SR_EOC
+ADC_SR_JEOC
+ADC_SR_JSTRT
+ADC_SR_OVR
+ADC_SR_STRT
+ADC_StructInit(ADC_InitTypeDef* ADC_InitStruct);
+ADC_TempSensorVrefintCmd(FunctionalState NewState);
+ADC_TripleMode_AlterTrig
+ADC_TripleMode_InjecSimult
+ADC_TripleMode_Interl
+ADC_TripleMode_RegSimult
+ADC_TripleMode_RegSimult_AlterTrig
+ADC_TripleMode_RegSimult_InjecSimult
+ADC_TwoSamplingDelay_10Cycles
+ADC_TwoSamplingDelay_11Cycles
+ADC_TwoSamplingDelay_12Cycles
+ADC_TwoSamplingDelay_13Cycles
+ADC_TwoSamplingDelay_14Cycles
+ADC_TwoSamplingDelay_15Cycles
+ADC_TwoSamplingDelay_16Cycles
+ADC_TwoSamplingDelay_17Cycles
+ADC_TwoSamplingDelay_18Cycles
+ADC_TwoSamplingDelay_19Cycles
+ADC_TwoSamplingDelay_20Cycles
+ADC_TwoSamplingDelay_5Cycles
+ADC_TwoSamplingDelay_6Cycles
+ADC_TwoSamplingDelay_7Cycles
+ADC_TwoSamplingDelay_8Cycles
+ADC_TwoSamplingDelay_9Cycles
+ADC_VBATCmd(FunctionalState NewState);
+AHB1PERIPH_BASE       (PERIPH_BASE + 0x00020000)
+AHB2PERIPH_BASE       (PERIPH_BASE + 0x10000000)
+APB1PERIPH_BASE
+APB2PERIPH_BASE       (PERIPH_BASE + 0x00010000)
+arm_abs_f32(float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_abs_q15(q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_abs_q31(q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_abs_q7(q7_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_add_f32(float32_t * pSrcA,float32_t * pSrcB,float32_t * pDst,uint32_t blockSize)
+arm_add_q15(q15_t * pSrcA,q15_t * pSrcB,q15_t * pDst,uint32_t blockSize)
+arm_add_q31(q31_t * pSrcA,q31_t * pSrcB,q31_t * pDst,uint32_t blockSize)
+arm_add_q7(q7_t * pSrcA,q7_t * pSrcB,q7_t * pDst,uint32_t blockSize)
+arm_bilinear_interp_instance_f32 * S,float32_t X,float32_t Y)
+arm_bilinear_interp_instance_q15 * S,q31_t X,q31_t Y)
+arm_bilinear_interp_instance_q31 * S,q31_t X,q31_t Y)
+arm_bilinear_interp_instance_q7 * S,q31_t X,q31_t Y)
+arm_biquad_cascade_df2T_instance_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_biquad_cascade_df2T_instance_f32 * S,uint8_t numStages,float32_t * pCoeffs,float32_t * pState)
+arm_biquad_casd_df1_inst_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_biquad_casd_df1_inst_f32 * S,uint8_t numStages,float32_t * pCoeffs,float32_t * pState)
+arm_biquad_casd_df1_inst_q15 * S,q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_biquad_casd_df1_inst_q15 * S,uint8_t numStages,q15_t * pCoeffs,q15_t * pState,int8_t postShift)
+arm_biquad_casd_df1_inst_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_biquad_casd_df1_inst_q31 * S,uint8_t numStages,q31_t * pCoeffs,q31_t * pState,int8_t postShift)
+arm_biquad_cas_df1_32x64_ins_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_biquad_cas_df1_32x64_ins_q31 * S,uint8_t numStages,q31_t * pCoeffs,q63_t * pState,uint8_t postShift)
+arm_cfft_f32() function.
+arm_cfft_instance_f32
+arm_cfft_instance_f32 * S,float32_t * p1,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_cfft_instance_f32 Sint
+arm_cfft_radix2_instance_f32
+arm_cfft_radix2_instance_f32 * S,float32_t * pSrc)
+arm_cfft_radix2_instance_f32 * S,uint16_t fftLen,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_cfft_radix2_instance_q15
+arm_cfft_radix2_instance_q15 * S,q15_t * pSrc)
+arm_cfft_radix2_instance_q15 * S,uint16_t fftLen,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_cfft_radix2_instance_q31
+arm_cfft_radix2_instance_q31 * S,q31_t * pSrc)
+arm_cfft_radix2_instance_q31 * S,uint16_t fftLen,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_cfft_radix4_instance_f32
+arm_cfft_radix4_instance_f32 *pCfft
+arm_cfft_radix4_instance_f32 * S_CFFT,uint16_t N,uint16_t Nby2,float32_t normalize)
+arm_cfft_radix4_instance_f32 * S_CFFT,uint32_t fftLenReal,uint32_t ifftFlagR,uint32_t bitReverseFlag)
+arm_cfft_radix4_instance_f32 * S,float32_t * pSrc)
+arm_cfft_radix4_instance_f32 * S,uint16_t fftLen,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_cfft_radix4_instance_q15
+arm_cfft_radix4_instance_q15 *pCfft
+arm_cfft_radix4_instance_q15 * S_CFFT,uint16_t N,uint16_t Nby2,q15_t normalize)
+arm_cfft_radix4_instance_q15 * S_CFFT,uint32_t fftLenReal,uint32_t ifftFlagR,uint32_t bitReverseFlag)
+arm_cfft_radix4_instance_q15 * S,q15_t * pSrc)
+arm_cfft_radix4_instance_q15 * S,uint16_t fftLen,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_cfft_radix4_instance_q31
+arm_cfft_radix4_instance_q31 *pCfft
+arm_cfft_radix4_instance_q31 * S_CFFT,uint16_t N,uint16_t Nby2,q31_t normalize)
+arm_cfft_radix4_instance_q31 * S_CFFT,uint32_t fftLenReal,uint32_t ifftFlagR,uint32_t bitReverseFlag)
+arm_cfft_radix4_instance_q31 * S,q31_t * pSrc)
+arm_cfft_radix4_instance_q31 * S,uint16_t fftLen,uint8_t ifftFlag,uint8_t bitReverseFlag)
+arm_circularRead_f32(int32_t * circBuffer,int32_t L,int32_t * readOffset,int32_t bufferInc,int32_t * dst,int32_t * dst_base,--
+arm_circularRead_q15(q15_t * circBuffer,int32_t L,int32_t * readOffset,int32_t bufferInc,q15_t * dst,q15_t * dst_base,--
+arm_circularRead_q7(q7_t * circBuffer,int32_t L,int32_t * readOffset,int32_t bufferInc,q7_t * dst,q7_t * dst_base,--
+arm_circularWrite_f32(int32_t * circBuffer,int32_t L,uint16_t * writeOffset,int32_t bufferInc,const int32_t * src,int32_t srcInc,--
+arm_circularWrite_q15(q15_t * circBuffer,int32_t L,uint16_t * writeOffset,int32_t bufferInc,const q15_t * src,int32_t srcInc,--
+arm_circularWrite_q7(q7_t * circBuffer,int32_t L,uint16_t * writeOffset,int32_t bufferInc,const q7_t * src,int32_t srcInc,--
+arm_clarke_f32(float32_t Ia,float32_t Ib,float32_t * pIalpha,float32_t * pIbeta)
+arm_clarke_q31(q31_t Ia,q31_t Ib,q31_t * pIalpha,q31_t * pIbeta)
+arm_cmplx_conj_f32(float32_t * pSrc,float32_t * pDst,uint32_t numSamples)
+arm_cmplx_conj_q15(q15_t * pSrc,q15_t * pDst,uint32_t numSamples)
+arm_cmplx_conj_q31(q31_t * pSrc,q31_t * pDst,uint32_t numSamples)
+arm_cmplx_dot_prod_f32(float32_t * pSrcA,float32_t * pSrcB,uint32_t numSamples,float32_t * realResult,float32_t * imagResult)
+arm_cmplx_dot_prod_q15(q15_t * pSrcA,q15_t * pSrcB,uint32_t numSamples,q31_t * realResult,q31_t * imagResult)
+arm_cmplx_dot_prod_q31(q31_t * pSrcA,q31_t * pSrcB,uint32_t numSamples,q63_t * realResult,q63_t * imagResult)
+arm_cmplx_mag_f32(float32_t * pSrc,float32_t * pDst,uint32_t numSamples)
+arm_cmplx_mag_q15(q15_t * pSrc,q15_t * pDst,uint32_t numSamples)
+arm_cmplx_mag_q31(q31_t * pSrc,q31_t * pDst,uint32_t numSamples)
+arm_cmplx_mag_squared_f32(float32_t * pSrc,float32_t * pDst,uint32_t numSamples)
+arm_cmplx_mag_squared_q15(q15_t * pSrc,q15_t * pDst,uint32_t numSamples)
+arm_cmplx_mag_squared_q31(q31_t * pSrc,q31_t * pDst,uint32_t numSamples)
+arm_cmplx_mult_cmplx_f32(float32_t * pSrcA,float32_t * pSrcB,float32_t * pDst,uint32_t numSamples)
+arm_cmplx_mult_cmplx_q15(q15_t * pSrcA,q15_t * pSrcB,q15_t * pDst,uint32_t numSamples)
+arm_cmplx_mult_cmplx_q31(q31_t * pSrcA,q31_t * pSrcB,q31_t * pDst,uint32_t numSamples)
+arm_cmplx_mult_real_f32(float32_t * pSrcCmplx,float32_t * pSrcReal,float32_t * pCmplxDst,uint32_t numSamples)
+arm_cmplx_mult_real_q15(q15_t * pSrcCmplx,q15_t * pSrcReal,q15_t * pCmplxDst,uint32_t numSamples)
+arm_cmplx_mult_real_q31(q31_t * pSrcCmplx,q31_t * pSrcReal,q31_t * pCmplxDst,uint32_t numSamples)
+arm_const_structs.h
+arm_conv_f32(float32_t * pSrcA,uint32_t srcALen,float32_t * pSrcB,uint32_t srcBLen,float32_t * pDst)
+arm_conv_fast_opt_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,q15_t * pScratch1,--
+arm_conv_fast_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst)
+arm_conv_fast_q31(q31_t * pSrcA,uint32_t srcALen,q31_t * pSrcB,uint32_t srcBLen,q31_t * pDst)
+arm_conv_opt_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,q15_t * pScratch1,--
+arm_conv_opt_q7(q7_t * pSrcA,uint32_t srcALen,q7_t * pSrcB,uint32_t srcBLen,q7_t * pDst,q15_t * pScratch1,--
+arm_conv_partial_f32(float32_t * pSrcA,uint32_t srcALen,float32_t * pSrcB,uint32_t srcBLen,float32_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_fast_opt_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_fast_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_fast_q31(q31_t * pSrcA,uint32_t srcALen,q31_t * pSrcB,uint32_t srcBLen,q31_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_opt_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_opt_q7(q7_t * pSrcA,uint32_t srcALen,q7_t * pSrcB,uint32_t srcBLen,q7_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_q31(q31_t * pSrcA,uint32_t srcALen,q31_t * pSrcB,uint32_t srcBLen,q31_t * pDst,uint32_t firstIndex,--
+arm_conv_partial_q7(q7_t * pSrcA,uint32_t srcALen,q7_t * pSrcB,uint32_t srcBLen,q7_t * pDst,uint32_t firstIndex,--
+arm_conv_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst)
+arm_conv_q31(q31_t * pSrcA,uint32_t srcALen,q31_t * pSrcB,uint32_t srcBLen,q31_t * pDst)
+arm_conv_q7(q7_t * pSrcA,uint32_t srcALen,q7_t * pSrcB,uint32_t srcBLen,q7_t * pDst)
+arm_copy_f32(float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_copy_q15(q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_copy_q31(q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_copy_q7(q7_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_correlate_f32(float32_t * pSrcA,uint32_t srcALen,float32_t * pSrcB,uint32_t srcBLen,float32_t * pDst)
+arm_correlate_fast_opt_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,q15_t * pScratch)
+arm_correlate_fast_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst)
+arm_correlate_fast_q31(q31_t * pSrcA,uint32_t srcALen,q31_t * pSrcB,uint32_t srcBLen,q31_t * pDst)
+arm_correlate_opt_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst,q15_t * pScratch)
+arm_correlate_opt_q7(q7_t * pSrcA,uint32_t srcALen,q7_t * pSrcB,uint32_t srcBLen,q7_t * pDst,q15_t * pScratch1,--
+arm_correlate_q15(q15_t * pSrcA,uint32_t srcALen,q15_t * pSrcB,uint32_t srcBLen,q15_t * pDst)
+arm_correlate_q31(q31_t * pSrcA,uint32_t srcALen,q31_t * pSrcB,uint32_t srcBLen,q31_t * pDst)
+arm_correlate_q7(q7_t * pSrcA,uint32_t srcALen,q7_t * pSrcB,uint32_t srcBLen,q7_t * pDst)
+arm_cortexM0b_math.lib (Big endian on Cortex-M3)
+arm_cortexM0l_math.lib (Little endian on Cortex-M0)
+arm_cortexM3b_math.lib (Big endian on Cortex-M3)
+arm_cortexM3l_math.lib (Little endian on Cortex-M3)
+arm_cortexM4bf_math.lib (Big endian and Floating Point Unit on Cortex-M4)
+arm_cortexM4b_math.lib (Big endian on Cortex-M4)
+arm_cortexM4lf_math.lib (Little endian and Floating Point Unit on Cortex-M4)
+arm_cortexM4l_math.lib (Little endian on Cortex-M4)
+arm_cos_f32(float32_t x)
+arm_cos_q15(q15_t x)
+arm_cos_q31(q31_t x)
+arm_dct4_instance_f32 * S,float32_t * pState,float32_t * pInlineBuffer)
+arm_dct4_instance_q15 * S,q15_t * pState,q15_t * pInlineBuffer)
+arm_dct4_instance_q31 * S,q31_t * pState,q31_t * pInlineBuffer)
+arm_dot_prod_f32(float32_t * pSrcA,float32_t * pSrcB,uint32_t blockSize,float32_t * result)
+arm_dot_prod_q15(q15_t * pSrcA,q15_t * pSrcB,uint32_t blockSize,q63_t * result)
+arm_dot_prod_q31(q31_t * pSrcA,q31_t * pSrcB,uint32_t blockSize,q63_t * result)
+arm_dot_prod_q7(q7_t * pSrcA,q7_t * pSrcB,uint32_t blockSize,q31_t * result)
+arm_fill_f32(float32_t value,float32_t * pDst,uint32_t blockSize)
+arm_fill_q15(q15_t value,q15_t * pDst,uint32_t blockSize)
+arm_fill_q31(q31_t value,q31_t * pDst,uint32_t blockSize)
+arm_fill_q7(q7_t value,q7_t * pDst,uint32_t blockSize)
+arm_fir_decimate_instance_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_fir_decimate_instance_f32 * S,uint16_t numTaps,uint8_t M,float32_t * pCoeffs,float32_t * pState,uint32_t blockSize)
+arm_fir_decimate_instance_q15 * S,q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_fir_decimate_instance_q15 * S,uint16_t numTaps,uint8_t M,q15_t * pCoeffs,q15_t * pState,uint32_t blockSize)
+arm_fir_decimate_instance_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_fir_decimate_instance_q31 * S,uint16_t numTaps,uint8_t M,q31_t * pCoeffs,q31_t * pState,uint32_t blockSize)
+arm_fir_instance_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_fir_instance_f32 * S,uint16_t numTaps,float32_t * pCoeffs,float32_t * pState,uint32_t blockSize)
+arm_fir_instance_q15 * S,q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_fir_instance_q15 * S,uint16_t numTaps,q15_t * pCoeffs,q15_t * pState,uint32_t blockSize)
+arm_fir_instance_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_fir_instance_q31 * S,uint16_t numTaps,q31_t * pCoeffs,q31_t * pState,uint32_t blockSize)
+arm_fir_instance_q7 * S,q7_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_fir_instance_q7 * S,uint16_t numTaps,q7_t * pCoeffs,q7_t * pState,uint32_t blockSize)
+arm_fir_interpolate_instance_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_fir_interpolate_instance_f32 * S,uint8_t L,uint16_t numTaps,float32_t * pCoeffs,float32_t * pState,uint32_t blockSize)
+arm_fir_interpolate_instance_q15 * S,q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_fir_interpolate_instance_q15 * S,uint8_t L,uint16_t numTaps,q15_t * pCoeffs,q15_t * pState,uint32_t blockSize)
+arm_fir_interpolate_instance_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_fir_interpolate_instance_q31 * S,uint8_t L,uint16_t numTaps,q31_t * pCoeffs,q31_t * pState,uint32_t blockSize)
+arm_fir_lattice_instance_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_fir_lattice_instance_f32 * S,uint16_t numStages,float32_t * pCoeffs,float32_t * pState)
+arm_fir_lattice_instance_q15 * S,q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_fir_lattice_instance_q15 * S,uint16_t numStages,q15_t * pCoeffs,q15_t * pState)
+arm_fir_lattice_instance_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_fir_lattice_instance_q31 * S,uint16_t numStages,q31_t * pCoeffs,q31_t * pState)
+arm_fir_sparse_instance_f32 * S,float32_t * pSrc,float32_t * pDst,float32_t * pScratchIn,uint32_t blockSize)
+arm_fir_sparse_instance_f32 * S,uint16_t numTaps,float32_t * pCoeffs,float32_t * pState,int32_t * pTapDelay,uint16_t maxDelay,--
+arm_fir_sparse_instance_q15 * S,q15_t * pSrc,q15_t * pDst,q15_t * pScratchIn,q31_t * pScratchOut,uint32_t blockSize)
+arm_fir_sparse_instance_q15 * S,uint16_t numTaps,q15_t * pCoeffs,q15_t * pState,int32_t * pTapDelay,uint16_t maxDelay,--
+arm_fir_sparse_instance_q31 * S,q31_t * pSrc,q31_t * pDst,q31_t * pScratchIn,uint32_t blockSize)
+arm_fir_sparse_instance_q31 * S,uint16_t numTaps,q31_t * pCoeffs,q31_t * pState,int32_t * pTapDelay,uint16_t maxDelay,--
+arm_fir_sparse_instance_q7 * S,q7_t * pSrc,q7_t * pDst,q7_t * pScratchIn,q31_t * pScratchOut,uint32_t blockSize)
+arm_fir_sparse_instance_q7 * S,uint16_t numTaps,q7_t * pCoeffs,q7_t * pState,int32_t * pTapDelay,uint16_t maxDelay,--
+arm_float_to_q15(float32_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_float_to_q31(float32_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_float_to_q7(float32_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_iir_lattice_instance_f32 * S,float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_iir_lattice_instance_f32 * S,uint16_t numStages,float32_t * pkCoeffs,float32_t * pvCoeffs,float32_t * pState,uint32_t blockSize)
+arm_iir_lattice_instance_q15 * S,q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_iir_lattice_instance_q15 * S,uint16_t numStages,q15_t * pkCoeffs,q15_t * pvCoeffs,q15_t * pState,uint32_t blockSize)
+arm_iir_lattice_instance_q31 * S,q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_iir_lattice_instance_q31 * S,uint16_t numStages,q31_t * pkCoeffs,q31_t * pvCoeffs,q31_t * pState,uint32_t blockSize)
+arm_inv_clarke_f32(float32_t Ialpha,float32_t Ibeta,float32_t * pIa,float32_t * pIb)
+arm_inv_clarke_q31(q31_t Ialpha,q31_t Ibeta,q31_t * pIa,q31_t * pIb)
+arm_inv_park_f32(float32_t Id,float32_t Iq,float32_t * pIalpha,float32_t * pIbeta,float32_t sinVal,float32_t cosVal)
+arm_inv_park_q31(q31_t Id,q31_t Iq,q31_t * pIalpha,q31_t * pIbeta,q31_t sinVal,q31_t cosVal)
+arm_linear_interp_instance_f32 * S,float32_t x)
+arm_linear_interp_q15(q15_t * pYData,q31_t x,uint32_t nValues)
+arm_linear_interp_q31(q31_t * pYData,q31_t x,uint32_t nValues)
+arm_linear_interp_q7(q7_t * pYData,q31_t x,uint32_t nValues)
+arm_lms_instance_f32 * S,float32_t * pSrc,float32_t * pRef,float32_t * pOut,float32_t * pErr,uint32_t blockSize)
+arm_lms_instance_f32 * S,uint16_t numTaps,float32_t * pCoeffs,float32_t * pState,float32_t mu,uint32_t blockSize)
+arm_lms_instance_q15 * S,q15_t * pSrc,q15_t * pRef,q15_t * pOut,q15_t * pErr,uint32_t blockSize)
+arm_lms_instance_q15 * S,uint16_t numTaps,q15_t * pCoeffs,q15_t * pState,q15_t mu,uint32_t blockSize,--
+arm_lms_instance_q31 * S,q31_t * pSrc,q31_t * pRef,q31_t * pOut,q31_t * pErr,uint32_t blockSize)
+arm_lms_instance_q31 * S,uint16_t numTaps,q31_t * pCoeffs,q31_t * pState,q31_t mu,uint32_t blockSize,--
+arm_lms_norm_instance_f32 * S,float32_t * pSrc,float32_t * pRef,float32_t * pOut,float32_t * pErr,uint32_t blockSize)
+arm_lms_norm_instance_f32 * S,uint16_t numTaps,float32_t * pCoeffs,float32_t * pState,float32_t mu,uint32_t blockSize)
+arm_lms_norm_instance_q15 * S,q15_t * pSrc,q15_t * pRef,q15_t * pOut,q15_t * pErr,uint32_t blockSize)
+arm_lms_norm_instance_q15 * S,uint16_t numTaps,q15_t * pCoeffs,q15_t * pState,q15_t mu,uint32_t blockSize,--
+arm_lms_norm_instance_q31 * S,q31_t * pSrc,q31_t * pRef,q31_t * pOut,q31_t * pErr,uint32_t blockSize)
+arm_lms_norm_instance_q31 * S,uint16_t numTaps,q31_t * pCoeffs,q31_t * pState,q31_t mu,uint32_t blockSize,--
+arm_math.h</code> for Cortex-M4/M3/M0 with little endian and big endian. Same header file will be used for floating point unit(FPU) variants.
+arm_math.h</code> which is placed in the <code>Include</code> folder.
+arm_mat_init_q15()</code> for floating-point, Q31 and Q15 types,  respectively.
+arm_mat_init_q31()</code>
+arm_matrix_instance_f32 * dst)
+arm_matrix_instance_f32 * pDst)
+arm_matrix_instance_f32 * S,uint16_t nRows,uint16_t nColumns,float32_t * pData)
+arm_matrix_instance_q15 * pDst)
+arm_matrix_instance_q15 * pDst,q15_t * pState)
+arm_matrix_instance_q15 * S,uint16_t nRows,uint16_t nColumns,q15_t * pData)
+arm_matrix_instance_q31 * pDst)
+arm_matrix_instance_q31 * S,uint16_t nRows,uint16_t nColumns,q31_t * pData)
+arm_max_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult,uint32_t * pIndex)
+arm_max_q15(q15_t * pSrc,uint32_t blockSize,q15_t * pResult,uint32_t * pIndex)
+arm_max_q31(q31_t * pSrc,uint32_t blockSize,q31_t * pResult,uint32_t * pIndex)
+arm_max_q7(q7_t * pSrc,uint32_t blockSize,q7_t * pResult,uint32_t * pIndex)
+arm_mean_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult)
+arm_mean_q15(q15_t * pSrc,uint32_t blockSize,q15_t * pResult)
+arm_mean_q31(q31_t * pSrc,uint32_t blockSize,q31_t * pResult)
+arm_mean_q7(q7_t * pSrc,uint32_t blockSize,q7_t * pResult)
+arm_min_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult,uint32_t * pIndex)
+arm_min_q15(q15_t * pSrc,uint32_t blockSize,q15_t * pResult,uint32_t * pIndex)
+arm_min_q31(q31_t * pSrc,uint32_t blockSize,q31_t * pResult,uint32_t * pIndex)
+arm_min_q7(q7_t * pSrc,uint32_t blockSize,q7_t * result,uint32_t * index)
+arm_mult_f32(float32_t * pSrcA,float32_t * pSrcB,float32_t * pDst,uint32_t blockSize)
+arm_mult_q15(q15_t * pSrcA,q15_t * pSrcB,q15_t * pDst,uint32_t blockSize)
+arm_mult_q31(q31_t * pSrcA,q31_t * pSrcB,q31_t * pDst,uint32_t blockSize)
+arm_mult_q7(q7_t * pSrcA,q7_t * pSrcB,q7_t * pDst,uint32_t blockSize)
+arm_negate_f32(float32_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_negate_q15(q15_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_negate_q31(q31_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_negate_q7(q7_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_offset_f32(float32_t * pSrc,float32_t offset,float32_t * pDst,uint32_t blockSize)
+arm_offset_q15(q15_t * pSrc,q15_t offset,q15_t * pDst,uint32_t blockSize)
+arm_offset_q31(q31_t * pSrc,q31_t offset,q31_t * pDst,uint32_t blockSize)
+arm_offset_q7(q7_t * pSrc,q7_t offset,q7_t * pDst,uint32_t blockSize)
+arm_park_f32(float32_t Ialpha,float32_t Ibeta,float32_t * pId,float32_t * pIq,float32_t sinVal,float32_t cosVal)
+arm_park_q31(q31_t Ialpha,q31_t Ibeta,q31_t * pId,q31_t * pIq,q31_t sinVal,q31_t cosVal)
+arm_pid_instance_f32 * S)
+arm_pid_instance_f32 * S,float32_t in)
+arm_pid_instance_f32 * S,int32_t resetStateFlag)
+arm_pid_instance_q15 * S)
+arm_pid_instance_q15 * S,int32_t resetStateFlag)
+arm_pid_instance_q15 * S,q15_t in)
+arm_pid_instance_q31 * S)
+arm_pid_instance_q31 * S,int32_t resetStateFlag)
+arm_pid_instance_q31 * S,q31_t in)
+arm_power_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult)
+arm_power_q15(q15_t * pSrc,uint32_t blockSize,q63_t * pResult)
+arm_power_q31(q31_t * pSrc,uint32_t blockSize,q63_t * pResult)
+arm_power_q7(q7_t * pSrc,uint32_t blockSize,q31_t * pResult)
+arm_q15_to_float(q15_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_q15_to_q31(q15_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_q15_to_q7(q15_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_q31_to_float(q31_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_q31_to_q15(q31_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_q31_to_q7(q31_t * pSrc,q7_t * pDst,uint32_t blockSize)
+arm_q7_to_float(q7_t * pSrc,float32_t * pDst,uint32_t blockSize)
+arm_q7_to_q15(q7_t * pSrc,q15_t * pDst,uint32_t blockSize)
+arm_q7_to_q31(q7_t * pSrc,q31_t * pDst,uint32_t blockSize)
+arm_recip_q15(q15_t in,q15_t * dst,q15_t * pRecipTable)
+arm_recip_q31(q31_t in,q31_t * dst,q31_t * pRecipTable)
+arm_rfft_fast_init_f32 (* S,fftLen)
+arm_rfft_fast_instance_f32 
+arm_rfft_fast_instance_f32 * S,float32_t * p, float32_t * pOut,uint8_t ifftFlag)
+arm_rfft_instance_f32
+arm_rfft_instance_f32 * S,float32_t * pSrc,float32_t * pDst)
+arm_rfft_instance_q15
+arm_rfft_instance_q15 * S,q15_t * pSrc,q15_t * pDst)
+arm_rfft_instance_q31
+arm_rfft_instance_q31 * S,q31_t * pSrc,q31_t * pDst)
+arm_rms_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult)
+arm_rms_q15(q15_t * pSrc,uint32_t blockSize,q15_t * pResult)
+arm_rms_q31(q31_t * pSrc,uint32_t blockSize,q31_t * pResult)
+arm_scale_f32(float32_t * pSrc,float32_t scale,float32_t * pDst,uint32_t blockSize)
+arm_scale_q15(q15_t * pSrc,q15_t scaleFract,int8_t shift,q15_t * pDst,uint32_t blockSize)
+arm_scale_q31(q31_t * pSrc,q31_t scaleFract,int8_t shift,q31_t * pDst,uint32_t blockSize)
+arm_scale_q7(q7_t * pSrc,q7_t scaleFract,int8_t shift,q7_t * pDst,uint32_t blockSize)
+arm_shift_q15(q15_t * pSrc,int8_t shiftBits,q15_t * pDst,uint32_t blockSize)
+arm_shift_q31(q31_t * pSrc,int8_t shiftBits,q31_t * pDst,uint32_t blockSize)
+arm_shift_q7(q7_t * pSrc,int8_t shiftBits,q7_t * pDst,uint32_t blockSize)
+arm_sin_cos_f32(float32_t theta,float32_t * pSinVal,float32_t * pCcosVal)
+arm_sin_cos_q31(q31_t theta,q31_t * pSinVal,q31_t * pCosVal)
+arm_sin_f32(float32_t x)
+arm_sin_q15(q15_t x)
+arm_sin_q31(q31_t x)
+arm_sqrt_f32(float32_t in,float32_t * pOut)
+arm_sqrt_q15(q15_t in,q15_t * pOut)
+arm_sqrt_q31(q31_t in,q31_t * pOut)
+arm_status function returns ARM_MATH_SUCCESS if initialization is successful or ARM_MATH_ARGUMENT_ERROR if <code>fftLenReal</code> is not a supported transform length.
+arm_status function returns ARM_MATH_SUCCESS if initialization is successful or ARM_MATH_ARGUMENT_ERROR if <code>N</code> is not a supported transform length.
+arm_std_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult)
+arm_std_q15(q15_t * pSrc,uint32_t blockSize,q15_t * pResult)
+arm_std_q31(q31_t * pSrc,uint32_t blockSize,q31_t * pResult)
+arm_sub_f32(float32_t * pSrcA,float32_t * pSrcB,float32_t * pDst,uint32_t blockSize)
+arm_sub_q15(q15_t * pSrcA,q15_t * pSrcB,q15_t * pDst,uint32_t blockSize)
+arm_sub_q31(q31_t * pSrcA,q31_t * pSrcB,q31_t * pDst,uint32_t blockSize)
+arm_sub_q7(q7_t * pSrcA,q7_t * pSrcB,q7_t * pDst,uint32_t blockSize)
+arm_var_f32(float32_t * pSrc,uint32_t blockSize,float32_t * pResult)
+arm_var_q15(q15_t * pSrc,uint32_t blockSize,q31_t * pResult)
+arm_var_q31(q31_t * pSrc,uint32_t blockSize,q63_t * pResult)
+assert_param(expr)
+BKPSRAM_BASE
+BKPSRAM_BB_BASE
+BUTTONn
+CAN1_BASE             (APB1PERIPH_BASE + 0x6400)
+CAN1                ((CAN_TypeDef *)
+CAN2_BASE             (APB1PERIPH_BASE + 0x6800)
+CAN2                ((CAN_TypeDef *)
+CAN_BS1_10tq
+CAN_BS1_11tq
+CAN_BS1_12tq
+CAN_BS1_13tq
+CAN_BS1_14tq
+CAN_BS1_15tq
+CAN_BS1_16tq
+CAN_BS1_1tq
+CAN_BS1_2tq
+CAN_BS1_3tq
+CAN_BS1_4tq
+CAN_BS1_5tq
+CAN_BS1_6tq
+CAN_BS1_7tq
+CAN_BS1_8tq
+CAN_BS1_9tq
+CAN_BS2_1tq
+CAN_BS2_2tq
+CAN_BS2_3tq
+CAN_BS2_4tq
+CAN_BS2_5tq
+CAN_BS2_6tq
+CAN_BS2_7tq
+CAN_BS2_8tq
+CAN_BTR_BRP
+CAN_BTR_LBKM
+CAN_BTR_SILM
+CAN_BTR_SJW
+CAN_BTR_TS1
+CAN_BTR_TS2
+CAN_CancelTransmit(CAN_TypeDef* CANx, uint8_t Mailbox);
+CAN_ClearFlag(CAN_TypeDef* CANx, uint32_t CAN_FLAG);
+CAN_ClearITPendingBit(CAN_TypeDef* CANx, uint32_t CAN_IT);
+CAN_DBGFreeze(CAN_TypeDef* CANx, FunctionalState NewState);
+CAN_DeInit(CAN_TypeDef* CANx);
+CAN_ErrorCode_ACKErr
+CAN_ErrorCode_BitDominantErr
+CAN_ErrorCode_BitRecessiveErr
+CAN_ErrorCode_CRCErr
+CAN_ErrorCode_FormErr
+CAN_ErrorCode_NoErr
+CAN_ErrorCode_SoftwareSetErr
+CAN_ErrorCode_StuffErr
+CAN_ESR_BOFF
+CAN_ESR_EPVF
+CAN_ESR_EWGF
+CAN_ESR_LEC
+CAN_ESR_LEC_0
+CAN_ESR_LEC_1
+CAN_ESR_LEC_2
+CAN_ESR_REC
+CAN_ESR_TEC
+CAN_F0R1_FB0
+CAN_F0R1_FB1
+CAN_F0R1_FB10
+CAN_F0R1_FB11
+CAN_F0R1_FB12
+CAN_F0R1_FB13
+CAN_F0R1_FB14
+CAN_F0R1_FB15
+CAN_F0R1_FB16
+CAN_F0R1_FB17
+CAN_F0R1_FB18
+CAN_F0R1_FB19
+CAN_F0R1_FB2
+CAN_F0R1_FB20
+CAN_F0R1_FB21
+CAN_F0R1_FB22
+CAN_F0R1_FB23
+CAN_F0R1_FB24
+CAN_F0R1_FB25
+CAN_F0R1_FB26
+CAN_F0R1_FB27
+CAN_F0R1_FB28
+CAN_F0R1_FB29
+CAN_F0R1_FB3
+CAN_F0R1_FB30
+CAN_F0R1_FB31
+CAN_F0R1_FB4
+CAN_F0R1_FB5
+CAN_F0R1_FB6
+CAN_F0R1_FB7
+CAN_F0R1_FB8
+CAN_F0R1_FB9
+CAN_F0R2_FB0
+CAN_F0R2_FB1
+CAN_F0R2_FB10
+CAN_F0R2_FB11
+CAN_F0R2_FB12
+CAN_F0R2_FB13
+CAN_F0R2_FB14
+CAN_F0R2_FB15
+CAN_F0R2_FB16
+CAN_F0R2_FB17
+CAN_F0R2_FB18
+CAN_F0R2_FB19
+CAN_F0R2_FB2
+CAN_F0R2_FB20
+CAN_F0R2_FB21
+CAN_F0R2_FB22
+CAN_F0R2_FB23
+CAN_F0R2_FB24
+CAN_F0R2_FB25
+CAN_F0R2_FB26
+CAN_F0R2_FB27
+CAN_F0R2_FB28
+CAN_F0R2_FB29
+CAN_F0R2_FB3
+CAN_F0R2_FB30
+CAN_F0R2_FB31
+CAN_F0R2_FB4
+CAN_F0R2_FB5
+CAN_F0R2_FB6
+CAN_F0R2_FB7
+CAN_F0R2_FB8
+CAN_F0R2_FB9
+CAN_F10R1_FB0
+CAN_F10R1_FB1
+CAN_F10R1_FB10
+CAN_F10R1_FB11
+CAN_F10R1_FB12
+CAN_F10R1_FB13
+CAN_F10R1_FB14
+CAN_F10R1_FB15
+CAN_F10R1_FB16
+CAN_F10R1_FB17
+CAN_F10R1_FB18
+CAN_F10R1_FB19
+CAN_F10R1_FB2
+CAN_F10R1_FB20
+CAN_F10R1_FB21
+CAN_F10R1_FB22
+CAN_F10R1_FB23
+CAN_F10R1_FB24
+CAN_F10R1_FB25
+CAN_F10R1_FB26
+CAN_F10R1_FB27
+CAN_F10R1_FB28
+CAN_F10R1_FB29
+CAN_F10R1_FB3
+CAN_F10R1_FB30
+CAN_F10R1_FB31
+CAN_F10R1_FB4
+CAN_F10R1_FB5
+CAN_F10R1_FB6
+CAN_F10R1_FB7
+CAN_F10R1_FB8
+CAN_F10R1_FB9
+CAN_F10R2_FB0
+CAN_F10R2_FB1
+CAN_F10R2_FB10
+CAN_F10R2_FB11
+CAN_F10R2_FB12
+CAN_F10R2_FB13
+CAN_F10R2_FB14
+CAN_F10R2_FB15
+CAN_F10R2_FB16
+CAN_F10R2_FB17
+CAN_F10R2_FB18
+CAN_F10R2_FB19
+CAN_F10R2_FB2
+CAN_F10R2_FB20
+CAN_F10R2_FB21
+CAN_F10R2_FB22
+CAN_F10R2_FB23
+CAN_F10R2_FB24
+CAN_F10R2_FB25
+CAN_F10R2_FB26
+CAN_F10R2_FB27
+CAN_F10R2_FB28
+CAN_F10R2_FB29
+CAN_F10R2_FB3
+CAN_F10R2_FB30
+CAN_F10R2_FB31
+CAN_F10R2_FB4
+CAN_F10R2_FB5
+CAN_F10R2_FB6
+CAN_F10R2_FB7
+CAN_F10R2_FB8
+CAN_F10R2_FB9
+CAN_F11R1_FB0
+CAN_F11R1_FB1
+CAN_F11R1_FB10
+CAN_F11R1_FB11
+CAN_F11R1_FB12
+CAN_F11R1_FB13
+CAN_F11R1_FB14
+CAN_F11R1_FB15
+CAN_F11R1_FB16
+CAN_F11R1_FB17
+CAN_F11R1_FB18
+CAN_F11R1_FB19
+CAN_F11R1_FB2
+CAN_F11R1_FB20
+CAN_F11R1_FB21
+CAN_F11R1_FB22
+CAN_F11R1_FB23
+CAN_F11R1_FB24
+CAN_F11R1_FB25
+CAN_F11R1_FB26
+CAN_F11R1_FB27
+CAN_F11R1_FB28
+CAN_F11R1_FB29
+CAN_F11R1_FB3
+CAN_F11R1_FB30
+CAN_F11R1_FB31
+CAN_F11R1_FB4
+CAN_F11R1_FB5
+CAN_F11R1_FB6
+CAN_F11R1_FB7
+CAN_F11R1_FB8
+CAN_F11R1_FB9
+CAN_F11R2_FB0
+CAN_F11R2_FB1
+CAN_F11R2_FB10
+CAN_F11R2_FB11
+CAN_F11R2_FB12
+CAN_F11R2_FB13
+CAN_F11R2_FB14
+CAN_F11R2_FB15
+CAN_F11R2_FB16
+CAN_F11R2_FB17
+CAN_F11R2_FB18
+CAN_F11R2_FB19
+CAN_F11R2_FB2
+CAN_F11R2_FB20
+CAN_F11R2_FB21
+CAN_F11R2_FB22
+CAN_F11R2_FB23
+CAN_F11R2_FB24
+CAN_F11R2_FB25
+CAN_F11R2_FB26
+CAN_F11R2_FB27
+CAN_F11R2_FB28
+CAN_F11R2_FB29
+CAN_F11R2_FB3
+CAN_F11R2_FB30
+CAN_F11R2_FB31
+CAN_F11R2_FB4
+CAN_F11R2_FB5
+CAN_F11R2_FB6
+CAN_F11R2_FB7
+CAN_F11R2_FB8
+CAN_F11R2_FB9
+CAN_F12R1_FB0
+CAN_F12R1_FB1
+CAN_F12R1_FB10
+CAN_F12R1_FB11
+CAN_F12R1_FB12
+CAN_F12R1_FB13
+CAN_F12R1_FB14
+CAN_F12R1_FB15
+CAN_F12R1_FB16
+CAN_F12R1_FB17
+CAN_F12R1_FB18
+CAN_F12R1_FB19
+CAN_F12R1_FB2
+CAN_F12R1_FB20
+CAN_F12R1_FB21
+CAN_F12R1_FB22
+CAN_F12R1_FB23
+CAN_F12R1_FB24
+CAN_F12R1_FB25
+CAN_F12R1_FB26
+CAN_F12R1_FB27
+CAN_F12R1_FB28
+CAN_F12R1_FB29
+CAN_F12R1_FB3
+CAN_F12R1_FB30
+CAN_F12R1_FB31
+CAN_F12R1_FB4
+CAN_F12R1_FB5
+CAN_F12R1_FB6
+CAN_F12R1_FB7
+CAN_F12R1_FB8
+CAN_F12R1_FB9
+CAN_F12R2_FB0
+CAN_F12R2_FB1
+CAN_F12R2_FB10
+CAN_F12R2_FB11
+CAN_F12R2_FB12
+CAN_F12R2_FB13
+CAN_F12R2_FB14
+CAN_F12R2_FB15
+CAN_F12R2_FB16
+CAN_F12R2_FB17
+CAN_F12R2_FB18
+CAN_F12R2_FB19
+CAN_F12R2_FB2
+CAN_F12R2_FB20
+CAN_F12R2_FB21
+CAN_F12R2_FB22
+CAN_F12R2_FB23
+CAN_F12R2_FB24
+CAN_F12R2_FB25
+CAN_F12R2_FB26
+CAN_F12R2_FB27
+CAN_F12R2_FB28
+CAN_F12R2_FB29
+CAN_F12R2_FB3
+CAN_F12R2_FB30
+CAN_F12R2_FB31
+CAN_F12R2_FB4
+CAN_F12R2_FB5
+CAN_F12R2_FB6
+CAN_F12R2_FB7
+CAN_F12R2_FB8
+CAN_F12R2_FB9
+CAN_F13R1_FB0
+CAN_F13R1_FB1
+CAN_F13R1_FB10
+CAN_F13R1_FB11
+CAN_F13R1_FB12
+CAN_F13R1_FB13
+CAN_F13R1_FB14
+CAN_F13R1_FB15
+CAN_F13R1_FB16
+CAN_F13R1_FB17
+CAN_F13R1_FB18
+CAN_F13R1_FB19
+CAN_F13R1_FB2
+CAN_F13R1_FB20
+CAN_F13R1_FB21
+CAN_F13R1_FB22
+CAN_F13R1_FB23
+CAN_F13R1_FB24
+CAN_F13R1_FB25
+CAN_F13R1_FB26
+CAN_F13R1_FB27
+CAN_F13R1_FB28
+CAN_F13R1_FB29
+CAN_F13R1_FB3
+CAN_F13R1_FB30
+CAN_F13R1_FB31
+CAN_F13R1_FB4
+CAN_F13R1_FB5
+CAN_F13R1_FB6
+CAN_F13R1_FB7
+CAN_F13R1_FB8
+CAN_F13R1_FB9
+CAN_F13R2_FB0
+CAN_F13R2_FB1
+CAN_F13R2_FB10
+CAN_F13R2_FB11
+CAN_F13R2_FB12
+CAN_F13R2_FB13
+CAN_F13R2_FB14
+CAN_F13R2_FB15
+CAN_F13R2_FB16
+CAN_F13R2_FB17
+CAN_F13R2_FB18
+CAN_F13R2_FB19
+CAN_F13R2_FB2
+CAN_F13R2_FB20
+CAN_F13R2_FB21
+CAN_F13R2_FB22
+CAN_F13R2_FB23
+CAN_F13R2_FB24
+CAN_F13R2_FB25
+CAN_F13R2_FB26
+CAN_F13R2_FB27
+CAN_F13R2_FB28
+CAN_F13R2_FB29
+CAN_F13R2_FB3
+CAN_F13R2_FB30
+CAN_F13R2_FB31
+CAN_F13R2_FB4
+CAN_F13R2_FB5
+CAN_F13R2_FB6
+CAN_F13R2_FB7
+CAN_F13R2_FB8
+CAN_F13R2_FB9
+CAN_F1R1_FB0
+CAN_F1R1_FB1
+CAN_F1R1_FB10
+CAN_F1R1_FB11
+CAN_F1R1_FB12
+CAN_F1R1_FB13
+CAN_F1R1_FB14
+CAN_F1R1_FB15
+CAN_F1R1_FB16
+CAN_F1R1_FB17
+CAN_F1R1_FB18
+CAN_F1R1_FB19
+CAN_F1R1_FB2
+CAN_F1R1_FB20
+CAN_F1R1_FB21
+CAN_F1R1_FB22
+CAN_F1R1_FB23
+CAN_F1R1_FB24
+CAN_F1R1_FB25
+CAN_F1R1_FB26
+CAN_F1R1_FB27
+CAN_F1R1_FB28
+CAN_F1R1_FB29
+CAN_F1R1_FB3
+CAN_F1R1_FB30
+CAN_F1R1_FB31
+CAN_F1R1_FB4
+CAN_F1R1_FB5
+CAN_F1R1_FB6
+CAN_F1R1_FB7
+CAN_F1R1_FB8
+CAN_F1R1_FB9
+CAN_F1R2_FB0
+CAN_F1R2_FB1
+CAN_F1R2_FB10
+CAN_F1R2_FB11
+CAN_F1R2_FB12
+CAN_F1R2_FB13
+CAN_F1R2_FB14
+CAN_F1R2_FB15
+CAN_F1R2_FB16
+CAN_F1R2_FB17
+CAN_F1R2_FB18
+CAN_F1R2_FB19
+CAN_F1R2_FB2
+CAN_F1R2_FB20
+CAN_F1R2_FB21
+CAN_F1R2_FB22
+CAN_F1R2_FB23
+CAN_F1R2_FB24
+CAN_F1R2_FB25
+CAN_F1R2_FB26
+CAN_F1R2_FB27
+CAN_F1R2_FB28
+CAN_F1R2_FB29
+CAN_F1R2_FB3
+CAN_F1R2_FB30
+CAN_F1R2_FB31
+CAN_F1R2_FB4
+CAN_F1R2_FB5
+CAN_F1R2_FB6
+CAN_F1R2_FB7
+CAN_F1R2_FB8
+CAN_F1R2_FB9
+CAN_F2R1_FB0
+CAN_F2R1_FB1
+CAN_F2R1_FB10
+CAN_F2R1_FB11
+CAN_F2R1_FB12
+CAN_F2R1_FB13
+CAN_F2R1_FB14
+CAN_F2R1_FB15
+CAN_F2R1_FB16
+CAN_F2R1_FB17
+CAN_F2R1_FB18
+CAN_F2R1_FB19
+CAN_F2R1_FB2
+CAN_F2R1_FB20
+CAN_F2R1_FB21
+CAN_F2R1_FB22
+CAN_F2R1_FB23
+CAN_F2R1_FB24
+CAN_F2R1_FB25
+CAN_F2R1_FB26
+CAN_F2R1_FB27
+CAN_F2R1_FB28
+CAN_F2R1_FB29
+CAN_F2R1_FB3
+CAN_F2R1_FB30
+CAN_F2R1_FB31
+CAN_F2R1_FB4
+CAN_F2R1_FB5
+CAN_F2R1_FB6
+CAN_F2R1_FB7
+CAN_F2R1_FB8
+CAN_F2R1_FB9
+CAN_F2R2_FB0
+CAN_F2R2_FB1
+CAN_F2R2_FB10
+CAN_F2R2_FB11
+CAN_F2R2_FB12
+CAN_F2R2_FB13
+CAN_F2R2_FB14
+CAN_F2R2_FB15
+CAN_F2R2_FB16
+CAN_F2R2_FB17
+CAN_F2R2_FB18
+CAN_F2R2_FB19
+CAN_F2R2_FB2
+CAN_F2R2_FB20
+CAN_F2R2_FB21
+CAN_F2R2_FB22
+CAN_F2R2_FB23
+CAN_F2R2_FB24
+CAN_F2R2_FB25
+CAN_F2R2_FB26
+CAN_F2R2_FB27
+CAN_F2R2_FB28
+CAN_F2R2_FB29
+CAN_F2R2_FB3
+CAN_F2R2_FB30
+CAN_F2R2_FB31
+CAN_F2R2_FB4
+CAN_F2R2_FB5
+CAN_F2R2_FB6
+CAN_F2R2_FB7
+CAN_F2R2_FB8
+CAN_F2R2_FB9
+CAN_F3R1_FB0
+CAN_F3R1_FB1
+CAN_F3R1_FB10
+CAN_F3R1_FB11
+CAN_F3R1_FB12
+CAN_F3R1_FB13
+CAN_F3R1_FB14
+CAN_F3R1_FB15
+CAN_F3R1_FB16
+CAN_F3R1_FB17
+CAN_F3R1_FB18
+CAN_F3R1_FB19
+CAN_F3R1_FB2
+CAN_F3R1_FB20
+CAN_F3R1_FB21
+CAN_F3R1_FB22
+CAN_F3R1_FB23
+CAN_F3R1_FB24
+CAN_F3R1_FB25
+CAN_F3R1_FB26
+CAN_F3R1_FB27
+CAN_F3R1_FB28
+CAN_F3R1_FB29
+CAN_F3R1_FB3
+CAN_F3R1_FB30
+CAN_F3R1_FB31
+CAN_F3R1_FB4
+CAN_F3R1_FB5
+CAN_F3R1_FB6
+CAN_F3R1_FB7
+CAN_F3R1_FB8
+CAN_F3R1_FB9
+CAN_F3R2_FB0
+CAN_F3R2_FB1
+CAN_F3R2_FB10
+CAN_F3R2_FB11
+CAN_F3R2_FB12
+CAN_F3R2_FB13
+CAN_F3R2_FB14
+CAN_F3R2_FB15
+CAN_F3R2_FB16
+CAN_F3R2_FB17
+CAN_F3R2_FB18
+CAN_F3R2_FB19
+CAN_F3R2_FB2
+CAN_F3R2_FB20
+CAN_F3R2_FB21
+CAN_F3R2_FB22
+CAN_F3R2_FB23
+CAN_F3R2_FB24
+CAN_F3R2_FB25
+CAN_F3R2_FB26
+CAN_F3R2_FB27
+CAN_F3R2_FB28
+CAN_F3R2_FB29
+CAN_F3R2_FB3
+CAN_F3R2_FB30
+CAN_F3R2_FB31
+CAN_F3R2_FB4
+CAN_F3R2_FB5
+CAN_F3R2_FB6
+CAN_F3R2_FB7
+CAN_F3R2_FB8
+CAN_F3R2_FB9
+CAN_F4R1_FB0
+CAN_F4R1_FB1
+CAN_F4R1_FB10
+CAN_F4R1_FB11
+CAN_F4R1_FB12
+CAN_F4R1_FB13
+CAN_F4R1_FB14
+CAN_F4R1_FB15
+CAN_F4R1_FB16
+CAN_F4R1_FB17
+CAN_F4R1_FB18
+CAN_F4R1_FB19
+CAN_F4R1_FB2
+CAN_F4R1_FB20
+CAN_F4R1_FB21
+CAN_F4R1_FB22
+CAN_F4R1_FB23
+CAN_F4R1_FB24
+CAN_F4R1_FB25
+CAN_F4R1_FB26
+CAN_F4R1_FB27
+CAN_F4R1_FB28
+CAN_F4R1_FB29
+CAN_F4R1_FB3
+CAN_F4R1_FB30
+CAN_F4R1_FB31
+CAN_F4R1_FB4
+CAN_F4R1_FB5
+CAN_F4R1_FB6
+CAN_F4R1_FB7
+CAN_F4R1_FB8
+CAN_F4R1_FB9
+CAN_F4R2_FB0
+CAN_F4R2_FB1
+CAN_F4R2_FB10
+CAN_F4R2_FB11
+CAN_F4R2_FB12
+CAN_F4R2_FB13
+CAN_F4R2_FB14
+CAN_F4R2_FB15
+CAN_F4R2_FB16
+CAN_F4R2_FB17
+CAN_F4R2_FB18
+CAN_F4R2_FB19
+CAN_F4R2_FB2
+CAN_F4R2_FB20
+CAN_F4R2_FB21
+CAN_F4R2_FB22
+CAN_F4R2_FB23
+CAN_F4R2_FB24
+CAN_F4R2_FB25
+CAN_F4R2_FB26
+CAN_F4R2_FB27
+CAN_F4R2_FB28
+CAN_F4R2_FB29
+CAN_F4R2_FB3
+CAN_F4R2_FB30
+CAN_F4R2_FB31
+CAN_F4R2_FB4
+CAN_F4R2_FB5
+CAN_F4R2_FB6
+CAN_F4R2_FB7
+CAN_F4R2_FB8
+CAN_F4R2_FB9
+CAN_F5R1_FB0
+CAN_F5R1_FB1
+CAN_F5R1_FB10
+CAN_F5R1_FB11
+CAN_F5R1_FB12
+CAN_F5R1_FB13
+CAN_F5R1_FB14
+CAN_F5R1_FB15
+CAN_F5R1_FB16
+CAN_F5R1_FB17
+CAN_F5R1_FB18
+CAN_F5R1_FB19
+CAN_F5R1_FB2
+CAN_F5R1_FB20
+CAN_F5R1_FB21
+CAN_F5R1_FB22
+CAN_F5R1_FB23
+CAN_F5R1_FB24
+CAN_F5R1_FB25
+CAN_F5R1_FB26
+CAN_F5R1_FB27
+CAN_F5R1_FB28
+CAN_F5R1_FB29
+CAN_F5R1_FB3
+CAN_F5R1_FB30
+CAN_F5R1_FB31
+CAN_F5R1_FB4
+CAN_F5R1_FB5
+CAN_F5R1_FB6
+CAN_F5R1_FB7
+CAN_F5R1_FB8
+CAN_F5R1_FB9
+CAN_F5R2_FB0
+CAN_F5R2_FB1
+CAN_F5R2_FB10
+CAN_F5R2_FB11
+CAN_F5R2_FB12
+CAN_F5R2_FB13
+CAN_F5R2_FB14
+CAN_F5R2_FB15
+CAN_F5R2_FB16
+CAN_F5R2_FB17
+CAN_F5R2_FB18
+CAN_F5R2_FB19
+CAN_F5R2_FB2
+CAN_F5R2_FB20
+CAN_F5R2_FB21
+CAN_F5R2_FB22
+CAN_F5R2_FB23
+CAN_F5R2_FB24
+CAN_F5R2_FB25
+CAN_F5R2_FB26
+CAN_F5R2_FB27
+CAN_F5R2_FB28
+CAN_F5R2_FB29
+CAN_F5R2_FB3
+CAN_F5R2_FB30
+CAN_F5R2_FB31
+CAN_F5R2_FB4
+CAN_F5R2_FB5
+CAN_F5R2_FB6
+CAN_F5R2_FB7
+CAN_F5R2_FB8
+CAN_F5R2_FB9
+CAN_F6R1_FB0
+CAN_F6R1_FB1
+CAN_F6R1_FB10
+CAN_F6R1_FB11
+CAN_F6R1_FB12
+CAN_F6R1_FB13
+CAN_F6R1_FB14
+CAN_F6R1_FB15
+CAN_F6R1_FB16
+CAN_F6R1_FB17
+CAN_F6R1_FB18
+CAN_F6R1_FB19
+CAN_F6R1_FB2
+CAN_F6R1_FB20
+CAN_F6R1_FB21
+CAN_F6R1_FB22
+CAN_F6R1_FB23
+CAN_F6R1_FB24
+CAN_F6R1_FB25
+CAN_F6R1_FB26
+CAN_F6R1_FB27
+CAN_F6R1_FB28
+CAN_F6R1_FB29
+CAN_F6R1_FB3
+CAN_F6R1_FB30
+CAN_F6R1_FB31
+CAN_F6R1_FB4
+CAN_F6R1_FB5
+CAN_F6R1_FB6
+CAN_F6R1_FB7
+CAN_F6R1_FB8
+CAN_F6R1_FB9
+CAN_F6R2_FB0
+CAN_F6R2_FB1
+CAN_F6R2_FB10
+CAN_F6R2_FB11
+CAN_F6R2_FB12
+CAN_F6R2_FB13
+CAN_F6R2_FB14
+CAN_F6R2_FB15
+CAN_F6R2_FB16
+CAN_F6R2_FB17
+CAN_F6R2_FB18
+CAN_F6R2_FB19
+CAN_F6R2_FB2
+CAN_F6R2_FB20
+CAN_F6R2_FB21
+CAN_F6R2_FB22
+CAN_F6R2_FB23
+CAN_F6R2_FB24
+CAN_F6R2_FB25
+CAN_F6R2_FB26
+CAN_F6R2_FB27
+CAN_F6R2_FB28
+CAN_F6R2_FB29
+CAN_F6R2_FB3
+CAN_F6R2_FB30
+CAN_F6R2_FB31
+CAN_F6R2_FB4
+CAN_F6R2_FB5
+CAN_F6R2_FB6
+CAN_F6R2_FB7
+CAN_F6R2_FB8
+CAN_F6R2_FB9
+CAN_F7R1_FB0
+CAN_F7R1_FB1
+CAN_F7R1_FB10
+CAN_F7R1_FB11
+CAN_F7R1_FB12
+CAN_F7R1_FB13
+CAN_F7R1_FB14
+CAN_F7R1_FB15
+CAN_F7R1_FB16
+CAN_F7R1_FB17
+CAN_F7R1_FB18
+CAN_F7R1_FB19
+CAN_F7R1_FB2
+CAN_F7R1_FB20
+CAN_F7R1_FB21
+CAN_F7R1_FB22
+CAN_F7R1_FB23
+CAN_F7R1_FB24
+CAN_F7R1_FB25
+CAN_F7R1_FB26
+CAN_F7R1_FB27
+CAN_F7R1_FB28
+CAN_F7R1_FB29
+CAN_F7R1_FB3
+CAN_F7R1_FB30
+CAN_F7R1_FB31
+CAN_F7R1_FB4
+CAN_F7R1_FB5
+CAN_F7R1_FB6
+CAN_F7R1_FB7
+CAN_F7R1_FB8
+CAN_F7R1_FB9
+CAN_F7R2_FB0
+CAN_F7R2_FB1
+CAN_F7R2_FB10
+CAN_F7R2_FB11
+CAN_F7R2_FB12
+CAN_F7R2_FB13
+CAN_F7R2_FB14
+CAN_F7R2_FB15
+CAN_F7R2_FB16
+CAN_F7R2_FB17
+CAN_F7R2_FB18
+CAN_F7R2_FB19
+CAN_F7R2_FB2
+CAN_F7R2_FB20
+CAN_F7R2_FB21
+CAN_F7R2_FB22
+CAN_F7R2_FB23
+CAN_F7R2_FB24
+CAN_F7R2_FB25
+CAN_F7R2_FB26
+CAN_F7R2_FB27
+CAN_F7R2_FB28
+CAN_F7R2_FB29
+CAN_F7R2_FB3
+CAN_F7R2_FB30
+CAN_F7R2_FB31
+CAN_F7R2_FB4
+CAN_F7R2_FB5
+CAN_F7R2_FB6
+CAN_F7R2_FB7
+CAN_F7R2_FB8
+CAN_F7R2_FB9
+CAN_F8R1_FB0
+CAN_F8R1_FB1
+CAN_F8R1_FB10
+CAN_F8R1_FB11
+CAN_F8R1_FB12
+CAN_F8R1_FB13
+CAN_F8R1_FB14
+CAN_F8R1_FB15
+CAN_F8R1_FB16
+CAN_F8R1_FB17
+CAN_F8R1_FB18
+CAN_F8R1_FB19
+CAN_F8R1_FB2
+CAN_F8R1_FB20
+CAN_F8R1_FB21
+CAN_F8R1_FB22
+CAN_F8R1_FB23
+CAN_F8R1_FB24
+CAN_F8R1_FB25
+CAN_F8R1_FB26
+CAN_F8R1_FB27
+CAN_F8R1_FB28
+CAN_F8R1_FB29
+CAN_F8R1_FB3
+CAN_F8R1_FB30
+CAN_F8R1_FB31
+CAN_F8R1_FB4
+CAN_F8R1_FB5
+CAN_F8R1_FB6
+CAN_F8R1_FB7
+CAN_F8R1_FB8
+CAN_F8R1_FB9
+CAN_F8R2_FB0
+CAN_F8R2_FB1
+CAN_F8R2_FB10
+CAN_F8R2_FB11
+CAN_F8R2_FB12
+CAN_F8R2_FB13
+CAN_F8R2_FB14
+CAN_F8R2_FB15
+CAN_F8R2_FB16
+CAN_F8R2_FB17
+CAN_F8R2_FB18
+CAN_F8R2_FB19
+CAN_F8R2_FB2
+CAN_F8R2_FB20
+CAN_F8R2_FB21
+CAN_F8R2_FB22
+CAN_F8R2_FB23
+CAN_F8R2_FB24
+CAN_F8R2_FB25
+CAN_F8R2_FB26
+CAN_F8R2_FB27
+CAN_F8R2_FB28
+CAN_F8R2_FB29
+CAN_F8R2_FB3
+CAN_F8R2_FB30
+CAN_F8R2_FB31
+CAN_F8R2_FB4
+CAN_F8R2_FB5
+CAN_F8R2_FB6
+CAN_F8R2_FB7
+CAN_F8R2_FB8
+CAN_F8R2_FB9
+CAN_F9R1_FB0
+CAN_F9R1_FB1
+CAN_F9R1_FB10
+CAN_F9R1_FB11
+CAN_F9R1_FB12
+CAN_F9R1_FB13
+CAN_F9R1_FB14
+CAN_F9R1_FB15
+CAN_F9R1_FB16
+CAN_F9R1_FB17
+CAN_F9R1_FB18
+CAN_F9R1_FB19
+CAN_F9R1_FB2
+CAN_F9R1_FB20
+CAN_F9R1_FB21
+CAN_F9R1_FB22
+CAN_F9R1_FB23
+CAN_F9R1_FB24
+CAN_F9R1_FB25
+CAN_F9R1_FB26
+CAN_F9R1_FB27
+CAN_F9R1_FB28
+CAN_F9R1_FB29
+CAN_F9R1_FB3
+CAN_F9R1_FB30
+CAN_F9R1_FB31
+CAN_F9R1_FB4
+CAN_F9R1_FB5
+CAN_F9R1_FB6
+CAN_F9R1_FB7
+CAN_F9R1_FB8
+CAN_F9R1_FB9
+CAN_F9R2_FB0
+CAN_F9R2_FB1
+CAN_F9R2_FB10
+CAN_F9R2_FB11
+CAN_F9R2_FB12
+CAN_F9R2_FB13
+CAN_F9R2_FB14
+CAN_F9R2_FB15
+CAN_F9R2_FB16
+CAN_F9R2_FB17
+CAN_F9R2_FB18
+CAN_F9R2_FB19
+CAN_F9R2_FB2
+CAN_F9R2_FB20
+CAN_F9R2_FB21
+CAN_F9R2_FB22
+CAN_F9R2_FB23
+CAN_F9R2_FB24
+CAN_F9R2_FB25
+CAN_F9R2_FB26
+CAN_F9R2_FB27
+CAN_F9R2_FB28
+CAN_F9R2_FB29
+CAN_F9R2_FB3
+CAN_F9R2_FB30
+CAN_F9R2_FB31
+CAN_F9R2_FB4
+CAN_F9R2_FB5
+CAN_F9R2_FB6
+CAN_F9R2_FB7
+CAN_F9R2_FB8
+CAN_F9R2_FB9
+CAN_FA1R_FACT
+CAN_FA1R_FACT0
+CAN_FA1R_FACT1
+CAN_FA1R_FACT10
+CAN_FA1R_FACT11
+CAN_FA1R_FACT12
+CAN_FA1R_FACT13
+CAN_FA1R_FACT2
+CAN_FA1R_FACT3
+CAN_FA1R_FACT4
+CAN_FA1R_FACT5
+CAN_FA1R_FACT6
+CAN_FA1R_FACT7
+CAN_FA1R_FACT8
+CAN_FA1R_FACT9
+CAN_FFA1R_FFA
+CAN_FFA1R_FFA0
+CAN_FFA1R_FFA1
+CAN_FFA1R_FFA10
+CAN_FFA1R_FFA11
+CAN_FFA1R_FFA12
+CAN_FFA1R_FFA13
+CAN_FFA1R_FFA2
+CAN_FFA1R_FFA3
+CAN_FFA1R_FFA4
+CAN_FFA1R_FFA5
+CAN_FFA1R_FFA6
+CAN_FFA1R_FFA7
+CAN_FFA1R_FFA8
+CAN_FFA1R_FFA9
+CAN_FIFO0
+CAN_FIFO1
+CAN_FIFORelease(CAN_TypeDef* CANx, uint8_t FIFONumber);
+CAN_FilterFIFO0
+CAN_Filter_FIFO0
+CAN_FilterFIFO1
+CAN_Filter_FIFO1
+CAN_FilterInit(CAN_FilterInitTypeDef* CAN_FilterInitStruct);
+CAN_FilterMode_IdList
+CAN_FilterMode_IdMask
+CAN_FilterScale_16bit
+CAN_FilterScale_32bit
+CAN_FLAG_BOF
+CAN_FLAG_EPV
+CAN_FLAG_EWG
+CAN_FLAG_FF0
+CAN_FLAG_FF1
+CAN_FLAG_FMP0
+CAN_FLAG_FMP1
+CAN_FLAG_FOV0
+CAN_FLAG_FOV1
+CAN_FLAG_LEC
+CAN_FLAG_RQCP0
+CAN_FLAG_RQCP1
+CAN_FLAG_RQCP2
+CAN_FLAG_SLAK
+CAN_FLAG_WKU
+CAN_FM1R_FBM
+CAN_FM1R_FBM0
+CAN_FM1R_FBM1
+CAN_FM1R_FBM10
+CAN_FM1R_FBM11
+CAN_FM1R_FBM12
+CAN_FM1R_FBM13
+CAN_FM1R_FBM2
+CAN_FM1R_FBM3
+CAN_FM1R_FBM4
+CAN_FM1R_FBM5
+CAN_FM1R_FBM6
+CAN_FM1R_FBM7
+CAN_FM1R_FBM8
+CAN_FM1R_FBM9
+CAN_FMR_FINIT
+CAN_FS1R_FSC
+CAN_FS1R_FSC0
+CAN_FS1R_FSC1
+CAN_FS1R_FSC10
+CAN_FS1R_FSC11
+CAN_FS1R_FSC12
+CAN_FS1R_FSC13
+CAN_FS1R_FSC2
+CAN_FS1R_FSC3
+CAN_FS1R_FSC4
+CAN_FS1R_FSC5
+CAN_FS1R_FSC6
+CAN_FS1R_FSC7
+CAN_FS1R_FSC8
+CAN_FS1R_FSC9
+CAN_GetFlagStatus(CAN_TypeDef* CANx, uint32_t CAN_FLAG);
+CAN_GetITStatus(CAN_TypeDef* CANx, uint32_t CAN_IT);
+CAN_GetLastErrorCode(CAN_TypeDef* CANx);
+CAN_GetLSBTransmitErrorCounter(CAN_TypeDef* CANx);
+CAN_GetReceiveErrorCounter(CAN_TypeDef* CANx);
+CAN_ID_EXT
+CAN_Id_Extended
+CAN_Id_Standard
+CAN_ID_STD
+CAN_IER_BOFIE
+CAN_IER_EPVIE
+CAN_IER_ERRIE
+CAN_IER_EWGIE
+CAN_IER_FFIE0
+CAN_IER_FFIE1
+CAN_IER_FMPIE0
+CAN_IER_FMPIE1
+CAN_IER_FOVIE0
+CAN_IER_FOVIE1
+CAN_IER_LECIE
+CAN_IER_SLKIE
+CAN_IER_TMEIE
+CAN_IER_WKUIE
+CAN_Init(CAN_TypeDef* CANx, CAN_InitTypeDef* CAN_InitStruct);
+CANINITFAILED
+CANINITOK
+CAN_InitStatus_Failed
+CAN_InitStatus_Success
+CAN_IT_BOF
+CAN_ITConfig(CAN_TypeDef* CANx, uint32_t CAN_IT, FunctionalState NewState);
+CAN_IT_EPV
+CAN_IT_ERR
+CAN_IT_EWG
+CAN_IT_FF0
+CAN_IT_FF1
+CAN_IT_FMP0
+CAN_IT_FMP1
+CAN_IT_FOV0
+CAN_IT_FOV1
+CAN_IT_LEC
+CAN_IT_RQCP0
+CAN_IT_RQCP1
+CAN_IT_RQCP2
+CAN_IT_SLK
+CAN_IT_TME
+CAN_IT_WKU
+CAN_MCR_ABOM
+CAN_MCR_AWUM
+CAN_MCR_INRQ
+CAN_MCR_NART
+CAN_MCR_RESET
+CAN_MCR_RFLM
+CAN_MCR_SLEEP
+CAN_MCR_TTCM
+CAN_MCR_TXFP
+CAN_MessagePending(CAN_TypeDef* CANx, uint8_t FIFONumber);
+CAN_Mode_LoopBack
+CAN_Mode_Normal
+CAN_Mode_Silent
+CAN_Mode_Silent_LoopBack
+CAN_ModeStatus_Failed
+CAN_ModeStatus_Success
+CAN_MSR_ERRI
+CAN_MSR_INAK
+CAN_MSR_RX
+CAN_MSR_RXM
+CAN_MSR_SAMP
+CAN_MSR_SLAK
+CAN_MSR_SLAKI
+CAN_MSR_TXM
+CAN_MSR_WKUI
+CAN_NO_MB
+CAN_OperatingMode_Initialization
+CAN_OperatingMode_Normal
+CAN_OperatingModeRequest(CAN_TypeDef* CANx, uint8_t CAN_OperatingMode);
+CAN_OperatingMode_Sleep
+== CAN_OperatingMode_Sleep))
+CAN_RDH0R_DATA4
+CAN_RDH0R_DATA5
+CAN_RDH0R_DATA6
+CAN_RDH0R_DATA7
+CAN_RDH1R_DATA4
+CAN_RDH1R_DATA5
+CAN_RDH1R_DATA6
+CAN_RDH1R_DATA7
+CAN_RDL0R_DATA0
+CAN_RDL0R_DATA1
+CAN_RDL0R_DATA2
+CAN_RDL0R_DATA3
+CAN_RDL1R_DATA0
+CAN_RDL1R_DATA1
+CAN_RDL1R_DATA2
+CAN_RDL1R_DATA3
+CAN_RDT0R_DLC
+CAN_RDT0R_FMI
+CAN_RDT0R_TIME
+CAN_RDT1R_DLC
+CAN_RDT1R_FMI
+CAN_RDT1R_TIME
+CAN_Receive(CAN_TypeDef* CANx, uint8_t FIFONumber, CanRxMsg* RxMessage);
+CAN_RF0R_FMP0
+CAN_RF0R_FOVR0
+CAN_RF0R_FULL0
+CAN_RF0R_RFOM0
+CAN_RF1R_FMP1
+CAN_RF1R_FOVR1
+CAN_RF1R_FULL1
+CAN_RF1R_RFOM1
+CAN_RI0R_EXID
+CAN_RI0R_IDE
+CAN_RI0R_RTR
+CAN_RI0R_STID
+CAN_RI1R_EXID
+CAN_RI1R_IDE
+CAN_RI1R_RTR
+CAN_RI1R_STID
+CAN_RTR_Data
+CAN_RTR_DATA
+CAN_RTR_Remote
+CAN_RTR_REMOTE
+CAN_SJW_1tq
+CAN_SJW_2tq
+CAN_SJW_3tq
+CAN_SJW_4tq
+CAN_SlaveStartBank(uint8_t CAN_BankNumber); 
+CAN_Sleep(CAN_TypeDef* CANx);
+CAN_Sleep_Failed
+CANSLEEPFAILED
+CAN_Sleep_Ok
+CANSLEEPOK
+CAN_StructInit(CAN_InitTypeDef* CAN_InitStruct);
+CAN_TDH0R_DATA4
+CAN_TDH0R_DATA5
+CAN_TDH0R_DATA6
+CAN_TDH0R_DATA7
+CAN_TDH1R_DATA4
+CAN_TDH1R_DATA5
+CAN_TDH1R_DATA6
+CAN_TDH1R_DATA7
+CAN_TDH2R_DATA4
+CAN_TDH2R_DATA5
+CAN_TDH2R_DATA6
+CAN_TDH2R_DATA7
+CAN_TDL0R_DATA0
+CAN_TDL0R_DATA1
+CAN_TDL0R_DATA2
+CAN_TDL0R_DATA3
+CAN_TDL1R_DATA0
+CAN_TDL1R_DATA1
+CAN_TDL1R_DATA2
+CAN_TDL1R_DATA3
+CAN_TDL2R_DATA0
+CAN_TDL2R_DATA1
+CAN_TDL2R_DATA2
+CAN_TDL2R_DATA3
+CAN_TDT0R_DLC
+CAN_TDT0R_TGT
+CAN_TDT0R_TIME
+CAN_TDT1R_DLC
+CAN_TDT1R_TGT
+CAN_TDT1R_TIME
+CAN_TDT2R_DLC
+CAN_TDT2R_TGT
+CAN_TDT2R_TIME
+CAN_TI0R_EXID
+CAN_TI0R_IDE
+CAN_TI0R_RTR
+CAN_TI0R_STID
+CAN_TI0R_TXRQ
+CAN_TI1R_EXID
+CAN_TI1R_IDE
+CAN_TI1R_RTR
+CAN_TI1R_STID
+CAN_TI1R_TXRQ
+CAN_TI2R_EXID
+CAN_TI2R_IDE
+CAN_TI2R_RTR
+CAN_TI2R_STID
+CAN_TI2R_TXRQ
+CAN_Transmit(CAN_TypeDef* CANx, CanTxMsg* TxMessage);
+CAN_TransmitStatus(CAN_TypeDef* CANx, uint8_t TransmitMailbox);
+CAN_TSR_ABRQ0
+CAN_TSR_ABRQ1
+CAN_TSR_ABRQ2
+CAN_TSR_ALST0
+CAN_TSR_ALST1
+CAN_TSR_ALST2
+CAN_TSR_CODE
+CAN_TSR_LOW
+CAN_TSR_LOW0
+CAN_TSR_LOW1
+CAN_TSR_LOW2
+CAN_TSR_RQCP0
+CAN_TSR_RQCP1
+CAN_TSR_RQCP2
+CAN_TSR_TERR0
+CAN_TSR_TERR1
+CAN_TSR_TERR2
+CAN_TSR_TME
+CAN_TSR_TME0
+CAN_TSR_TME1
+CAN_TSR_TME2
+CAN_TSR_TXOK0
+CAN_TSR_TXOK1
+CAN_TSR_TXOK2
+CAN_TTComModeCmd(CAN_TypeDef* CANx, FunctionalState NewState);
+CANTXFAILED
+CANTXOK
+CANTXPENDING
+CAN_TxStatus_Failed
+CAN_TxStatus_NoMailBox
+CAN_TxStatus_Ok
+CAN_TxStatus_Pending
+CAN_WakeUp(CAN_TypeDef* CANx);
+CAN_WakeUp_Failed
+CANWAKEUPFAILED
+CAN_WakeUp_Ok
+CANWAKEUPOK
+CCMDATARAM_BASE
+CCMDATARAM_BB_BASE
+CLEAR_BIT(REG, BIT)
+CLEAR_REG(REG)
+__CM4_REV
+CRC_BASE              (AHB1PERIPH_BASE + 0x3000)
+CRC_CalcBlockCRC(uint32_t pBuffer[], uint32_t BufferLength);
+CRC_CalcCRC(uint32_t Data);
+CRC                 ((CRC_TypeDef *)
+CRC_CR_RESET
+CRC_DR_DR
+CRC_GetCRC(void);
+CRC_GetIDRegister(void);
+CRC_IDR_IDR
+CRC_ResetDR(void);
+CRC_SetIDRegister(uint8_t IDValue);
+CR_PSIZE_MASK
+CRYP_AES_CBC(uint8_t Mode,
+CRYP_AES_CTR(uint8_t Mode,
+CRYP_AES_ECB(uint8_t Mode,
+CRYP_AlgoDir_Decrypt
+CRYP_AlgoDir_Encrypt
+CRYP_AlgoMode_AES_CBC
+CRYP_AlgoMode_AES_CTR
+CRYP_AlgoMode_AES_ECB
+CRYP_AlgoMode_AES_Key
+CRYP_AlgoMode_DES_CBC
+CRYP_AlgoMode_DES_ECB
+CRYP_AlgoMode_TDES_CBC
+CRYP_AlgoMode_TDES_ECB
+CRYP_BASE             (AHB2PERIPH_BASE + 0x60000)
+CRYP_Cmd(FunctionalState NewState);
+CRYP_CR_ALGODIR
+CRYP_CR_ALGOMODE
+CRYP_CR_ALGOMODE_0
+CRYP_CR_ALGOMODE_1
+CRYP_CR_ALGOMODE_2
+CRYP_CR_ALGOMODE_AES_CBC
+CRYP_CR_ALGOMODE_AES_CTR
+CRYP_CR_ALGOMODE_AES_ECB
+CRYP_CR_ALGOMODE_AES_KEY
+CRYP_CR_ALGOMODE_DES_CBC
+CRYP_CR_ALGOMODE_DES_ECB
+CRYP_CR_ALGOMODE_TDES_CBC
+CRYP_CR_ALGOMODE_TDES_ECB
+CRYP_CR_CRYPEN
+CRYP_CR_DATATYPE
+CRYP_CR_DATATYPE_0
+CRYP_CR_DATATYPE_1
+CRYP_CR_FFLUSH
+CRYP_CR_KEYSIZE
+CRYP_CR_KEYSIZE_0
+CRYP_CR_KEYSIZE_1
+CRYP                ((CRYP_TypeDef *)
+CRYP_DataIn(uint32_t Data);
+CRYP_DataOut(void);
+CRYP_DataType_16b
+CRYP_DataType_1b
+CRYP_DataType_32b
+CRYP_DataType_8b
+CRYP_DeInit(void);
+CRYP_DES_CBC(uint8_t Mode,
+CRYP_DES_ECB(uint8_t Mode,
+CRYP_DMACmd(uint8_t CRYP_DMAReq, FunctionalState NewState);
+CRYP_DMACR_DIEN
+CRYP_DMACR_DOEN
+CRYP_DMAReq_DataIN
+CRYP_DMAReq_DataOUT
+CRYP_FIFOFlush(void);
+CRYP_FLAG_BUSY
+CRYP_FLAG_IFEM
+CRYP_FLAG_IFNF
+CRYP_FLAG_INRIS
+CRYP_FLAG_OFFU
+CRYP_FLAG_OFNE
+CRYP_FLAG_OUTRIS
+CRYP_GetFlagStatus(uint8_t CRYP_FLAG);
+CRYP_GetITStatus(uint8_t CRYP_IT);
+CRYP_IMSCR_INIM
+CRYP_IMSCR_OUTIM
+CRYP_Init(CRYP_InitTypeDef* CRYP_InitStruct);
+CRYP_ITConfig(uint8_t CRYP_IT, FunctionalState NewState);
+CRYP_IT_INI
+CRYP_IT_OUTI
+CRYP_IVInit(CRYP_IVInitTypeDef* CRYP_IVInitStruct);
+CRYP_IVStructInit(CRYP_IVInitTypeDef* CRYP_IVInitStruct);
+CRYP_KeyInit(CRYP_KeyInitTypeDef* CRYP_KeyInitStruct);
+CRYP_KeySize_128b
+CRYP_KeySize_192b
+CRYP_KeySize_256b
+CRYP_KeyStructInit(CRYP_KeyInitTypeDef* CRYP_KeyInitStruct);
+CRYP_MISR_INMIS
+CRYP_MISR_OUTMIS
+CRYP_RestoreContext(CRYP_Context* CRYP_ContextRestore);
+CRYP_RISR_INRIS
+CRYP_RISR_OUTRIS
+CRYP_SaveContext(CRYP_Context* CRYP_ContextSave,
+CRYP_SR_BUSY
+CRYP_SR_IFEM
+CRYP_SR_IFNF
+CRYP_SR_OFFU
+CRYP_SR_OFNE
+CRYP_StructInit(CRYP_InitTypeDef* CRYP_InitStruct);
+CRYP_TDES_CBC(uint8_t Mode,
+CRYP_TDES_ECB(uint8_t Mode,
+DAC_Align_12b_L
+DAC_Align_12b_R
+DAC_Align_8b_R
+DAC_BASE              (APB1PERIPH_BASE + 0x7400)
+DAC_Channel_1
+DAC_Channel_2
+DAC_ClearFlag(uint32_t DAC_Channel, uint32_t DAC_FLAG);
+DAC_ClearITPendingBit(uint32_t DAC_Channel, uint32_t DAC_IT);
+DAC_Cmd(uint32_t DAC_Channel, FunctionalState NewState);
+DAC_CR_BOFF1
+DAC_CR_BOFF2
+DAC_CR_DMAEN1
+DAC_CR_DMAEN2
+DAC_CR_EN1
+DAC_CR_EN2
+DAC_CR_MAMP1
+DAC_CR_MAMP1_0
+DAC_CR_MAMP1_1
+DAC_CR_MAMP1_2
+DAC_CR_MAMP1_3
+DAC_CR_MAMP2
+DAC_CR_MAMP2_0
+DAC_CR_MAMP2_1
+DAC_CR_MAMP2_2
+DAC_CR_MAMP2_3
+DAC_CR_TEN1
+DAC_CR_TEN2
+DAC_CR_TSEL1
+DAC_CR_TSEL1_0
+DAC_CR_TSEL1_1
+DAC_CR_TSEL1_2
+DAC_CR_TSEL2
+DAC_CR_TSEL2_0
+DAC_CR_TSEL2_1
+DAC_CR_TSEL2_2
+DAC_CR_WAVE1
+DAC_CR_WAVE1_0
+DAC_CR_WAVE1_1
+DAC_CR_WAVE2
+DAC_CR_WAVE2_0
+DAC_CR_WAVE2_1
+DAC                 ((DAC_TypeDef *)
+DAC_DeInit(void);
+DAC_DHR12L1_DACC1DHR
+DAC_DHR12L2_DACC2DHR
+DAC_DHR12LD_DACC1DHR
+DAC_DHR12LD_DACC2DHR
+DAC_DHR12R1_DACC1DHR
+DAC_DHR12R2_DACC2DHR
+DAC_DHR12RD_DACC1DHR
+DAC_DHR12RD_DACC2DHR
+DAC_DHR8R1_DACC1DHR
+DAC_DHR8R2_DACC2DHR
+DAC_DHR8RD_DACC1DHR
+DAC_DHR8RD_DACC2DHR
+DAC_DMACmd(uint32_t DAC_Channel, FunctionalState NewState);
+DAC_DOR1_DACC1DOR
+DAC_DOR2_DACC2DOR
+DAC_DualSoftwareTriggerCmd(FunctionalState NewState);
+DAC_FLAG_DMAUDR
+DAC_GetDataOutputValue(uint32_t DAC_Channel);
+DAC_GetFlagStatus(uint32_t DAC_Channel, uint32_t DAC_FLAG);
+DAC_GetITStatus(uint32_t DAC_Channel, uint32_t DAC_IT);
+DAC_Init(uint32_t DAC_Channel, DAC_InitTypeDef* DAC_InitStruct);
+DAC_ITConfig(uint32_t DAC_Channel, uint32_t DAC_IT, FunctionalState NewState);
+DAC_IT_DMAUDR
+DAC_LFSRUnmask_Bit0
+DAC_LFSRUnmask_Bits1_0
+DAC_LFSRUnmask_Bits10_0
+DAC_LFSRUnmask_Bits11_0
+DAC_LFSRUnmask_Bits2_0
+DAC_LFSRUnmask_Bits3_0
+DAC_LFSRUnmask_Bits4_0
+DAC_LFSRUnmask_Bits5_0
+DAC_LFSRUnmask_Bits6_0
+DAC_LFSRUnmask_Bits7_0
+DAC_LFSRUnmask_Bits8_0
+DAC_LFSRUnmask_Bits9_0
+DAC_OutputBuffer_Disable
+DAC_OutputBuffer_Enable
+DAC_SetChannel1Data(uint32_t DAC_Align, uint16_t Data);
+DAC_SetChannel2Data(uint32_t DAC_Align, uint16_t Data);
+DAC_SetDualChannelData(uint32_t DAC_Align, uint16_t Data2, uint16_t Data1);
+DAC_SoftwareTriggerCmd(uint32_t DAC_Channel, FunctionalState NewState);
+DAC_SR_DMAUDR1
+DAC_SR_DMAUDR2
+DAC_StructInit(DAC_InitTypeDef* DAC_InitStruct);
+DAC_SWTRIGR_SWTRIG1
+DAC_SWTRIGR_SWTRIG2
+DAC_TriangleAmplitude_1
+DAC_TriangleAmplitude_1023
+DAC_TriangleAmplitude_127
+DAC_TriangleAmplitude_15
+DAC_TriangleAmplitude_2047
+DAC_TriangleAmplitude_255
+DAC_TriangleAmplitude_3
+DAC_TriangleAmplitude_31
+DAC_TriangleAmplitude_4095
+DAC_TriangleAmplitude_511
+DAC_TriangleAmplitude_63
+DAC_TriangleAmplitude_7
+DAC_Trigger_Ext_IT9
+DAC_Trigger_None
+DAC_Trigger_Software
+DAC_Trigger_T2_TRGO
+DAC_Trigger_T4_TRGO
+DAC_Trigger_T5_TRGO
+DAC_Trigger_T6_TRGO
+DAC_Trigger_T7_TRGO
+DAC_Trigger_T8_TRGO
+DAC_WaveGenerationCmd(uint32_t DAC_Channel, uint32_t DAC_Wave, FunctionalState NewState);
+DAC_WaveGeneration_Noise
+DAC_WaveGeneration_None
+DAC_WaveGeneration_Triangle
+DAC_Wave_Noise
+DAC_Wave_Triangle
+DBGMCU_APB1_FZ_DBG_CAN1_STOP
+DBGMCU_APB1_FZ_DBG_CAN2_STOP
+DBGMCU_APB1_FZ_DBG_I2C1_SMBUS_TIMEOUT
+DBGMCU_APB1_FZ_DBG_I2C2_SMBUS_TIMEOUT
+DBGMCU_APB1_FZ_DBG_I2C3_SMBUS_TIMEOUT
+DBGMCU_APB1_FZ_DBG_IWDEG_STOP
+DBGMCU_APB1_FZ_DBG_IWDG_STOP
+DBGMCU_APB1_FZ_DBG_RTC_STOP
+DBGMCU_APB1_FZ_DBG_TIM10_STOP
+DBGMCU_APB1_FZ_DBG_TIM11_STOP
+DBGMCU_APB1_FZ_DBG_TIM12_STOP
+DBGMCU_APB1_FZ_DBG_TIM13_STOP
+DBGMCU_APB1_FZ_DBG_TIM14_STOP
+DBGMCU_APB1_FZ_DBG_TIM1_STOP
+DBGMCU_APB1_FZ_DBG_TIM2_STOP
+DBGMCU_APB1_FZ_DBG_TIM3_STOP
+DBGMCU_APB1_FZ_DBG_TIM4_STOP
+DBGMCU_APB1_FZ_DBG_TIM5_STOP
+DBGMCU_APB1_FZ_DBG_TIM6_STOP
+DBGMCU_APB1_FZ_DBG_TIM7_STOP
+DBGMCU_APB1_FZ_DBG_TIM8_STOP
+DBGMCU_APB1_FZ_DBG_TIM9_STOP
+DBGMCU_APB1_FZ_DBG_WWDG_STOP
+DBGMCU_APB1PeriphConfig(uint32_t DBGMCU_Periph, FunctionalState NewState);
+DBGMCU_APB2PeriphConfig(uint32_t DBGMCU_Periph, FunctionalState NewState);
+DBGMCU_BASE
+DBGMCU_CAN1_STOP
+DBGMCU_CAN2_STOP
+DBGMCU_Config(uint32_t DBGMCU_Periph, FunctionalState NewState);
+DBGMCU_CR_DBG_SLEEP
+DBGMCU_CR_DBG_STANDBY
+DBGMCU_CR_DBG_STOP
+DBGMCU_CR_TRACE_IOEN
+DBGMCU_CR_TRACE_MODE
+DBGMCU_CR_TRACE_MODE_0
+DBGMCU_CR_TRACE_MODE_1
+DBGMCU              ((DBGMCU_TypeDef *)
+DBGMCU_GetDEVID(void);
+DBGMCU_GetREVID(void);
+DBGMCU_I2C1_SMBUS_TIMEOUT
+DBGMCU_I2C2_SMBUS_TIMEOUT
+DBGMCU_I2C3_SMBUS_TIMEOUT
+DBGMCU_IDCODE_DEV_ID
+DBGMCU_IDCODE_REV_ID
+DBGMCU_IWDG_STOP
+DBGMCU_RTC_STOP
+DBGMCU_SLEEP
+DBGMCU_STANDBY
+DBGMCU_STOP
+DBGMCU_TIM10_STOP
+DBGMCU_TIM11_STOP
+DBGMCU_TIM12_STOP
+DBGMCU_TIM13_STOP
+DBGMCU_TIM14_STOP
+DBGMCU_TIM1_STOP
+DBGMCU_TIM2_STOP
+DBGMCU_TIM3_STOP
+DBGMCU_TIM4_STOP
+DBGMCU_TIM5_STOP
+DBGMCU_TIM6_STOP
+DBGMCU_TIM7_STOP
+DBGMCU_TIM8_STOP
+DBGMCU_TIM9_STOP
+DBGMCU_WWDG_STOP
+DCMI_BASE             (AHB2PERIPH_BASE + 0x50000)
+DCMI_CaptureCmd(FunctionalState NewState);
+DCMI_CaptureMode_Continuous
+DCMI_CaptureMode_SnapShot
+DCMI_CaptureRate_1of2_Frame
+DCMI_CaptureRate_1of4_Frame
+DCMI_CaptureRate_All_Frame
+DCMI_ClearFlag(uint16_t DCMI_FLAG);
+DCMI_ClearITPendingBit(uint16_t DCMI_IT);
+DCMI_Cmd(FunctionalState NewState);
+DCMI_CR_CAPTURE
+DCMI_CR_CM
+DCMI_CR_CRE
+DCMI_CR_CROP
+DCMI_CR_EDM_0
+DCMI_CR_EDM_1
+DCMI_CR_ENABLE
+DCMI_CR_ESS
+DCMI_CR_FCRC_0
+DCMI_CR_FCRC_1
+DCMI_CR_HSPOL
+DCMI_CR_JPEG
+DCMI_CROPCmd(FunctionalState NewState);
+DCMI_CROPConfig(DCMI_CROPInitTypeDef* DCMI_CROPInitStruct);
+DCMI_CR_PCKPOL
+DCMI_CR_VSPOL
+DCMI                ((DCMI_TypeDef *)
+DCMI_DeInit(void);
+DCMI_ExtendedDataMode_10b
+DCMI_ExtendedDataMode_12b
+DCMI_ExtendedDataMode_14b
+DCMI_ExtendedDataMode_8b
+DCMI_FLAG_ERRMI
+DCMI_FLAG_ERRRI
+DCMI_FLAG_FNE
+DCMI_FLAG_FRAMEMI
+DCMI_FLAG_FRAMERI
+DCMI_FLAG_HSYNC
+DCMI_FLAG_LINEMI
+DCMI_FLAG_LINERI
+DCMI_FLAG_OVFMI
+DCMI_FLAG_OVFRI
+DCMI_FLAG_VSYNC
+DCMI_FLAG_VSYNCMI
+DCMI_FLAG_VSYNCRI
+DCMI_GetFlagStatus(uint16_t DCMI_FLAG);
+DCMI_GetITStatus(uint16_t DCMI_IT);
+DCMI_HSPolarity_High
+DCMI_HSPolarity_Low
+DCMI_ICR_ERR_ISC
+DCMI_ICR_FRAME_ISC
+DCMI_ICR_LINE_ISC
+DCMI_ICR_OVF_ISC
+DCMI_ICR_VSYNC_ISC
+DCMI_IER_ERR_IE
+DCMI_IER_FRAME_IE
+DCMI_IER_LINE_IE
+DCMI_IER_OVF_IE
+DCMI_IER_VSYNC_IE
+DCMI_Init(DCMI_InitTypeDef* DCMI_InitStruct);
+DCMI_ITConfig(uint16_t DCMI_IT, FunctionalState NewState);
+DCMI_IT_ERR
+DCMI_IT_FRAME
+DCMI_IT_LINE
+DCMI_IT_OVF
+DCMI_IT_VSYNC
+DCMI_JPEGCmd(FunctionalState NewState);
+DCMI_MISR_ERR_MIS
+DCMI_MISR_FRAME_MIS
+DCMI_MISR_LINE_MIS
+DCMI_MISR_OVF_MIS
+DCMI_MISR_VSYNC_MIS
+DCMI_PCKPolarity_Falling
+DCMI_PCKPolarity_Rising
+DCMI_ReadData(void);
+DCMI_RISR_ERR_RIS
+DCMI_RISR_FRAME_RIS
+DCMI_RISR_LINE_RIS
+DCMI_RISR_OVF_RIS
+DCMI_RISR_VSYNC_RIS
+DCMI_SetEmbeddedSynchroCodes(DCMI_CodesInitTypeDef* DCMI_CodesInitStruct);
+DCMI_SR_FNE
+DCMI_SR_HSYNC
+DCMI_SR_VSYNC
+DCMI_StructInit(DCMI_InitTypeDef* DCMI_InitStruct);
+DCMI_SynchroMode_Embedded
+DCMI_SynchroMode_Hardware
+DCMI_VSPolarity_High
+DCMI_VSPolarity_Low
+DMA1_BASE             (AHB1PERIPH_BASE + 0x6000)
+DMA1                ((DMA_TypeDef *)
+DMA1_Stream0_BASE     (DMA1_BASE + 0x010)
+DMA1_Stream0        ((DMA_Stream_TypeDef *)
+DMA1_Stream1_BASE     (DMA1_BASE + 0x028)
+DMA1_Stream1        ((DMA_Stream_TypeDef *)
+DMA1_Stream2_BASE     (DMA1_BASE + 0x040)
+DMA1_Stream2        ((DMA_Stream_TypeDef *)
+DMA1_Stream3_BASE     (DMA1_BASE + 0x058)
+DMA1_Stream3        ((DMA_Stream_TypeDef *)
+DMA1_Stream4_BASE     (DMA1_BASE + 0x070)
+DMA1_Stream4        ((DMA_Stream_TypeDef *)
+DMA1_Stream5_BASE     (DMA1_BASE + 0x088)
+DMA1_Stream5        ((DMA_Stream_TypeDef *)
+DMA1_Stream6_BASE     (DMA1_BASE + 0x0A0)
+DMA1_Stream6        ((DMA_Stream_TypeDef *)
+DMA1_Stream7_BASE     (DMA1_BASE + 0x0B8)
+DMA1_Stream7        ((DMA_Stream_TypeDef *)
+DMA2_BASE             (AHB1PERIPH_BASE + 0x6400)
+DMA2                ((DMA_TypeDef *)
+DMA2_Stream0_BASE     (DMA2_BASE + 0x010)
+DMA2_Stream0        ((DMA_Stream_TypeDef *)
+DMA2_Stream1_BASE     (DMA2_BASE + 0x028)
+DMA2_Stream1        ((DMA_Stream_TypeDef *)
+DMA2_Stream2_BASE     (DMA2_BASE + 0x040)
+DMA2_Stream2        ((DMA_Stream_TypeDef *)
+DMA2_Stream3_BASE     (DMA2_BASE + 0x058)
+DMA2_Stream3        ((DMA_Stream_TypeDef *)
+DMA2_Stream4_BASE     (DMA2_BASE + 0x070)
+DMA2_Stream4        ((DMA_Stream_TypeDef *)
+DMA2_Stream5_BASE     (DMA2_BASE + 0x088)
+DMA2_Stream5        ((DMA_Stream_TypeDef *)
+DMA2_Stream6_BASE     (DMA2_BASE + 0x0A0)
+DMA2_Stream6        ((DMA_Stream_TypeDef *)
+DMA2_Stream7_BASE     (DMA2_BASE + 0x0B8)
+DMA2_Stream7        ((DMA_Stream_TypeDef *)
+DMA_Channel_0
+DMA_Channel_1
+DMA_Channel_2
+DMA_Channel_3
+DMA_Channel_4
+DMA_Channel_5
+DMA_Channel_6
+DMA_Channel_7
+DMA_ClearFlag(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_FLAG);
+DMA_ClearITPendingBit(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+DMA_Cmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+DMA_DeInit(DMA_Stream_TypeDef* DMAy_Streamx);
+DMA_DIR_MemoryToMemory
+DMA_DIR_MemoryToPeripheral
+DMA_DIR_PeripheralToMemory
+DMA_DoubleBufferModeCmd(DMA_Stream_TypeDef* DMAy_Streamx, FunctionalState NewState);
+DMA_DoubleBufferModeConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t Memory1BaseAddr,
+DMA_FIFOMode_Disable
+DMA_FIFOMode_Enable
+DMA_FIFOStatus_1QuarterFull
+DMA_FIFOStatus_3QuartersFull
+DMA_FIFOStatus_Empty
+DMA_FIFOStatus_Full
+DMA_FIFOStatus_HalfFull
+DMA_FIFOStatus_Less1QuarterFull
+DMA_FIFOThreshold_1QuarterFull
+DMA_FIFOThreshold_3QuartersFull
+DMA_FIFOThreshold_Full
+DMA_FIFOThreshold_HalfFull
+DMA_FLAG_DMEIF0
+DMA_FLAG_DMEIF1
+DMA_FLAG_DMEIF2
+DMA_FLAG_DMEIF3
+DMA_FLAG_DMEIF4
+DMA_FLAG_DMEIF5
+DMA_FLAG_DMEIF6
+DMA_FLAG_DMEIF7
+DMA_FLAG_FEIF0
+DMA_FLAG_FEIF1
+DMA_FLAG_FEIF2
+DMA_FLAG_FEIF3
+DMA_FLAG_FEIF4
+DMA_FLAG_FEIF5
+DMA_FLAG_FEIF6
+DMA_FLAG_FEIF7
+DMA_FLAG_HTIF0
+DMA_FLAG_HTIF1
+DMA_FLAG_HTIF2
+DMA_FLAG_HTIF3
+DMA_FLAG_HTIF4
+DMA_FLAG_HTIF5
+DMA_FLAG_HTIF6
+DMA_FLAG_HTIF7
+DMA_FLAG_TCIF0
+DMA_FLAG_TCIF1
+DMA_FLAG_TCIF2
+DMA_FLAG_TCIF3
+DMA_FLAG_TCIF4
+DMA_FLAG_TCIF5
+DMA_FLAG_TCIF6
+DMA_FLAG_TCIF7
+DMA_FLAG_TEIF0
+DMA_FLAG_TEIF1
+DMA_FLAG_TEIF2
+DMA_FLAG_TEIF3
+DMA_FLAG_TEIF4
+DMA_FLAG_TEIF5
+DMA_FLAG_TEIF6
+DMA_FLAG_TEIF7
+DMA_FlowControllerConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_FlowCtrl);
+DMA_FlowCtrl_Memory
+DMA_FlowCtrl_Peripheral
+DMA_GetCmdStatus(DMA_Stream_TypeDef* DMAy_Streamx);
+DMA_GetCurrDataCounter(DMA_Stream_TypeDef* DMAy_Streamx);
+DMA_GetCurrentMemoryTarget(DMA_Stream_TypeDef* DMAy_Streamx);
+DMA_GetFIFOStatus(DMA_Stream_TypeDef* DMAy_Streamx);
+DMA_GetFlagStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_FLAG);
+DMA_GetITStatus(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT);
+DMA_HIFCR_CDMEIF4
+DMA_HIFCR_CDMEIF5
+DMA_HIFCR_CDMEIF6
+DMA_HIFCR_CDMEIF7
+DMA_HIFCR_CFEIF4
+DMA_HIFCR_CFEIF5
+DMA_HIFCR_CFEIF6
+DMA_HIFCR_CFEIF7
+DMA_HIFCR_CHTIF4
+DMA_HIFCR_CHTIF5
+DMA_HIFCR_CHTIF6
+DMA_HIFCR_CHTIF7
+DMA_HIFCR_CTCIF4
+DMA_HIFCR_CTCIF5
+DMA_HIFCR_CTCIF6
+DMA_HIFCR_CTCIF7
+DMA_HIFCR_CTEIF4
+DMA_HIFCR_CTEIF5
+DMA_HIFCR_CTEIF6
+DMA_HIFCR_CTEIF7
+DMA_HISR_DMEIF4
+DMA_HISR_DMEIF5
+DMA_HISR_DMEIF6
+DMA_HISR_DMEIF7
+DMA_HISR_FEIF4
+DMA_HISR_FEIF5
+DMA_HISR_FEIF6
+DMA_HISR_FEIF7
+DMA_HISR_HTIF4
+DMA_HISR_HTIF5
+DMA_HISR_HTIF6
+DMA_HISR_HTIF7
+DMA_HISR_TCIF4
+DMA_HISR_TCIF5
+DMA_HISR_TCIF6
+DMA_HISR_TCIF7
+DMA_HISR_TEIF4
+DMA_HISR_TEIF5
+DMA_HISR_TEIF6
+DMA_HISR_TEIF7
+DMA_Init(DMA_Stream_TypeDef* DMAy_Streamx, DMA_InitTypeDef* DMA_InitStruct);
+DMA_ITConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_IT, FunctionalState NewState);
+DMA_IT_DME
+DMA_IT_DMEIF0
+DMA_IT_DMEIF1
+DMA_IT_DMEIF2
+DMA_IT_DMEIF3
+DMA_IT_DMEIF4
+DMA_IT_DMEIF5
+DMA_IT_DMEIF6
+DMA_IT_DMEIF7
+DMA_IT_FE
+DMA_IT_FEIF0
+DMA_IT_FEIF1
+DMA_IT_FEIF2
+DMA_IT_FEIF3
+DMA_IT_FEIF4
+DMA_IT_FEIF5
+DMA_IT_FEIF6
+DMA_IT_FEIF7
+DMA_IT_HT
+DMA_IT_HTIF0
+DMA_IT_HTIF1
+DMA_IT_HTIF2
+DMA_IT_HTIF3
+DMA_IT_HTIF4
+DMA_IT_HTIF5
+DMA_IT_HTIF6
+DMA_IT_HTIF7
+DMA_IT_TC
+DMA_IT_TCIF0
+DMA_IT_TCIF1
+DMA_IT_TCIF2
+DMA_IT_TCIF3
+DMA_IT_TCIF4
+DMA_IT_TCIF5
+DMA_IT_TCIF6
+DMA_IT_TCIF7
+DMA_IT_TE
+DMA_IT_TEIF0
+DMA_IT_TEIF1
+DMA_IT_TEIF2
+DMA_IT_TEIF3
+DMA_IT_TEIF4
+DMA_IT_TEIF5
+DMA_IT_TEIF6
+DMA_IT_TEIF7
+DMA_LIFCR_CDMEIF0
+DMA_LIFCR_CDMEIF1
+DMA_LIFCR_CDMEIF2
+DMA_LIFCR_CDMEIF3
+DMA_LIFCR_CFEIF0
+DMA_LIFCR_CFEIF1
+DMA_LIFCR_CFEIF2
+DMA_LIFCR_CFEIF3
+DMA_LIFCR_CHTIF0
+DMA_LIFCR_CHTIF1
+DMA_LIFCR_CHTIF2
+DMA_LIFCR_CHTIF3
+DMA_LIFCR_CTCIF0
+DMA_LIFCR_CTCIF1
+DMA_LIFCR_CTCIF2
+DMA_LIFCR_CTCIF3
+DMA_LIFCR_CTEIF0
+DMA_LIFCR_CTEIF1
+DMA_LIFCR_CTEIF2
+DMA_LIFCR_CTEIF3
+DMA_LISR_DMEIF0
+DMA_LISR_DMEIF1
+DMA_LISR_DMEIF2
+DMA_LISR_DMEIF3
+DMA_LISR_FEIF0
+DMA_LISR_FEIF1
+DMA_LISR_FEIF2
+DMA_LISR_FEIF3
+DMA_LISR_HTIF0
+DMA_LISR_HTIF1
+DMA_LISR_HTIF2
+DMA_LISR_HTIF3
+DMA_LISR_TCIF0
+DMA_LISR_TCIF1
+DMA_LISR_TCIF2
+DMA_LISR_TCIF3
+DMA_LISR_TEIF0
+DMA_LISR_TEIF1
+DMA_LISR_TEIF2
+DMA_LISR_TEIF3
+DMA_Memory_0
+DMA_Memory_1
+DMA_MemoryBurst_INC16
+DMA_MemoryBurst_INC4
+DMA_MemoryBurst_INC8
+DMA_MemoryBurst_Single
+DMA_MemoryDataSize_Byte
+DMA_MemoryDataSize_HalfWord
+DMA_MemoryDataSize_Word
+DMA_MemoryInc_Disable
+DMA_MemoryInc_Enable
+DMA_MemoryTargetConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t MemoryBaseAddr,
+DMA_Mode_Circular
+DMA_Mode_Normal
+DMA_PeripheralBurst_INC16
+DMA_PeripheralBurst_INC4
+DMA_PeripheralBurst_INC8
+DMA_PeripheralBurst_Single
+DMA_PeripheralDataSize_Byte
+DMA_PeripheralDataSize_HalfWord
+DMA_PeripheralDataSize_Word
+DMA_PeripheralInc_Disable
+DMA_PeripheralInc_Enable
+DMA_PeriphIncOffsetSizeConfig(DMA_Stream_TypeDef* DMAy_Streamx, uint32_t DMA_Pincos);
+DMA_PINCOS_Psize
+DMA_PINCOS_WordAligned
+DMA_Priority_High
+DMA_Priority_Low
+DMA_Priority_Medium
+DMA_Priority_VeryHigh
+DMA_SetCurrDataCounter(DMA_Stream_TypeDef* DMAy_Streamx, uint16_t Counter);
+DMA_StructInit(DMA_InitTypeDef* DMA_InitStruct);
+DMA_SxCR_ACK
+DMA_SxCR_CHSEL
+DMA_SxCR_CHSEL_0
+DMA_SxCR_CHSEL_1
+DMA_SxCR_CHSEL_2
+DMA_SxCR_CIRC
+DMA_SxCR_CT
+DMA_SxCR_DBM
+DMA_SxCR_DIR
+DMA_SxCR_DIR_0
+DMA_SxCR_DIR_1
+DMA_SxCR_DMEIE
+DMA_SxCR_EN
+DMA_SxCR_HTIE
+DMA_SxCR_MBURST
+DMA_SxCR_MBURST_0
+DMA_SxCR_MBURST_1
+DMA_SxCR_MINC
+DMA_SxCR_MSIZE
+DMA_SxCR_MSIZE_0
+DMA_SxCR_MSIZE_1
+DMA_SxCR_PBURST
+DMA_SxCR_PBURST_0
+DMA_SxCR_PBURST_1
+DMA_SxCR_PFCTRL
+DMA_SxCR_PINC
+DMA_SxCR_PINCOS
+DMA_SxCR_PL
+DMA_SxCR_PL_0
+DMA_SxCR_PL_1
+DMA_SxCR_PSIZE
+DMA_SxCR_PSIZE_0
+DMA_SxCR_PSIZE_1
+DMA_SxCR_TCIE
+DMA_SxCR_TEIE
+DMA_SxFCR_DMDIS
+DMA_SxFCR_FEIE
+DMA_SxFCR_FS
+DMA_SxFCR_FS_0
+DMA_SxFCR_FS_1
+DMA_SxFCR_FS_2
+DMA_SxFCR_FTH
+DMA_SxFCR_FTH_0
+DMA_SxFCR_FTH_1
+DMA_SxNDT
+DMA_SxNDT_0
+DMA_SxNDT_1
+DMA_SxNDT_10
+DMA_SxNDT_11
+DMA_SxNDT_12
+DMA_SxNDT_13
+DMA_SxNDT_14
+DMA_SxNDT_15
+DMA_SxNDT_2
+DMA_SxNDT_3
+DMA_SxNDT_4
+DMA_SxNDT_5
+DMA_SxNDT_6
+DMA_SxNDT_7
+DMA_SxNDT_8
+DMA_SxNDT_9
+ETH_BASE              (AHB1PERIPH_BASE + 0x8000)
+ETH_DMA_BASE          (ETH_BASE + 0x1000)
+ETH_DMABMR_AAB
+ETH_DMABMR_DA
+ETH_DMABMR_DSL
+ETH_DMABMR_EDE
+ETH_DMABMR_FB
+ETH_DMABMR_FPM
+ETH_DMABMR_PBL
+ETH_DMABMR_PBL_16Beat
+ETH_DMABMR_PBL_1Beat
+ETH_DMABMR_PBL_2Beat
+ETH_DMABMR_PBL_32Beat
+ETH_DMABMR_PBL_4Beat
+ETH_DMABMR_PBL_4xPBL_128Beat
+ETH_DMABMR_PBL_4xPBL_16Beat
+ETH_DMABMR_PBL_4xPBL_32Beat
+ETH_DMABMR_PBL_4xPBL_4Beat
+ETH_DMABMR_PBL_4xPBL_64Beat
+ETH_DMABMR_PBL_4xPBL_8Beat
+ETH_DMABMR_PBL_8Beat
+ETH_DMABMR_RDP
+ETH_DMABMR_RDP_16Beat
+ETH_DMABMR_RDP_1Beat
+ETH_DMABMR_RDP_2Beat
+ETH_DMABMR_RDP_32Beat
+ETH_DMABMR_RDP_4Beat
+ETH_DMABMR_RDP_4xPBL_128Beat
+ETH_DMABMR_RDP_4xPBL_16Beat
+ETH_DMABMR_RDP_4xPBL_32Beat
+ETH_DMABMR_RDP_4xPBL_4Beat
+ETH_DMABMR_RDP_4xPBL_64Beat
+ETH_DMABMR_RDP_4xPBL_8Beat
+ETH_DMABMR_RDP_8Beat
+ETH_DMABMR_RTPR
+ETH_DMABMR_RTPR_1_1
+ETH_DMABMR_RTPR_2_1
+ETH_DMABMR_RTPR_3_1
+ETH_DMABMR_RTPR_4_1
+ETH_DMABMR_SR
+ETH_DMABMR_USP
+ETH_DMACHRBAR_HRBAP
+ETH_DMACHRDR_HRDAP
+ETH_DMACHTBAR_HTBAP
+ETH_DMACHTDR_HTDAP
+ETH_DMAIER_AISE
+ETH_DMAIER_ERIE
+ETH_DMAIER_ETIE
+ETH_DMAIER_FBEIE
+ETH_DMAIER_NISE
+ETH_DMAIER_RBUIE
+ETH_DMAIER_RIE
+ETH_DMAIER_ROIE
+ETH_DMAIER_RPSIE
+ETH_DMAIER_RWTIE
+ETH_DMAIER_TBUIE
+ETH_DMAIER_TIE
+ETH_DMAIER_TJTIE
+ETH_DMAIER_TPSIE
+ETH_DMAIER_TUIE
+ETH_DMAMFBOCR_MFA
+ETH_DMAMFBOCR_MFC
+ETH_DMAMFBOCR_OFOC
+ETH_DMAMFBOCR_OMFC
+ETH_DMAOMR_DFRF
+ETH_DMAOMR_DTCEFD
+ETH_DMAOMR_FEF
+ETH_DMAOMR_FTF
+ETH_DMAOMR_FUGF
+ETH_DMAOMR_OSF
+ETH_DMAOMR_RSF
+ETH_DMAOMR_RTC
+ETH_DMAOMR_RTC_128Bytes
+ETH_DMAOMR_RTC_32Bytes
+ETH_DMAOMR_RTC_64Bytes
+ETH_DMAOMR_RTC_96Bytes
+ETH_DMAOMR_SR
+ETH_DMAOMR_ST
+ETH_DMAOMR_TSF
+ETH_DMAOMR_TTC
+ETH_DMAOMR_TTC_128Bytes
+ETH_DMAOMR_TTC_16Bytes
+ETH_DMAOMR_TTC_192Bytes
+ETH_DMAOMR_TTC_24Bytes
+ETH_DMAOMR_TTC_256Bytes
+ETH_DMAOMR_TTC_32Bytes
+ETH_DMAOMR_TTC_40Bytes
+ETH_DMAOMR_TTC_64Bytes
+ETH_DMARDLAR_SRL
+ETH_DMARPDR_RPD
+ETH_DMASR_AIS
+ETH_DMASR_EBS
+ETH_DMASR_EBS_DataTransfTx
+ETH_DMASR_EBS_DescAccess
+ETH_DMASR_EBS_ReadTransf
+ETH_DMASR_ERS
+ETH_DMASR_ETS
+ETH_DMASR_FBES
+ETH_DMASR_MMCS
+ETH_DMASR_NIS
+ETH_DMASR_PMTS
+ETH_DMASR_RBUS
+ETH_DMASR_ROS
+ETH_DMASR_RPS
+ETH_DMASR_RPS_Closing
+ETH_DMASR_RPS_Fetching
+ETH_DMASR_RPS_Queuing
+ETH_DMASR_RPSS
+ETH_DMASR_RPS_Stopped
+ETH_DMASR_RPS_Suspended
+ETH_DMASR_RPS_Waiting
+ETH_DMASR_RS
+ETH_DMASR_RWTS
+ETH_DMASR_TBUS
+ETH_DMASR_TJTS
+ETH_DMASR_TPS
+ETH_DMASR_TPS_Closing
+ETH_DMASR_TPS_Fetching
+ETH_DMASR_TPS_Reading
+ETH_DMASR_TPSS
+ETH_DMASR_TPS_Stopped
+ETH_DMASR_TPS_Suspended
+ETH_DMASR_TPS_Waiting
+ETH_DMASR_TS
+ETH_DMASR_TSTS
+ETH_DMASR_TUS
+ETH_DMATDLAR_STL
+ETH_DMATPDR_TPD
+ETH                 ((ETH_TypeDef *)
+ETH_MACA0HR_MACA0H
+ETH_MACA0LR_MACA0L
+ETH_MACA1HR_AE
+ETH_MACA1HR_MACA1H
+ETH_MACA1HR_MBC
+ETH_MACA1HR_MBC_HBits15_8
+ETH_MACA1HR_MBC_HBits7_0
+ETH_MACA1HR_MBC_LBits15_8
+ETH_MACA1HR_MBC_LBits23_16
+ETH_MACA1HR_MBC_LBits31_24
+ETH_MACA1HR_MBC_LBits7_0
+ETH_MACA1HR_SA
+ETH_MACA1LR_MACA1L
+ETH_MACA2HR_AE
+ETH_MACA2HR_MACA2H
+ETH_MACA2HR_MBC
+ETH_MACA2HR_MBC_HBits15_8
+ETH_MACA2HR_MBC_HBits7_0
+ETH_MACA2HR_MBC_LBits15_8
+ETH_MACA2HR_MBC_LBits23_16
+ETH_MACA2HR_MBC_LBits31_24
+ETH_MACA2HR_MBC_LBits7_0
+ETH_MACA2HR_SA
+ETH_MACA2LR_MACA2L
+ETH_MACA3HR_AE
+ETH_MACA3HR_MACA3H
+ETH_MACA3HR_MBC
+ETH_MACA3HR_MBC_HBits15_8
+ETH_MACA3HR_MBC_HBits7_0
+ETH_MACA3HR_MBC_LBits15_8
+ETH_MACA3HR_MBC_LBits23_16
+ETH_MACA3HR_MBC_LBits31_24
+ETH_MACA3HR_MBC_LBits7_0
+ETH_MACA3HR_SA
+ETH_MACA3LR_MACA3L
+ETH_MAC_BASE          (ETH_BASE)
+ETH_MACCR_APCS
+ETH_MACCR_BL
+ETH_MACCR_BL_1
+ETH_MACCR_BL_10
+ETH_MACCR_BL_4
+ETH_MACCR_BL_8
+ETH_MACCR_CSD
+ETH_MACCR_DC
+ETH_MACCR_DM
+ETH_MACCR_FES
+ETH_MACCR_IFG
+ETH_MACCR_IFG_40Bit
+ETH_MACCR_IFG_48Bit
+ETH_MACCR_IFG_56Bit
+ETH_MACCR_IFG_64Bit
+ETH_MACCR_IFG_72Bit
+ETH_MACCR_IFG_80Bit
+ETH_MACCR_IFG_88Bit
+ETH_MACCR_IFG_96Bit
+ETH_MACCR_IPCO
+ETH_MACCR_JD
+ETH_MACCR_LM
+ETH_MACCR_RD
+ETH_MACCR_RE
+ETH_MACCR_ROD
+ETH_MACCR_TE
+ETH_MACCR_WD
+ETH_MACFCR_FCBBPA
+ETH_MACFCR_PLT
+ETH_MACFCR_PLT_Minus144
+ETH_MACFCR_PLT_Minus256
+ETH_MACFCR_PLT_Minus28
+ETH_MACFCR_PLT_Minus4
+ETH_MACFCR_PT
+ETH_MACFCR_RFCE
+ETH_MACFCR_TFCE
+ETH_MACFCR_UPFD
+ETH_MACFCR_ZQPD
+ETH_MACFFR_BFD
+ETH_MACFFR_DAIF
+ETH_MACFFR_HM
+ETH_MACFFR_HPF
+ETH_MACFFR_HU
+ETH_MACFFR_PAM
+ETH_MACFFR_PCF
+ETH_MACFFR_PCF_BlockAll
+ETH_MACFFR_PCF_ForwardAll
+ETH_MACFFR_PCF_ForwardPassedAddrFilter
+ETH_MACFFR_PM
+ETH_MACFFR_RA
+ETH_MACFFR_SAF
+ETH_MACFFR_SAIF
+ETH_MACHTHR_HTH
+ETH_MACHTLR_HTL
+ETH_MACIMR_PMTIM
+ETH_MACIMR_TSTIM
+ETH_MACMIIAR_CR
+ETH_MACMIIAR_CR_Div102
+ETH_MACMIIAR_CR_Div16
+ETH_MACMIIAR_CR_Div26
+ETH_MACMIIAR_CR_Div42
+ETH_MACMIIAR_CR_Div62
+ETH_MACMIIAR_MB
+ETH_MACMIIAR_MR
+ETH_MACMIIAR_MW
+ETH_MACMIIAR_PA
+ETH_MACMIIDR_MD
+ETH_MACPMTCSR_GU
+ETH_MACPMTCSR_MPE
+ETH_MACPMTCSR_MPR
+ETH_MACPMTCSR_PD
+ETH_MACPMTCSR_WFE
+ETH_MACPMTCSR_WFFRPR
+ETH_MACPMTCSR_WFR
+ETH_MACRWUFFR_D
+ETH_MACSR_MMCS
+ETH_MACSR_MMCTS
+ETH_MACSR_MMMCRS
+ETH_MACSR_PMTS
+ETH_MACSR_TSTS
+ETH_MACVLANTR_VLANTC
+ETH_MACVLANTR_VLANTI
+ETH_MMC_BASE          (ETH_BASE + 0x0100)
+ETH_MMCCR_CR
+ETH_MMCCR_CSR
+ETH_MMCCR_MCF
+ETH_MMCCR_MCFHP
+ETH_MMCCR_MCP
+ETH_MMCCR_ROR
+ETH_MMCRFAECR_RFAEC
+ETH_MMCRFCECR_RFCEC
+ETH_MMCRGUFCR_RGUFC
+ETH_MMCRIMR_RFAEM
+ETH_MMCRIMR_RFCEM
+ETH_MMCRIMR_RGUFM
+ETH_MMCRIR_RFAES
+ETH_MMCRIR_RFCES
+ETH_MMCRIR_RGUFS
+ETH_MMCTGFCR_TGFC
+ETH_MMCTGFMSCCR_TGFMSCC
+ETH_MMCTGFSCCR_TGFSCC
+ETH_MMCTIMR_TGFM
+ETH_MMCTIMR_TGFMSCM
+ETH_MMCTIMR_TGFSCM
+ETH_MMCTIR_TGFMSCS
+ETH_MMCTIR_TGFS
+ETH_MMCTIR_TGFSCS
+ETH_PTP_BASE          (ETH_BASE + 0x0700)
+ETH_PTPSSIR_STSSI
+ETH_PTPTSAR_TSA
+ETH_PTPTSCR_TSARU
+ETH_PTPTSCR_TSCNT
+ETH_PTPTSCR_TSE
+ETH_PTPTSCR_TSFCU
+ETH_PTPTSCR_TSITE
+ETH_PTPTSCR_TSSTI
+ETH_PTPTSCR_TSSTU
+ETH_PTPTSHR_STS
+ETH_PTPTSHUR_TSUS
+ETH_PTPTSLR_STPNS
+ETH_PTPTSLR_STSS
+ETH_PTPTSLUR_TSUPNS
+ETH_PTPTSLUR_TSUSS
+ETH_PTPTSSR_TSPTPPSV2E
+ETH_PTPTSSR_TSSARFE
+ETH_PTPTSSR_TSSEME
+ETH_PTPTSSR_TSSIPV4FE
+ETH_PTPTSSR_TSSIPV6FE
+ETH_PTPTSSR_TSSMRME
+ETH_PTPTSSR_TSSO
+ETH_PTPTSSR_TSSPTPOEFE
+ETH_PTPTSSR_TSSSR
+ETH_PTPTSSR_TSTTR
+ETH_PTPTTHR_TTSH
+ETH_PTPTTLR_TTSL
+EXTI_BASE             (APB2PERIPH_BASE + 0x3C00)
+EXTI_ClearFlag(uint32_t EXTI_Line);
+EXTI_ClearITPendingBit(uint32_t EXTI_Line);
+EXTI_DeInit(void);
+EXTI_EMR_MR0
+EXTI_EMR_MR1
+EXTI_EMR_MR10
+EXTI_EMR_MR11
+EXTI_EMR_MR12
+EXTI_EMR_MR13
+EXTI_EMR_MR14
+EXTI_EMR_MR15
+EXTI_EMR_MR16
+EXTI_EMR_MR17
+EXTI_EMR_MR18
+EXTI_EMR_MR19
+EXTI_EMR_MR2
+EXTI_EMR_MR3
+EXTI_EMR_MR4
+EXTI_EMR_MR5
+EXTI_EMR_MR6
+EXTI_EMR_MR7
+EXTI_EMR_MR8
+EXTI_EMR_MR9
+EXTI                ((EXTI_TypeDef *)
+EXTI_FTSR_TR0
+EXTI_FTSR_TR1
+EXTI_FTSR_TR10
+EXTI_FTSR_TR11
+EXTI_FTSR_TR12
+EXTI_FTSR_TR13
+EXTI_FTSR_TR14
+EXTI_FTSR_TR15
+EXTI_FTSR_TR16
+EXTI_FTSR_TR17
+EXTI_FTSR_TR18
+EXTI_FTSR_TR19
+EXTI_FTSR_TR2
+EXTI_FTSR_TR3
+EXTI_FTSR_TR4
+EXTI_FTSR_TR5
+EXTI_FTSR_TR6
+EXTI_FTSR_TR7
+EXTI_FTSR_TR8
+EXTI_FTSR_TR9
+EXTI_GenerateSWInterrupt(uint32_t EXTI_Line);
+EXTI_GetFlagStatus(uint32_t EXTI_Line);
+EXTI_GetITStatus(uint32_t EXTI_Line);
+EXTI_IMR_MR0
+EXTI_IMR_MR1
+EXTI_IMR_MR10
+EXTI_IMR_MR11
+EXTI_IMR_MR12
+EXTI_IMR_MR13
+EXTI_IMR_MR14
+EXTI_IMR_MR15
+EXTI_IMR_MR16
+EXTI_IMR_MR17
+EXTI_IMR_MR18
+EXTI_IMR_MR19
+EXTI_IMR_MR2
+EXTI_IMR_MR3
+EXTI_IMR_MR4
+EXTI_IMR_MR5
+EXTI_IMR_MR6
+EXTI_IMR_MR7
+EXTI_IMR_MR8
+EXTI_IMR_MR9
+EXTI_Init(EXTI_InitTypeDef* EXTI_InitStruct);
+EXTI_Line0
+EXTI_Line1
+EXTI_Line10
+EXTI_Line11
+EXTI_Line12
+EXTI_Line13
+EXTI_Line14
+EXTI_Line15
+EXTI_Line16
+EXTI_Line17
+EXTI_Line18
+EXTI_Line19
+EXTI_Line2
+EXTI_Line20
+EXTI_Line21
+EXTI_Line22
+EXTI_Line3
+EXTI_Line4
+EXTI_Line5
+EXTI_Line6
+EXTI_Line7
+EXTI_Line8
+EXTI_Line9
+EXTI_PinSource0
+EXTI_PinSource1
+EXTI_PinSource10
+EXTI_PinSource11
+EXTI_PinSource12
+EXTI_PinSource13
+EXTI_PinSource14
+EXTI_PinSource15
+EXTI_PinSource2
+EXTI_PinSource3
+EXTI_PinSource4
+EXTI_PinSource5
+EXTI_PinSource6
+EXTI_PinSource7
+EXTI_PinSource8
+EXTI_PinSource9
+EXTI_PortSourceGPIOA
+EXTI_PortSourceGPIOB
+EXTI_PortSourceGPIOC
+EXTI_PortSourceGPIOD
+EXTI_PortSourceGPIOE
+EXTI_PortSourceGPIOF
+EXTI_PortSourceGPIOG
+EXTI_PortSourceGPIOH
+EXTI_PortSourceGPIOI
+EXTI_PR_PR0
+EXTI_PR_PR1
+EXTI_PR_PR10
+EXTI_PR_PR11
+EXTI_PR_PR12
+EXTI_PR_PR13
+EXTI_PR_PR14
+EXTI_PR_PR15
+EXTI_PR_PR16
+EXTI_PR_PR17
+EXTI_PR_PR18
+EXTI_PR_PR19
+EXTI_PR_PR2
+EXTI_PR_PR3
+EXTI_PR_PR4
+EXTI_PR_PR5
+EXTI_PR_PR6
+EXTI_PR_PR7
+EXTI_PR_PR8
+EXTI_PR_PR9
+EXTI_RTSR_TR0
+EXTI_RTSR_TR1
+EXTI_RTSR_TR10
+EXTI_RTSR_TR11
+EXTI_RTSR_TR12
+EXTI_RTSR_TR13
+EXTI_RTSR_TR14
+EXTI_RTSR_TR15
+EXTI_RTSR_TR16
+EXTI_RTSR_TR17
+EXTI_RTSR_TR18
+EXTI_RTSR_TR19
+EXTI_RTSR_TR2
+EXTI_RTSR_TR3
+EXTI_RTSR_TR4
+EXTI_RTSR_TR5
+EXTI_RTSR_TR6
+EXTI_RTSR_TR7
+EXTI_RTSR_TR8
+EXTI_RTSR_TR9
+EXTI_StructInit(EXTI_InitTypeDef* EXTI_InitStruct);
+EXTI_SWIER_SWIER0
+EXTI_SWIER_SWIER1
+EXTI_SWIER_SWIER10
+EXTI_SWIER_SWIER11
+EXTI_SWIER_SWIER12
+EXTI_SWIER_SWIER13
+EXTI_SWIER_SWIER14
+EXTI_SWIER_SWIER15
+EXTI_SWIER_SWIER16
+EXTI_SWIER_SWIER17
+EXTI_SWIER_SWIER18
+EXTI_SWIER_SWIER19
+EXTI_SWIER_SWIER2
+EXTI_SWIER_SWIER3
+EXTI_SWIER_SWIER4
+EXTI_SWIER_SWIER5
+EXTI_SWIER_SWIER6
+EXTI_SWIER_SWIER7
+EXTI_SWIER_SWIER8
+EXTI_SWIER_SWIER9
+FLASH_ACR_BYTE0_ADDRESS
+FLASH_ACR_BYTE2_ADDRESS
+FLASH_ACR_DCEN
+FLASH_ACR_DCRST
+FLASH_ACR_ICEN
+FLASH_ACR_ICRST
+FLASH_ACR_LATENCY
+FLASH_ACR_LATENCY_0WS
+FLASH_ACR_LATENCY_1WS
+FLASH_ACR_LATENCY_2WS
+FLASH_ACR_LATENCY_3WS
+FLASH_ACR_LATENCY_4WS
+FLASH_ACR_LATENCY_5WS
+FLASH_ACR_LATENCY_6WS
+FLASH_ACR_LATENCY_7WS
+FLASH_ACR_PRFTEN
+FLASH_BASE
+FLASH_ClearFlag(uint32_t FLASH_FLAG);
+FLASH_CR_EOPIE
+FLASH_CR_LOCK
+FLASH_CR_MER
+FLASH_CR_PG
+FLASH_CR_PSIZE_0
+FLASH_CR_PSIZE_1
+FLASH_CR_SER
+FLASH_CR_SNB_0
+FLASH_CR_SNB_1
+FLASH_CR_SNB_2
+FLASH_CR_SNB_3
+FLASH_CR_STRT
+FLASH_DataCacheCmd(FunctionalState NewState);
+FLASH_DataCacheReset(void);
+FLASH_EraseAllSectors(uint8_t VoltageRange);
+FLASH_EraseSector(uint32_t FLASH_Sector, uint8_t VoltageRange);
+FLASH_FLAG_BSY
+FLASH_FLAG_EOP
+FLASH_FLAG_OPERR
+FLASH_FLAG_PGAERR
+FLASH_FLAG_PGPERR
+FLASH_FLAG_PGSERR
+FLASH_FLAG_WRPERR
+FLASH               ((FLASH_TypeDef *)
+FLASH_GetFlagStatus(uint32_t FLASH_FLAG);
+FLASH_GetStatus(void);
+FLASH_InstructionCacheCmd(FunctionalState NewState);
+FLASH_InstructionCacheReset(void);
+FLASH_ITConfig(uint32_t FLASH_IT, FunctionalState NewState);
+FLASH_IT_EOP
+FLASH_IT_ERR
+FLASH_KEY1
+FLASH_KEY2
+FLASH_Latency_0
+FLASH_Latency_1
+FLASH_Latency_2
+FLASH_Latency_3
+FLASH_Latency_4
+FLASH_Latency_5
+FLASH_Latency_6
+FLASH_Latency_7
+FLASH_Lock(void);
+FLASH_OB_BORConfig(uint8_t OB_BOR);
+FLASH_OB_GetBOR(void);
+FLASH_OB_GetRDP(void);
+FLASH_OB_GetUser(void);
+FLASH_OB_GetWRP(void);
+FLASH_OB_Launch(void);
+FLASH_OB_Lock(void);
+FLASH_OB_RDPConfig(uint8_t OB_RDP);
+FLASH_OB_Unlock(void);
+FLASH_OB_UserConfig(uint8_t OB_IWDG, uint8_t OB_STOP, uint8_t OB_STDBY);
+FLASH_OB_WRPConfig(uint32_t OB_WRP, FunctionalState NewState);
+FLASH_OPTCR_BOR_LEV
+FLASH_OPTCR_BOR_LEV_0
+FLASH_OPTCR_BOR_LEV_1
+FLASH_OPTCR_nRST_STDBY
+FLASH_OPTCR_nRST_STOP
+FLASH_OPTCR_nWRP_0
+FLASH_OPTCR_nWRP_1
+FLASH_OPTCR_nWRP_10
+FLASH_OPTCR_nWRP_11
+FLASH_OPTCR_nWRP_2
+FLASH_OPTCR_nWRP_3
+FLASH_OPTCR_nWRP_4
+FLASH_OPTCR_nWRP_5
+FLASH_OPTCR_nWRP_6
+FLASH_OPTCR_nWRP_7
+FLASH_OPTCR_nWRP_8
+FLASH_OPTCR_nWRP_9
+FLASH_OPTCR_OPTLOCK
+FLASH_OPTCR_OPTSTRT
+FLASH_OPTCR_RDP_0
+FLASH_OPTCR_RDP_1
+FLASH_OPTCR_RDP_2
+FLASH_OPTCR_RDP_3
+FLASH_OPTCR_RDP_4
+FLASH_OPTCR_RDP_5
+FLASH_OPTCR_RDP_6
+FLASH_OPTCR_RDP_7
+FLASH_OPTCR_WDG_SW
+FLASH_OPT_KEY1
+FLASH_OPT_KEY2
+FLASH_PrefetchBufferCmd(FunctionalState NewState);
+FLASH_ProgramByte(uint32_t Address, uint8_t Data);
+FLASH_ProgramDoubleWord(uint32_t Address, uint64_t Data);
+FLASH_ProgramHalfWord(uint32_t Address, uint16_t Data);
+FLASH_ProgramWord(uint32_t Address, uint32_t Data);
+FLASH_PSIZE_BYTE
+FLASH_PSIZE_DOUBLE_WORD
+FLASH_PSIZE_HALF_WORD
+FLASH_PSIZE_WORD
+FLASH_R_BASE          (AHB1PERIPH_BASE + 0x3C00)
+FLASH_Sector_0
+FLASH_Sector_1
+FLASH_Sector_10
+FLASH_Sector_11
+FLASH_Sector_2
+FLASH_Sector_3
+FLASH_Sector_4
+FLASH_Sector_5
+FLASH_Sector_6
+FLASH_Sector_7
+FLASH_Sector_8
+FLASH_Sector_9
+FLASH_SetLatency(uint32_t FLASH_Latency);
+FLASH_SR_BSY
+FLASH_SR_EOP
+FLASH_SR_PGAERR
+FLASH_SR_PGPERR
+FLASH_SR_PGSERR
+FLASH_SR_SOP
+FLASH_SR_WRPERR
+FLASH_Unlock(void);
+FLASH_WaitForLastOperation(void);
+__FPU_PRESENT
+FSMC_AccessMode_A
+FSMC_AccessMode_B
+FSMC_AccessMode_C
+FSMC_AccessMode_D
+FSMC_AsynchronousWait_Disable
+FSMC_AsynchronousWait_Enable
+FSMC_Bank1E         ((FSMC_Bank1E_TypeDef *)
+FSMC_Bank1E_R_BASE    (FSMC_R_BASE + 0x0104)
+FSMC_Bank1          ((FSMC_Bank1_TypeDef *)
+FSMC_Bank1_NORSRAM1
+FSMC_Bank1_NORSRAM2
+FSMC_Bank1_NORSRAM3
+FSMC_Bank1_NORSRAM4
+FSMC_Bank1_R_BASE     (FSMC_R_BASE + 0x0000)
+FSMC_Bank2          ((FSMC_Bank2_TypeDef *)
+FSMC_Bank2_NAND
+FSMC_Bank2_R_BASE     (FSMC_R_BASE + 0x0060)
+FSMC_Bank3          ((FSMC_Bank3_TypeDef *)
+FSMC_Bank3_NAND
+FSMC_Bank3_R_BASE     (FSMC_R_BASE + 0x0080)
+FSMC_Bank4          ((FSMC_Bank4_TypeDef *)
+FSMC_Bank4_PCCARD
+FSMC_Bank4_R_BASE     (FSMC_R_BASE + 0x00A0)
+FSMC_BCR1_ASYNCWAIT
+FSMC_BCR1_BURSTEN
+FSMC_BCR1_CBURSTRW
+FSMC_BCR1_EXTMOD
+FSMC_BCR1_FACCEN
+FSMC_BCR1_MBKEN
+FSMC_BCR1_MTYP
+FSMC_BCR1_MTYP_0
+FSMC_BCR1_MTYP_1
+FSMC_BCR1_MUXEN
+FSMC_BCR1_MWID
+FSMC_BCR1_MWID_0
+FSMC_BCR1_MWID_1
+FSMC_BCR1_WAITCFG
+FSMC_BCR1_WAITEN
+FSMC_BCR1_WAITPOL
+FSMC_BCR1_WRAPMOD
+FSMC_BCR1_WREN
+FSMC_BCR2_ASYNCWAIT
+FSMC_BCR2_BURSTEN
+FSMC_BCR2_CBURSTRW
+FSMC_BCR2_EXTMOD
+FSMC_BCR2_FACCEN
+FSMC_BCR2_MBKEN
+FSMC_BCR2_MTYP
+FSMC_BCR2_MTYP_0
+FSMC_BCR2_MTYP_1
+FSMC_BCR2_MUXEN
+FSMC_BCR2_MWID
+FSMC_BCR2_MWID_0
+FSMC_BCR2_MWID_1
+FSMC_BCR2_WAITCFG
+FSMC_BCR2_WAITEN
+FSMC_BCR2_WAITPOL
+FSMC_BCR2_WRAPMOD
+FSMC_BCR2_WREN
+FSMC_BCR3_ASYNCWAIT
+FSMC_BCR3_BURSTEN
+FSMC_BCR3_CBURSTRW
+FSMC_BCR3_EXTMOD
+FSMC_BCR3_FACCEN
+FSMC_BCR3_MBKEN
+FSMC_BCR3_MTYP
+FSMC_BCR3_MTYP_0
+FSMC_BCR3_MTYP_1
+FSMC_BCR3_MUXEN
+FSMC_BCR3_MWID
+FSMC_BCR3_MWID_0
+FSMC_BCR3_MWID_1
+FSMC_BCR3_WAITCFG
+FSMC_BCR3_WAITEN
+FSMC_BCR3_WAITPOL
+FSMC_BCR3_WRAPMOD
+FSMC_BCR3_WREN
+FSMC_BCR4_ASYNCWAIT
+FSMC_BCR4_BURSTEN
+FSMC_BCR4_CBURSTRW
+FSMC_BCR4_EXTMOD
+FSMC_BCR4_FACCEN
+FSMC_BCR4_MBKEN
+FSMC_BCR4_MTYP
+FSMC_BCR4_MTYP_0
+FSMC_BCR4_MTYP_1
+FSMC_BCR4_MUXEN
+FSMC_BCR4_MWID
+FSMC_BCR4_MWID_0
+FSMC_BCR4_MWID_1
+FSMC_BCR4_WAITCFG
+FSMC_BCR4_WAITEN
+FSMC_BCR4_WAITPOL
+FSMC_BCR4_WRAPMOD
+FSMC_BCR4_WREN
+FSMC_BTR1_ACCMOD
+FSMC_BTR1_ACCMOD_0
+FSMC_BTR1_ACCMOD_1
+FSMC_BTR1_ADDHLD
+FSMC_BTR1_ADDHLD_0
+FSMC_BTR1_ADDHLD_1
+FSMC_BTR1_ADDHLD_2
+FSMC_BTR1_ADDHLD_3
+FSMC_BTR1_ADDSET
+FSMC_BTR1_ADDSET_0
+FSMC_BTR1_ADDSET_1
+FSMC_BTR1_ADDSET_2
+FSMC_BTR1_ADDSET_3
+FSMC_BTR1_BUSTURN
+FSMC_BTR1_BUSTURN_0
+FSMC_BTR1_BUSTURN_1
+FSMC_BTR1_BUSTURN_2
+FSMC_BTR1_BUSTURN_3
+FSMC_BTR1_CLKDIV
+FSMC_BTR1_CLKDIV_0
+FSMC_BTR1_CLKDIV_1
+FSMC_BTR1_CLKDIV_2
+FSMC_BTR1_CLKDIV_3
+FSMC_BTR1_DATAST
+FSMC_BTR1_DATAST_0
+FSMC_BTR1_DATAST_1
+FSMC_BTR1_DATAST_2
+FSMC_BTR1_DATAST_3
+FSMC_BTR1_DATLAT
+FSMC_BTR1_DATLAT_0
+FSMC_BTR1_DATLAT_1
+FSMC_BTR1_DATLAT_2
+FSMC_BTR1_DATLAT_3
+FSMC_BTR2_ACCMOD
+FSMC_BTR2_ACCMOD_0
+FSMC_BTR2_ACCMOD_1
+FSMC_BTR2_ADDHLD
+FSMC_BTR2_ADDHLD_0
+FSMC_BTR2_ADDHLD_1
+FSMC_BTR2_ADDHLD_2
+FSMC_BTR2_ADDHLD_3
+FSMC_BTR2_ADDSET
+FSMC_BTR2_ADDSET_0
+FSMC_BTR2_ADDSET_1
+FSMC_BTR2_ADDSET_2
+FSMC_BTR2_ADDSET_3
+FSMC_BTR2_BUSTURN
+FSMC_BTR2_BUSTURN_0
+FSMC_BTR2_BUSTURN_1
+FSMC_BTR2_BUSTURN_2
+FSMC_BTR2_BUSTURN_3
+FSMC_BTR2_CLKDIV
+FSMC_BTR2_CLKDIV_0
+FSMC_BTR2_CLKDIV_1
+FSMC_BTR2_CLKDIV_2
+FSMC_BTR2_CLKDIV_3
+FSMC_BTR2_DATAST
+FSMC_BTR2_DATAST_0
+FSMC_BTR2_DATAST_1
+FSMC_BTR2_DATAST_2
+FSMC_BTR2_DATAST_3
+FSMC_BTR2_DATLAT
+FSMC_BTR2_DATLAT_0
+FSMC_BTR2_DATLAT_1
+FSMC_BTR2_DATLAT_2
+FSMC_BTR2_DATLAT_3
+FSMC_BTR3_ACCMOD
+FSMC_BTR3_ACCMOD_0
+FSMC_BTR3_ACCMOD_1
+FSMC_BTR3_ADDHLD
+FSMC_BTR3_ADDHLD_0
+FSMC_BTR3_ADDHLD_1
+FSMC_BTR3_ADDHLD_2
+FSMC_BTR3_ADDHLD_3
+FSMC_BTR3_ADDSET
+FSMC_BTR3_ADDSET_0
+FSMC_BTR3_ADDSET_1
+FSMC_BTR3_ADDSET_2
+FSMC_BTR3_ADDSET_3
+FSMC_BTR3_BUSTURN
+FSMC_BTR3_BUSTURN_0
+FSMC_BTR3_BUSTURN_1
+FSMC_BTR3_BUSTURN_2
+FSMC_BTR3_BUSTURN_3
+FSMC_BTR3_CLKDIV
+FSMC_BTR3_CLKDIV_0
+FSMC_BTR3_CLKDIV_1
+FSMC_BTR3_CLKDIV_2
+FSMC_BTR3_CLKDIV_3
+FSMC_BTR3_DATAST
+FSMC_BTR3_DATAST_0
+FSMC_BTR3_DATAST_1
+FSMC_BTR3_DATAST_2
+FSMC_BTR3_DATAST_3
+FSMC_BTR3_DATLAT
+FSMC_BTR3_DATLAT_0
+FSMC_BTR3_DATLAT_1
+FSMC_BTR3_DATLAT_2
+FSMC_BTR3_DATLAT_3
+FSMC_BTR4_ACCMOD
+FSMC_BTR4_ACCMOD_0
+FSMC_BTR4_ACCMOD_1
+FSMC_BTR4_ADDHLD
+FSMC_BTR4_ADDHLD_0
+FSMC_BTR4_ADDHLD_1
+FSMC_BTR4_ADDHLD_2
+FSMC_BTR4_ADDHLD_3
+FSMC_BTR4_ADDSET
+FSMC_BTR4_ADDSET_0
+FSMC_BTR4_ADDSET_1
+FSMC_BTR4_ADDSET_2
+FSMC_BTR4_ADDSET_3
+FSMC_BTR4_BUSTURN
+FSMC_BTR4_BUSTURN_0
+FSMC_BTR4_BUSTURN_1
+FSMC_BTR4_BUSTURN_2
+FSMC_BTR4_BUSTURN_3
+FSMC_BTR4_CLKDIV
+FSMC_BTR4_CLKDIV_0
+FSMC_BTR4_CLKDIV_1
+FSMC_BTR4_CLKDIV_2
+FSMC_BTR4_CLKDIV_3
+FSMC_BTR4_DATAST
+FSMC_BTR4_DATAST_0
+FSMC_BTR4_DATAST_1
+FSMC_BTR4_DATAST_2
+FSMC_BTR4_DATAST_3
+FSMC_BTR4_DATLAT
+FSMC_BTR4_DATLAT_0
+FSMC_BTR4_DATLAT_1
+FSMC_BTR4_DATLAT_2
+FSMC_BTR4_DATLAT_3
+FSMC_BurstAccessMode_Disable
+FSMC_BurstAccessMode_Enable
+FSMC_BWTR1_ACCMOD
+FSMC_BWTR1_ACCMOD_0
+FSMC_BWTR1_ACCMOD_1
+FSMC_BWTR1_ADDHLD
+FSMC_BWTR1_ADDHLD_0
+FSMC_BWTR1_ADDHLD_1
+FSMC_BWTR1_ADDHLD_2
+FSMC_BWTR1_ADDHLD_3
+FSMC_BWTR1_ADDSET
+FSMC_BWTR1_ADDSET_0
+FSMC_BWTR1_ADDSET_1
+FSMC_BWTR1_ADDSET_2
+FSMC_BWTR1_ADDSET_3
+FSMC_BWTR1_CLKDIV
+FSMC_BWTR1_CLKDIV_0
+FSMC_BWTR1_CLKDIV_1
+FSMC_BWTR1_CLKDIV_2
+FSMC_BWTR1_CLKDIV_3
+FSMC_BWTR1_DATAST
+FSMC_BWTR1_DATAST_0
+FSMC_BWTR1_DATAST_1
+FSMC_BWTR1_DATAST_2
+FSMC_BWTR1_DATAST_3
+FSMC_BWTR1_DATLAT
+FSMC_BWTR1_DATLAT_0
+FSMC_BWTR1_DATLAT_1
+FSMC_BWTR1_DATLAT_2
+FSMC_BWTR1_DATLAT_3
+FSMC_BWTR2_ACCMOD
+FSMC_BWTR2_ACCMOD_0
+FSMC_BWTR2_ACCMOD_1
+FSMC_BWTR2_ADDHLD
+FSMC_BWTR2_ADDHLD_0
+FSMC_BWTR2_ADDHLD_1
+FSMC_BWTR2_ADDHLD_2
+FSMC_BWTR2_ADDHLD_3
+FSMC_BWTR2_ADDSET
+FSMC_BWTR2_ADDSET_0
+FSMC_BWTR2_ADDSET_1
+FSMC_BWTR2_ADDSET_2
+FSMC_BWTR2_ADDSET_3
+FSMC_BWTR2_CLKDIV
+FSMC_BWTR2_CLKDIV_0
+FSMC_BWTR2_CLKDIV_1
+FSMC_BWTR2_CLKDIV_2
+FSMC_BWTR2_CLKDIV_3
+FSMC_BWTR2_DATAST
+FSMC_BWTR2_DATAST_0
+FSMC_BWTR2_DATAST_1
+FSMC_BWTR2_DATAST_2
+FSMC_BWTR2_DATAST_3
+FSMC_BWTR2_DATLAT
+FSMC_BWTR2_DATLAT_0
+FSMC_BWTR2_DATLAT_1
+FSMC_BWTR2_DATLAT_2
+FSMC_BWTR2_DATLAT_3
+FSMC_BWTR3_ACCMOD
+FSMC_BWTR3_ACCMOD_0
+FSMC_BWTR3_ACCMOD_1
+FSMC_BWTR3_ADDHLD
+FSMC_BWTR3_ADDHLD_0
+FSMC_BWTR3_ADDHLD_1
+FSMC_BWTR3_ADDHLD_2
+FSMC_BWTR3_ADDHLD_3
+FSMC_BWTR3_ADDSET
+FSMC_BWTR3_ADDSET_0
+FSMC_BWTR3_ADDSET_1
+FSMC_BWTR3_ADDSET_2
+FSMC_BWTR3_ADDSET_3
+FSMC_BWTR3_CLKDIV
+FSMC_BWTR3_CLKDIV_0
+FSMC_BWTR3_CLKDIV_1
+FSMC_BWTR3_CLKDIV_2
+FSMC_BWTR3_CLKDIV_3
+FSMC_BWTR3_DATAST
+FSMC_BWTR3_DATAST_0
+FSMC_BWTR3_DATAST_1
+FSMC_BWTR3_DATAST_2
+FSMC_BWTR3_DATAST_3
+FSMC_BWTR3_DATLAT
+FSMC_BWTR3_DATLAT_0
+FSMC_BWTR3_DATLAT_1
+FSMC_BWTR3_DATLAT_2
+FSMC_BWTR3_DATLAT_3
+FSMC_BWTR4_ACCMOD
+FSMC_BWTR4_ACCMOD_0
+FSMC_BWTR4_ACCMOD_1
+FSMC_BWTR4_ADDHLD
+FSMC_BWTR4_ADDHLD_0
+FSMC_BWTR4_ADDHLD_1
+FSMC_BWTR4_ADDHLD_2
+FSMC_BWTR4_ADDHLD_3
+FSMC_BWTR4_ADDSET
+FSMC_BWTR4_ADDSET_0
+FSMC_BWTR4_ADDSET_1
+FSMC_BWTR4_ADDSET_2
+FSMC_BWTR4_ADDSET_3
+FSMC_BWTR4_CLKDIV
+FSMC_BWTR4_CLKDIV_0
+FSMC_BWTR4_CLKDIV_1
+FSMC_BWTR4_CLKDIV_2
+FSMC_BWTR4_CLKDIV_3
+FSMC_BWTR4_DATAST
+FSMC_BWTR4_DATAST_0
+FSMC_BWTR4_DATAST_1
+FSMC_BWTR4_DATAST_2
+FSMC_BWTR4_DATAST_3
+FSMC_BWTR4_DATLAT
+FSMC_BWTR4_DATLAT_0
+FSMC_BWTR4_DATLAT_1
+FSMC_BWTR4_DATLAT_2
+FSMC_BWTR4_DATLAT_3
+FSMC_ClearFlag(uint32_t FSMC_Bank, uint32_t FSMC_FLAG);
+FSMC_ClearITPendingBit(uint32_t FSMC_Bank, uint32_t FSMC_IT);
+FSMC_DataAddressMux_Disable
+FSMC_DataAddressMux_Enable
+FSMC_ECC_Disable
+FSMC_ECC_Enable
+FSMC_ECCPageSize_1024Bytes
+FSMC_ECCPageSize_2048Bytes
+FSMC_ECCPageSize_256Bytes
+FSMC_ECCPageSize_4096Bytes
+FSMC_ECCPageSize_512Bytes
+FSMC_ECCPageSize_8192Bytes
+FSMC_ECCR2_ECC2
+FSMC_ECCR3_ECC3
+FSMC_ExtendedMode_Disable
+FSMC_ExtendedMode_Enable
+FSMC_FLAG_FallingEdge
+FSMC_FLAG_FEMPT
+FSMC_FLAG_Level
+FSMC_FLAG_RisingEdge
+FSMC_GetECC(uint32_t FSMC_Bank);
+FSMC_GetFlagStatus(uint32_t FSMC_Bank, uint32_t FSMC_FLAG);
+FSMC_GetITStatus(uint32_t FSMC_Bank, uint32_t FSMC_IT);
+FSMC_ITConfig(uint32_t FSMC_Bank, uint32_t FSMC_IT, FunctionalState NewState);
+FSMC_IT_FallingEdge
+FSMC_IT_Level
+FSMC_IT_RisingEdge
+FSMC_MemoryDataWidth_16b
+FSMC_MemoryDataWidth_8b
+FSMC_MemoryType_NOR
+FSMC_MemoryType_PSRAM
+FSMC_MemoryType_SRAM
+FSMC_NANDCmd(uint32_t FSMC_Bank, FunctionalState NewState);
+FSMC_NANDDeInit(uint32_t FSMC_Bank);
+FSMC_NANDECCCmd(uint32_t FSMC_Bank, FunctionalState NewState);
+FSMC_NANDInit(FSMC_NANDInitTypeDef* FSMC_NANDInitStruct);
+FSMC_NANDStructInit(FSMC_NANDInitTypeDef* FSMC_NANDInitStruct);
+FSMC_NORSRAMCmd(uint32_t FSMC_Bank, FunctionalState NewState);
+FSMC_NORSRAMDeInit(uint32_t FSMC_Bank);
+FSMC_NORSRAMInit(FSMC_NORSRAMInitTypeDef* FSMC_NORSRAMInitStruct);
+FSMC_NORSRAMStructInit(FSMC_NORSRAMInitTypeDef* FSMC_NORSRAMInitStruct);
+FSMC_PATT2_ATTHIZ2
+FSMC_PATT2_ATTHIZ2_0
+FSMC_PATT2_ATTHIZ2_1
+FSMC_PATT2_ATTHIZ2_2
+FSMC_PATT2_ATTHIZ2_3
+FSMC_PATT2_ATTHIZ2_4
+FSMC_PATT2_ATTHIZ2_5
+FSMC_PATT2_ATTHIZ2_6
+FSMC_PATT2_ATTHIZ2_7
+FSMC_PATT2_ATTHOLD2
+FSMC_PATT2_ATTHOLD2_0
+FSMC_PATT2_ATTHOLD2_1
+FSMC_PATT2_ATTHOLD2_2
+FSMC_PATT2_ATTHOLD2_3
+FSMC_PATT2_ATTHOLD2_4
+FSMC_PATT2_ATTHOLD2_5
+FSMC_PATT2_ATTHOLD2_6
+FSMC_PATT2_ATTHOLD2_7
+FSMC_PATT2_ATTSET2
+FSMC_PATT2_ATTSET2_0
+FSMC_PATT2_ATTSET2_1
+FSMC_PATT2_ATTSET2_2
+FSMC_PATT2_ATTSET2_3
+FSMC_PATT2_ATTSET2_4
+FSMC_PATT2_ATTSET2_5
+FSMC_PATT2_ATTSET2_6
+FSMC_PATT2_ATTSET2_7
+FSMC_PATT2_ATTWAIT2
+FSMC_PATT2_ATTWAIT2_0
+FSMC_PATT2_ATTWAIT2_1
+FSMC_PATT2_ATTWAIT2_2
+FSMC_PATT2_ATTWAIT2_3
+FSMC_PATT2_ATTWAIT2_4
+FSMC_PATT2_ATTWAIT2_5
+FSMC_PATT2_ATTWAIT2_6
+FSMC_PATT2_ATTWAIT2_7
+FSMC_PATT3_ATTHIZ3
+FSMC_PATT3_ATTHIZ3_0
+FSMC_PATT3_ATTHIZ3_1
+FSMC_PATT3_ATTHIZ3_2
+FSMC_PATT3_ATTHIZ3_3
+FSMC_PATT3_ATTHIZ3_4
+FSMC_PATT3_ATTHIZ3_5
+FSMC_PATT3_ATTHIZ3_6
+FSMC_PATT3_ATTHIZ3_7
+FSMC_PATT3_ATTHOLD3
+FSMC_PATT3_ATTHOLD3_0
+FSMC_PATT3_ATTHOLD3_1
+FSMC_PATT3_ATTHOLD3_2
+FSMC_PATT3_ATTHOLD3_3
+FSMC_PATT3_ATTHOLD3_4
+FSMC_PATT3_ATTHOLD3_5
+FSMC_PATT3_ATTHOLD3_6
+FSMC_PATT3_ATTHOLD3_7
+FSMC_PATT3_ATTSET3
+FSMC_PATT3_ATTSET3_0
+FSMC_PATT3_ATTSET3_1
+FSMC_PATT3_ATTSET3_2
+FSMC_PATT3_ATTSET3_3
+FSMC_PATT3_ATTSET3_4
+FSMC_PATT3_ATTSET3_5
+FSMC_PATT3_ATTSET3_6
+FSMC_PATT3_ATTSET3_7
+FSMC_PATT3_ATTWAIT3
+FSMC_PATT3_ATTWAIT3_0
+FSMC_PATT3_ATTWAIT3_1
+FSMC_PATT3_ATTWAIT3_2
+FSMC_PATT3_ATTWAIT3_3
+FSMC_PATT3_ATTWAIT3_4
+FSMC_PATT3_ATTWAIT3_5
+FSMC_PATT3_ATTWAIT3_6
+FSMC_PATT3_ATTWAIT3_7
+FSMC_PATT4_ATTHIZ4
+FSMC_PATT4_ATTHIZ4_0
+FSMC_PATT4_ATTHIZ4_1
+FSMC_PATT4_ATTHIZ4_2
+FSMC_PATT4_ATTHIZ4_3
+FSMC_PATT4_ATTHIZ4_4
+FSMC_PATT4_ATTHIZ4_5
+FSMC_PATT4_ATTHIZ4_6
+FSMC_PATT4_ATTHIZ4_7
+FSMC_PATT4_ATTHOLD4
+FSMC_PATT4_ATTHOLD4_0
+FSMC_PATT4_ATTHOLD4_1
+FSMC_PATT4_ATTHOLD4_2
+FSMC_PATT4_ATTHOLD4_3
+FSMC_PATT4_ATTHOLD4_4
+FSMC_PATT4_ATTHOLD4_5
+FSMC_PATT4_ATTHOLD4_6
+FSMC_PATT4_ATTHOLD4_7
+FSMC_PATT4_ATTSET4
+FSMC_PATT4_ATTSET4_0
+FSMC_PATT4_ATTSET4_1
+FSMC_PATT4_ATTSET4_2
+FSMC_PATT4_ATTSET4_3
+FSMC_PATT4_ATTSET4_4
+FSMC_PATT4_ATTSET4_5
+FSMC_PATT4_ATTSET4_6
+FSMC_PATT4_ATTSET4_7
+FSMC_PATT4_ATTWAIT4
+FSMC_PATT4_ATTWAIT4_0
+FSMC_PATT4_ATTWAIT4_1
+FSMC_PATT4_ATTWAIT4_2
+FSMC_PATT4_ATTWAIT4_3
+FSMC_PATT4_ATTWAIT4_4
+FSMC_PATT4_ATTWAIT4_5
+FSMC_PATT4_ATTWAIT4_6
+FSMC_PATT4_ATTWAIT4_7
+FSMC_PCCARDCmd(FunctionalState NewState);
+FSMC_PCCARDDeInit(void);
+FSMC_PCCARDInit(FSMC_PCCARDInitTypeDef* FSMC_PCCARDInitStruct);
+FSMC_PCCARDStructInit(FSMC_PCCARDInitTypeDef* FSMC_PCCARDInitStruct);
+FSMC_PCR2_ECCEN
+FSMC_PCR2_ECCPS
+FSMC_PCR2_ECCPS_0
+FSMC_PCR2_ECCPS_1
+FSMC_PCR2_ECCPS_2
+FSMC_PCR2_PBKEN
+FSMC_PCR2_PTYP
+FSMC_PCR2_PWAITEN
+FSMC_PCR2_PWID
+FSMC_PCR2_PWID_0
+FSMC_PCR2_PWID_1
+FSMC_PCR2_TAR
+FSMC_PCR2_TAR_0
+FSMC_PCR2_TAR_1
+FSMC_PCR2_TAR_2
+FSMC_PCR2_TAR_3
+FSMC_PCR2_TCLR
+FSMC_PCR2_TCLR_0
+FSMC_PCR2_TCLR_1
+FSMC_PCR2_TCLR_2
+FSMC_PCR2_TCLR_3
+FSMC_PCR3_ECCEN
+FSMC_PCR3_ECCPS
+FSMC_PCR3_ECCPS_0
+FSMC_PCR3_ECCPS_1
+FSMC_PCR3_ECCPS_2
+FSMC_PCR3_PBKEN
+FSMC_PCR3_PTYP
+FSMC_PCR3_PWAITEN
+FSMC_PCR3_PWID
+FSMC_PCR3_PWID_0
+FSMC_PCR3_PWID_1
+FSMC_PCR3_TAR
+FSMC_PCR3_TAR_0
+FSMC_PCR3_TAR_1
+FSMC_PCR3_TAR_2
+FSMC_PCR3_TAR_3
+FSMC_PCR3_TCLR
+FSMC_PCR3_TCLR_0
+FSMC_PCR3_TCLR_1
+FSMC_PCR3_TCLR_2
+FSMC_PCR3_TCLR_3
+FSMC_PCR4_ECCEN
+FSMC_PCR4_ECCPS
+FSMC_PCR4_ECCPS_0
+FSMC_PCR4_ECCPS_1
+FSMC_PCR4_ECCPS_2
+FSMC_PCR4_PBKEN
+FSMC_PCR4_PTYP
+FSMC_PCR4_PWAITEN
+FSMC_PCR4_PWID
+FSMC_PCR4_PWID_0
+FSMC_PCR4_PWID_1
+FSMC_PCR4_TAR
+FSMC_PCR4_TAR_0
+FSMC_PCR4_TAR_1
+FSMC_PCR4_TAR_2
+FSMC_PCR4_TAR_3
+FSMC_PCR4_TCLR
+FSMC_PCR4_TCLR_0
+FSMC_PCR4_TCLR_1
+FSMC_PCR4_TCLR_2
+FSMC_PCR4_TCLR_3
+FSMC_PIO4_IOHIZ4
+FSMC_PIO4_IOHIZ4_0
+FSMC_PIO4_IOHIZ4_1
+FSMC_PIO4_IOHIZ4_2
+FSMC_PIO4_IOHIZ4_3
+FSMC_PIO4_IOHIZ4_4
+FSMC_PIO4_IOHIZ4_5
+FSMC_PIO4_IOHIZ4_6
+FSMC_PIO4_IOHIZ4_7
+FSMC_PIO4_IOHOLD4
+FSMC_PIO4_IOHOLD4_0
+FSMC_PIO4_IOHOLD4_1
+FSMC_PIO4_IOHOLD4_2
+FSMC_PIO4_IOHOLD4_3
+FSMC_PIO4_IOHOLD4_4
+FSMC_PIO4_IOHOLD4_5
+FSMC_PIO4_IOHOLD4_6
+FSMC_PIO4_IOHOLD4_7
+FSMC_PIO4_IOSET4
+FSMC_PIO4_IOSET4_0
+FSMC_PIO4_IOSET4_1
+FSMC_PIO4_IOSET4_2
+FSMC_PIO4_IOSET4_3
+FSMC_PIO4_IOSET4_4
+FSMC_PIO4_IOSET4_5
+FSMC_PIO4_IOSET4_6
+FSMC_PIO4_IOSET4_7
+FSMC_PIO4_IOWAIT4
+FSMC_PIO4_IOWAIT4_0
+FSMC_PIO4_IOWAIT4_1
+FSMC_PIO4_IOWAIT4_2
+FSMC_PIO4_IOWAIT4_3
+FSMC_PIO4_IOWAIT4_4
+FSMC_PIO4_IOWAIT4_5
+FSMC_PIO4_IOWAIT4_6
+FSMC_PIO4_IOWAIT4_7
+FSMC_PMEM2_MEMHIZ2
+FSMC_PMEM2_MEMHIZ2_0
+FSMC_PMEM2_MEMHIZ2_1
+FSMC_PMEM2_MEMHIZ2_2
+FSMC_PMEM2_MEMHIZ2_3
+FSMC_PMEM2_MEMHIZ2_4
+FSMC_PMEM2_MEMHIZ2_5
+FSMC_PMEM2_MEMHIZ2_6
+FSMC_PMEM2_MEMHIZ2_7
+FSMC_PMEM2_MEMHOLD2
+FSMC_PMEM2_MEMHOLD2_0
+FSMC_PMEM2_MEMHOLD2_1
+FSMC_PMEM2_MEMHOLD2_2
+FSMC_PMEM2_MEMHOLD2_3
+FSMC_PMEM2_MEMHOLD2_4
+FSMC_PMEM2_MEMHOLD2_5
+FSMC_PMEM2_MEMHOLD2_6
+FSMC_PMEM2_MEMHOLD2_7
+FSMC_PMEM2_MEMSET2
+FSMC_PMEM2_MEMSET2_0
+FSMC_PMEM2_MEMSET2_1
+FSMC_PMEM2_MEMSET2_2
+FSMC_PMEM2_MEMSET2_3
+FSMC_PMEM2_MEMSET2_4
+FSMC_PMEM2_MEMSET2_5
+FSMC_PMEM2_MEMSET2_6
+FSMC_PMEM2_MEMSET2_7
+FSMC_PMEM2_MEMWAIT2
+FSMC_PMEM2_MEMWAIT2_0
+FSMC_PMEM2_MEMWAIT2_1
+FSMC_PMEM2_MEMWAIT2_2
+FSMC_PMEM2_MEMWAIT2_3
+FSMC_PMEM2_MEMWAIT2_4
+FSMC_PMEM2_MEMWAIT2_5
+FSMC_PMEM2_MEMWAIT2_6
+FSMC_PMEM2_MEMWAIT2_7
+FSMC_PMEM3_MEMHIZ3
+FSMC_PMEM3_MEMHIZ3_0
+FSMC_PMEM3_MEMHIZ3_1
+FSMC_PMEM3_MEMHIZ3_2
+FSMC_PMEM3_MEMHIZ3_3
+FSMC_PMEM3_MEMHIZ3_4
+FSMC_PMEM3_MEMHIZ3_5
+FSMC_PMEM3_MEMHIZ3_6
+FSMC_PMEM3_MEMHIZ3_7
+FSMC_PMEM3_MEMHOLD3
+FSMC_PMEM3_MEMHOLD3_0
+FSMC_PMEM3_MEMHOLD3_1
+FSMC_PMEM3_MEMHOLD3_2
+FSMC_PMEM3_MEMHOLD3_3
+FSMC_PMEM3_MEMHOLD3_4
+FSMC_PMEM3_MEMHOLD3_5
+FSMC_PMEM3_MEMHOLD3_6
+FSMC_PMEM3_MEMHOLD3_7
+FSMC_PMEM3_MEMSET3
+FSMC_PMEM3_MEMSET3_0
+FSMC_PMEM3_MEMSET3_1
+FSMC_PMEM3_MEMSET3_2
+FSMC_PMEM3_MEMSET3_3
+FSMC_PMEM3_MEMSET3_4
+FSMC_PMEM3_MEMSET3_5
+FSMC_PMEM3_MEMSET3_6
+FSMC_PMEM3_MEMSET3_7
+FSMC_PMEM3_MEMWAIT3
+FSMC_PMEM3_MEMWAIT3_0
+FSMC_PMEM3_MEMWAIT3_1
+FSMC_PMEM3_MEMWAIT3_2
+FSMC_PMEM3_MEMWAIT3_3
+FSMC_PMEM3_MEMWAIT3_4
+FSMC_PMEM3_MEMWAIT3_5
+FSMC_PMEM3_MEMWAIT3_6
+FSMC_PMEM3_MEMWAIT3_7
+FSMC_PMEM4_MEMHIZ4
+FSMC_PMEM4_MEMHIZ4_0
+FSMC_PMEM4_MEMHIZ4_1
+FSMC_PMEM4_MEMHIZ4_2
+FSMC_PMEM4_MEMHIZ4_3
+FSMC_PMEM4_MEMHIZ4_4
+FSMC_PMEM4_MEMHIZ4_5
+FSMC_PMEM4_MEMHIZ4_6
+FSMC_PMEM4_MEMHIZ4_7
+FSMC_PMEM4_MEMHOLD4
+FSMC_PMEM4_MEMHOLD4_0
+FSMC_PMEM4_MEMHOLD4_1
+FSMC_PMEM4_MEMHOLD4_2
+FSMC_PMEM4_MEMHOLD4_3
+FSMC_PMEM4_MEMHOLD4_4
+FSMC_PMEM4_MEMHOLD4_5
+FSMC_PMEM4_MEMHOLD4_6
+FSMC_PMEM4_MEMHOLD4_7
+FSMC_PMEM4_MEMSET4
+FSMC_PMEM4_MEMSET4_0
+FSMC_PMEM4_MEMSET4_1
+FSMC_PMEM4_MEMSET4_2
+FSMC_PMEM4_MEMSET4_3
+FSMC_PMEM4_MEMSET4_4
+FSMC_PMEM4_MEMSET4_5
+FSMC_PMEM4_MEMSET4_6
+FSMC_PMEM4_MEMSET4_7
+FSMC_PMEM4_MEMWAIT4
+FSMC_PMEM4_MEMWAIT4_0
+FSMC_PMEM4_MEMWAIT4_1
+FSMC_PMEM4_MEMWAIT4_2
+FSMC_PMEM4_MEMWAIT4_3
+FSMC_PMEM4_MEMWAIT4_4
+FSMC_PMEM4_MEMWAIT4_5
+FSMC_PMEM4_MEMWAIT4_6
+FSMC_PMEM4_MEMWAIT4_7
+FSMC_R_BASE
+FSMC_SR2_FEMPT
+FSMC_SR2_IFEN
+FSMC_SR2_IFS
+FSMC_SR2_ILEN
+FSMC_SR2_ILS
+FSMC_SR2_IREN
+FSMC_SR2_IRS
+FSMC_SR3_FEMPT
+FSMC_SR3_IFEN
+FSMC_SR3_IFS
+FSMC_SR3_ILEN
+FSMC_SR3_ILS
+FSMC_SR3_IREN
+FSMC_SR3_IRS
+FSMC_SR4_FEMPT
+FSMC_SR4_IFEN
+FSMC_SR4_IFS
+FSMC_SR4_ILEN
+FSMC_SR4_ILS
+FSMC_SR4_IREN
+FSMC_SR4_IRS
+FSMC_Waitfeature_Disable
+FSMC_Waitfeature_Enable
+FSMC_WaitSignalActive_BeforeWaitState
+FSMC_WaitSignalActive_DuringWaitState
+FSMC_WaitSignal_Disable
+FSMC_WaitSignal_Enable
+FSMC_WaitSignalPolarity_High
+FSMC_WaitSignalPolarity_Low
+FSMC_WrapMode_Disable
+FSMC_WrapMode_Enable
+FSMC_WriteBurst_Disable
+FSMC_WriteBurst_Enable
+FSMC_WriteOperation_Disable
+FSMC_WriteOperation_Enable
+GPIOA_BASE            (AHB1PERIPH_BASE + 0x0000)
+GPIO_AF_CAN1
+GPIO_AF_CAN2
+GPIO_AF_DCMI
+GPIO_AF_ETH
+GPIO_AF_EVENTOUT
+GPIO_AF_FSMC
+GPIO_AF_I2C1
+GPIO_AF_I2C2
+GPIO_AF_I2C3
+GPIO_AF_I2S3ext
+GPIO_AF_MCO
+GPIO_AF_OTG1_FS
+GPIO_AF_OTG2_FS
+GPIO_AF_OTG2_HS
+GPIO_AF_OTG_FS
+GPIO_AF_OTG_HS
+GPIO_AF_OTG_HS_FS
+GPIO_AF_RTC_50Hz
+GPIO_AF_SDIO
+GPIO_AF_SPI1
+GPIO_AF_SPI2
+GPIO_AF_SPI3
+GPIO_AF_SWJ
+GPIO_AF_TAMPER
+GPIO_AF_TIM1
+GPIO_AF_TIM10
+GPIO_AF_TIM11
+GPIO_AF_TIM12
+GPIO_AF_TIM13
+GPIO_AF_TIM14
+GPIO_AF_TIM2
+GPIO_AF_TIM3
+GPIO_AF_TIM4
+GPIO_AF_TIM5
+GPIO_AF_TIM8
+GPIO_AF_TIM9
+GPIO_AF_TRACE
+GPIO_AF_UART4
+GPIO_AF_UART5
+GPIO_AF_USART1
+GPIO_AF_USART2
+GPIO_AF_USART3
+GPIO_AF_USART6
+GPIOA               ((GPIO_TypeDef *)
+GPIOB_BASE            (AHB1PERIPH_BASE + 0x0400)
+GPIOB               ((GPIO_TypeDef *)
+GPIO_BSRR_BR_0
+GPIO_BSRR_BR_1
+GPIO_BSRR_BR_10
+GPIO_BSRR_BR_11
+GPIO_BSRR_BR_12
+GPIO_BSRR_BR_13
+GPIO_BSRR_BR_14
+GPIO_BSRR_BR_15
+GPIO_BSRR_BR_2
+GPIO_BSRR_BR_3
+GPIO_BSRR_BR_4
+GPIO_BSRR_BR_5
+GPIO_BSRR_BR_6
+GPIO_BSRR_BR_7
+GPIO_BSRR_BR_8
+GPIO_BSRR_BR_9
+GPIO_BSRR_BS_0
+GPIO_BSRR_BS_1
+GPIO_BSRR_BS_10
+GPIO_BSRR_BS_11
+GPIO_BSRR_BS_12
+GPIO_BSRR_BS_13
+GPIO_BSRR_BS_14
+GPIO_BSRR_BS_15
+GPIO_BSRR_BS_2
+GPIO_BSRR_BS_3
+GPIO_BSRR_BS_4
+GPIO_BSRR_BS_5
+GPIO_BSRR_BS_6
+GPIO_BSRR_BS_7
+GPIO_BSRR_BS_8
+GPIO_BSRR_BS_9
+GPIOC_BASE            (AHB1PERIPH_BASE + 0x0800)
+GPIOC               ((GPIO_TypeDef *)
+GPIOD_BASE            (AHB1PERIPH_BASE + 0x0C00)
+GPIO_DeInit(GPIO_TypeDef* GPIOx);
+GPIOD               ((GPIO_TypeDef *)
+GPIOE_BASE            (AHB1PERIPH_BASE + 0x1000)
+GPIOE               ((GPIO_TypeDef *)
+GPIOF_BASE            (AHB1PERIPH_BASE + 0x1400)
+GPIOF               ((GPIO_TypeDef *)
+GPIOG_BASE            (AHB1PERIPH_BASE + 0x1800)
+GPIOG               ((GPIO_TypeDef *)
+GPIOH_BASE            (AHB1PERIPH_BASE + 0x1C00)
+GPIOH               ((GPIO_TypeDef *)
+GPIOI_BASE            (AHB1PERIPH_BASE + 0x2000)
+GPIO_IDR_IDR_0
+GPIO_IDR_IDR_1
+GPIO_IDR_IDR_10
+GPIO_IDR_IDR_11
+GPIO_IDR_IDR_12
+GPIO_IDR_IDR_13
+GPIO_IDR_IDR_14
+GPIO_IDR_IDR_15
+GPIO_IDR_IDR_2
+GPIO_IDR_IDR_3
+GPIO_IDR_IDR_4
+GPIO_IDR_IDR_5
+GPIO_IDR_IDR_6
+GPIO_IDR_IDR_7
+GPIO_IDR_IDR_8
+GPIO_IDR_IDR_9
+GPIOI               ((GPIO_TypeDef *)
+GPIO_Init(GPIO_TypeDef* GPIOx, GPIO_InitTypeDef* GPIO_InitStruct);
+GPIO_Mode_AIN
+GPIO_MODER_MODER0
+GPIO_MODER_MODER0_0
+GPIO_MODER_MODER0_1
+GPIO_MODER_MODER1
+GPIO_MODER_MODER10
+GPIO_MODER_MODER1_0
+GPIO_MODER_MODER10_0
+GPIO_MODER_MODER10_1
+GPIO_MODER_MODER11
+GPIO_MODER_MODER1_1
+GPIO_MODER_MODER11_0
+GPIO_MODER_MODER11_1
+GPIO_MODER_MODER12
+GPIO_MODER_MODER12_0
+GPIO_MODER_MODER12_1
+GPIO_MODER_MODER13
+GPIO_MODER_MODER13_0
+GPIO_MODER_MODER13_1
+GPIO_MODER_MODER14
+GPIO_MODER_MODER14_0
+GPIO_MODER_MODER14_1
+GPIO_MODER_MODER15
+GPIO_MODER_MODER15_0
+GPIO_MODER_MODER15_1
+GPIO_MODER_MODER2
+GPIO_MODER_MODER2_0
+GPIO_MODER_MODER2_1
+GPIO_MODER_MODER3
+GPIO_MODER_MODER3_0
+GPIO_MODER_MODER3_1
+GPIO_MODER_MODER4
+GPIO_MODER_MODER4_0
+GPIO_MODER_MODER4_1
+GPIO_MODER_MODER5
+GPIO_MODER_MODER5_0
+GPIO_MODER_MODER5_1
+GPIO_MODER_MODER6
+GPIO_MODER_MODER6_0
+GPIO_MODER_MODER6_1
+GPIO_MODER_MODER7
+GPIO_MODER_MODER7_0
+GPIO_MODER_MODER7_1
+GPIO_MODER_MODER8
+GPIO_MODER_MODER8_0
+GPIO_MODER_MODER8_1
+GPIO_MODER_MODER9
+GPIO_MODER_MODER9_0
+GPIO_MODER_MODER9_1
+GPIO_ODR_ODR_0
+GPIO_ODR_ODR_1
+GPIO_ODR_ODR_10
+GPIO_ODR_ODR_11
+GPIO_ODR_ODR_12
+GPIO_ODR_ODR_13
+GPIO_ODR_ODR_14
+GPIO_ODR_ODR_15
+GPIO_ODR_ODR_2
+GPIO_ODR_ODR_3
+GPIO_ODR_ODR_4
+GPIO_ODR_ODR_5
+GPIO_ODR_ODR_6
+GPIO_ODR_ODR_7
+GPIO_ODR_ODR_8
+GPIO_ODR_ODR_9
+GPIO_OSPEEDER_OSPEEDR0
+GPIO_OSPEEDER_OSPEEDR0_0
+GPIO_OSPEEDER_OSPEEDR0_1
+GPIO_OSPEEDER_OSPEEDR1
+GPIO_OSPEEDER_OSPEEDR10
+GPIO_OSPEEDER_OSPEEDR1_0
+GPIO_OSPEEDER_OSPEEDR10_0
+GPIO_OSPEEDER_OSPEEDR10_1
+GPIO_OSPEEDER_OSPEEDR11
+GPIO_OSPEEDER_OSPEEDR1_1
+GPIO_OSPEEDER_OSPEEDR11_0
+GPIO_OSPEEDER_OSPEEDR11_1
+GPIO_OSPEEDER_OSPEEDR12
+GPIO_OSPEEDER_OSPEEDR12_0
+GPIO_OSPEEDER_OSPEEDR12_1
+GPIO_OSPEEDER_OSPEEDR13
+GPIO_OSPEEDER_OSPEEDR13_0
+GPIO_OSPEEDER_OSPEEDR13_1
+GPIO_OSPEEDER_OSPEEDR14
+GPIO_OSPEEDER_OSPEEDR14_0
+GPIO_OSPEEDER_OSPEEDR14_1
+GPIO_OSPEEDER_OSPEEDR15
+GPIO_OSPEEDER_OSPEEDR15_0
+GPIO_OSPEEDER_OSPEEDR15_1
+GPIO_OSPEEDER_OSPEEDR2
+GPIO_OSPEEDER_OSPEEDR2_0
+GPIO_OSPEEDER_OSPEEDR2_1
+GPIO_OSPEEDER_OSPEEDR3
+GPIO_OSPEEDER_OSPEEDR3_0
+GPIO_OSPEEDER_OSPEEDR3_1
+GPIO_OSPEEDER_OSPEEDR4
+GPIO_OSPEEDER_OSPEEDR4_0
+GPIO_OSPEEDER_OSPEEDR4_1
+GPIO_OSPEEDER_OSPEEDR5
+GPIO_OSPEEDER_OSPEEDR5_0
+GPIO_OSPEEDER_OSPEEDR5_1
+GPIO_OSPEEDER_OSPEEDR6
+GPIO_OSPEEDER_OSPEEDR6_0
+GPIO_OSPEEDER_OSPEEDR6_1
+GPIO_OSPEEDER_OSPEEDR7
+GPIO_OSPEEDER_OSPEEDR7_0
+GPIO_OSPEEDER_OSPEEDR7_1
+GPIO_OSPEEDER_OSPEEDR8
+GPIO_OSPEEDER_OSPEEDR8_0
+GPIO_OSPEEDER_OSPEEDR8_1
+GPIO_OSPEEDER_OSPEEDR9
+GPIO_OSPEEDER_OSPEEDR9_0
+GPIO_OSPEEDER_OSPEEDR9_1
+GPIO_OTYPER_IDR_0
+GPIO_OTYPER_IDR_1
+GPIO_OTYPER_IDR_10
+GPIO_OTYPER_IDR_11
+GPIO_OTYPER_IDR_12
+GPIO_OTYPER_IDR_13
+GPIO_OTYPER_IDR_14
+GPIO_OTYPER_IDR_15
+GPIO_OTYPER_IDR_2
+GPIO_OTYPER_IDR_3
+GPIO_OTYPER_IDR_4
+GPIO_OTYPER_IDR_5
+GPIO_OTYPER_IDR_6
+GPIO_OTYPER_IDR_7
+GPIO_OTYPER_IDR_8
+GPIO_OTYPER_IDR_9
+GPIO_OTYPER_ODR_0
+GPIO_OTYPER_ODR_1
+GPIO_OTYPER_ODR_10
+GPIO_OTYPER_ODR_11
+GPIO_OTYPER_ODR_12
+GPIO_OTYPER_ODR_13
+GPIO_OTYPER_ODR_14
+GPIO_OTYPER_ODR_15
+GPIO_OTYPER_ODR_2
+GPIO_OTYPER_ODR_3
+GPIO_OTYPER_ODR_4
+GPIO_OTYPER_ODR_5
+GPIO_OTYPER_ODR_6
+GPIO_OTYPER_ODR_7
+GPIO_OTYPER_ODR_8
+GPIO_OTYPER_ODR_9
+GPIO_OTYPER_OT_0
+GPIO_OTYPER_OT_1
+GPIO_OTYPER_OT_10
+GPIO_OTYPER_OT_11
+GPIO_OTYPER_OT_12
+GPIO_OTYPER_OT_13
+GPIO_OTYPER_OT_14
+GPIO_OTYPER_OT_15
+GPIO_OTYPER_OT_2
+GPIO_OTYPER_OT_3
+GPIO_OTYPER_OT_4
+GPIO_OTYPER_OT_5
+GPIO_OTYPER_OT_6
+GPIO_OTYPER_OT_7
+GPIO_OTYPER_OT_8
+GPIO_OTYPER_OT_9
+GPIO_Pin_0
+GPIO_Pin_1
+GPIO_Pin_10
+GPIO_Pin_11
+GPIO_Pin_12
+GPIO_Pin_13
+GPIO_Pin_14
+GPIO_Pin_15
+GPIO_Pin_2
+GPIO_Pin_3
+GPIO_Pin_4
+GPIO_Pin_5
+GPIO_Pin_6
+GPIO_Pin_7
+GPIO_Pin_8
+GPIO_Pin_9
+GPIO_PinAFConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource, uint8_t GPIO_AF);
+GPIO_Pin_All
+GPIO_PinLockConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+GPIO_PinSource0
+GPIO_PinSource1
+GPIO_PinSource10
+GPIO_PinSource11
+GPIO_PinSource12
+GPIO_PinSource13
+GPIO_PinSource14
+GPIO_PinSource15
+GPIO_PinSource2
+GPIO_PinSource3
+GPIO_PinSource4
+GPIO_PinSource5
+GPIO_PinSource6
+GPIO_PinSource7
+GPIO_PinSource8
+GPIO_PinSource9
+GPIO_PUPDR_PUPDR0
+GPIO_PUPDR_PUPDR0_0
+GPIO_PUPDR_PUPDR0_1
+GPIO_PUPDR_PUPDR1
+GPIO_PUPDR_PUPDR10
+GPIO_PUPDR_PUPDR1_0
+GPIO_PUPDR_PUPDR10_0
+GPIO_PUPDR_PUPDR10_1
+GPIO_PUPDR_PUPDR11
+GPIO_PUPDR_PUPDR1_1
+GPIO_PUPDR_PUPDR11_0
+GPIO_PUPDR_PUPDR11_1
+GPIO_PUPDR_PUPDR12
+GPIO_PUPDR_PUPDR12_0
+GPIO_PUPDR_PUPDR12_1
+GPIO_PUPDR_PUPDR13
+GPIO_PUPDR_PUPDR13_0
+GPIO_PUPDR_PUPDR13_1
+GPIO_PUPDR_PUPDR14
+GPIO_PUPDR_PUPDR14_0
+GPIO_PUPDR_PUPDR14_1
+GPIO_PUPDR_PUPDR15
+GPIO_PUPDR_PUPDR15_0
+GPIO_PUPDR_PUPDR15_1
+GPIO_PUPDR_PUPDR2
+GPIO_PUPDR_PUPDR2_0
+GPIO_PUPDR_PUPDR2_1
+GPIO_PUPDR_PUPDR3
+GPIO_PUPDR_PUPDR3_0
+GPIO_PUPDR_PUPDR3_1
+GPIO_PUPDR_PUPDR4
+GPIO_PUPDR_PUPDR4_0
+GPIO_PUPDR_PUPDR4_1
+GPIO_PUPDR_PUPDR5
+GPIO_PUPDR_PUPDR5_0
+GPIO_PUPDR_PUPDR5_1
+GPIO_PUPDR_PUPDR6
+GPIO_PUPDR_PUPDR6_0
+GPIO_PUPDR_PUPDR6_1
+GPIO_PUPDR_PUPDR7
+GPIO_PUPDR_PUPDR7_0
+GPIO_PUPDR_PUPDR7_1
+GPIO_PUPDR_PUPDR8
+GPIO_PUPDR_PUPDR8_0
+GPIO_PUPDR_PUPDR8_1
+GPIO_PUPDR_PUPDR9
+GPIO_PUPDR_PUPDR9_0
+GPIO_PUPDR_PUPDR9_1
+GPIO_ReadInputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+GPIO_ReadInputData(GPIO_TypeDef* GPIOx);
+GPIO_ReadOutputDataBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+GPIO_ReadOutputData(GPIO_TypeDef* GPIOx);
+GPIO_ResetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+GPIO_SetBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+GPIO_StructInit(GPIO_InitTypeDef* GPIO_InitStruct);
+GPIO_ToggleBits(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+GPIO_WriteBit(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, BitAction BitVal);
+GPIO_Write(GPIO_TypeDef* GPIOx, uint16_t PortVal);
+HASH_AlgoMode_HASH
+HASH_AlgoMode_HMAC
+HASH_AlgoSelection_MD5
+HASH_AlgoSelection_SHA1
+HASH_BASE             (AHB2PERIPH_BASE + 0x60400)
+HASH_ClearFlag(uint16_t HASH_FLAG);
+HASH_ClearITPendingBit(uint8_t HASH_IT);
+HASH_CR_ALGO
+HASH_CR_DATATYPE
+HASH_CR_DATATYPE_0
+HASH_CR_DATATYPE_1
+HASH_CR_DINNE
+HASH_CR_DMAE
+HASH_CR_INIT
+HASH_CR_LKEY
+HASH_CR_MODE
+HASH_CR_NBW
+HASH_CR_NBW_0
+HASH_CR_NBW_1
+HASH_CR_NBW_2
+HASH_CR_NBW_3
+HASH_DataIn(uint32_t Data);
+HASH_DataType_16b
+HASH_DataType_1b
+HASH_DataType_32b
+HASH_DataType_8b
+HASH_DeInit(void);
+HASH_DMACmd(FunctionalState NewState);
+HASH_FLAG_BUSY
+HASH_FLAG_DCIS
+HASH_FLAG_DINIS
+HASH_FLAG_DINNE
+HASH_FLAG_DMAS
+HASH_GetDigest(HASH_MsgDigest* HASH_MessageDigest);
+HASH_GetFlagStatus(uint16_t HASH_FLAG);
+HASH_GetInFIFOWordsNbr(void);
+HASH_GetITStatus(uint8_t HASH_IT);
+HASH                ((HASH_TypeDef *)
+HASH_HMACKeyType_LongKey
+HASH_HMACKeyType_ShortKey
+HASH_IMR_DCIM
+HASH_IMR_DINIM
+HASH_Init(HASH_InitTypeDef* HASH_InitStruct);
+HASH_ITConfig(uint8_t HASH_IT, FunctionalState NewState);
+HASH_IT_DCI
+HASH_IT_DINI
+HASH_MD5(uint8_t *Input, uint32_t Ilen, uint8_t Output[16]);
+HASH_Reset(void);
+HASH_RestoreContext(HASH_Context* HASH_ContextRestore);
+HASH_SaveContext(HASH_Context* HASH_ContextSave);
+HASH_SetLastWordValidBitsNbr(uint16_t ValidNumber);
+HASH_SHA1(uint8_t *Input, uint32_t Ilen, uint8_t Output[20]);
+HASH_SR_BUSY
+HASH_SR_DCIS
+HASH_SR_DINIS
+HASH_SR_DMAS
+HASH_StartDigest(void);
+HASH_STR_DCAL
+HASH_STR_NBW
+HASH_STR_NBW_0
+HASH_STR_NBW_1
+HASH_STR_NBW_2
+HASH_STR_NBW_3
+HASH_STR_NBW_4
+HASH_StructInit(HASH_InitTypeDef* HASH_InitStruct);
+HMAC_MD5(uint8_t *Key, uint32_t Keylen,
+HMAC_SHA1(uint8_t *Key, uint32_t Keylen,
+HSE_STARTUP_TIMEOUT
+HSE_VALUE
+HSI_VALUE
+HTONS(A)
+I2C1_BASE             (APB1PERIPH_BASE + 0x5400)
+I2C1                ((I2C_TypeDef *)
+I2C2_BASE             (APB1PERIPH_BASE + 0x5800)
+I2C2                ((I2C_TypeDef *)
+I2C3_BASE             (APB1PERIPH_BASE + 0x5C00)
+I2C3                ((I2C_TypeDef *)
+I2C_Ack_Disable
+I2C_Ack_Enable
+I2C_AcknowledgeConfig(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_AcknowledgedAddress_10bit
+I2C_AcknowledgedAddress_7bit
+I2C_ARPCmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_CalculatePEC(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_CCR_CCR
+I2C_CCR_DUTY
+I2C_CCR_FS
+I2C_CheckEvent(I2C_TypeDef* I2Cx, uint32_t I2C_EVENT);
+I2C_ClearFlag(I2C_TypeDef* I2Cx, uint32_t I2C_FLAG);
+I2C_ClearITPendingBit(I2C_TypeDef* I2Cx, uint32_t I2C_IT);
+I2C_Cmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_CR1_ACK
+I2C_CR1_ALERT
+I2C_CR1_ENARP
+I2C_CR1_ENGC
+I2C_CR1_ENPEC
+I2C_CR1_NOSTRETCH
+I2C_CR1_PE
+I2C_CR1_PEC
+I2C_CR1_POS
+I2C_CR1_SMBTYPE
+I2C_CR1_SMBUS
+I2C_CR1_START
+I2C_CR1_STOP
+I2C_CR1_SWRST
+I2C_CR2_DMAEN
+I2C_CR2_FREQ
+I2C_CR2_FREQ_0
+I2C_CR2_FREQ_1
+I2C_CR2_FREQ_2
+I2C_CR2_FREQ_3
+I2C_CR2_FREQ_4
+I2C_CR2_FREQ_5
+I2C_CR2_ITBUFEN
+I2C_CR2_ITERREN
+I2C_CR2_ITEVTEN
+I2C_CR2_LAST
+I2C_DeInit(I2C_TypeDef* I2Cx);
+I2C_Direction_Receiver
+I2C_Direction_Transmitter
+I2C_DMACmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_DMALastTransferCmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_DR_DR
+I2C_DualAddressCmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_DutyCycle_16_9
+I2C_DutyCycle_2
+I2C_EVENT_MASTER_BYTE_RECEIVED
+I2C_EVENT_MASTER_BYTE_TRANSMITTED
+I2C_EVENT_MASTER_BYTE_TRANSMITTING
+I2C_EVENT_MASTER_MODE_ADDRESS10
+I2C_EVENT_MASTER_MODE_SELECT
+I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED
+I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED
+I2C_EVENT_SLAVE_ACK_FAILURE
+I2C_EVENT_SLAVE_BYTE_RECEIVED
+I2C_EVENT_SLAVE_BYTE_TRANSMITTED
+I2C_EVENT_SLAVE_BYTE_TRANSMITTING
+I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED
+I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED
+I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED
+I2C_EVENT_SLAVE_STOP_DETECTED
+I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED
+I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED
+I2C_FastModeDutyCycleConfig(I2C_TypeDef* I2Cx, uint16_t I2C_DutyCycle);
+I2C_FLAG_ADD10
+I2C_FLAG_ADDR
+I2C_FLAG_AF
+I2C_FLAG_ARLO
+I2C_FLAG_BERR
+I2C_FLAG_BTF
+I2C_FLAG_BUSY
+I2C_FLAG_DUALF
+I2C_FLAG_GENCALL
+I2C_FLAG_MSL
+I2C_FLAG_OVR
+I2C_FLAG_PECERR
+I2C_FLAG_RXNE
+I2C_FLAG_SB
+I2C_FLAG_SMBALERT
+I2C_FLAG_SMBDEFAULT
+I2C_FLAG_SMBHOST
+I2C_FLAG_STOPF
+I2C_FLAG_TIMEOUT
+I2C_FLAG_TRA
+I2C_FLAG_TXE
+I2C_GeneralCallCmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_GenerateSTART(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_GenerateSTOP(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_GetFlagStatus(I2C_TypeDef* I2Cx, uint32_t I2C_FLAG);
+I2C_GetITStatus(I2C_TypeDef* I2Cx, uint32_t I2C_IT);
+I2C_GetLastEvent(I2C_TypeDef* I2Cx);
+I2C_GetPEC(I2C_TypeDef* I2Cx);
+I2C_Init(I2C_TypeDef* I2Cx, I2C_InitTypeDef* I2C_InitStruct);
+I2C_IT_ADD10
+I2C_IT_ADDR
+I2C_IT_AF
+I2C_IT_ARLO
+I2C_IT_BERR
+I2C_IT_BTF
+I2C_IT_BUF
+I2C_ITConfig(I2C_TypeDef* I2Cx, uint16_t I2C_IT, FunctionalState NewState);
+I2C_IT_ERR
+I2C_IT_EVT
+I2C_IT_OVR
+I2C_IT_PECERR
+I2C_IT_RXNE
+I2C_IT_SB
+I2C_IT_SMBALERT
+I2C_IT_STOPF
+I2C_IT_TIMEOUT
+I2C_IT_TXE
+I2C_Mode_I2C
+I2C_Mode_SMBusDevice
+I2C_Mode_SMBusHost
+I2C_NACKPositionConfig(I2C_TypeDef* I2Cx, uint16_t I2C_NACKPosition);
+I2C_NACKPosition_Current
+I2C_NACKPosition_Next
+I2C_OAR1_ADD0
+I2C_OAR1_ADD1
+I2C_OAR1_ADD1_7
+I2C_OAR1_ADD2
+I2C_OAR1_ADD3
+I2C_OAR1_ADD4
+I2C_OAR1_ADD5
+I2C_OAR1_ADD6
+I2C_OAR1_ADD7
+I2C_OAR1_ADD8
+I2C_OAR1_ADD8_9
+I2C_OAR1_ADD9
+I2C_OAR1_ADDMODE
+I2C_OAR2_ADD2
+I2C_OAR2_ENDUAL
+I2C_OwnAddress2Config(I2C_TypeDef* I2Cx, uint8_t Address);
+I2C_PECPositionConfig(I2C_TypeDef* I2Cx, uint16_t I2C_PECPosition);
+I2C_PECPosition_Current
+I2C_PECPosition_Next
+I2C_ReadRegister(I2C_TypeDef* I2Cx, uint8_t I2C_Register);
+I2C_ReceiveData(I2C_TypeDef* I2Cx);
+I2C_Register_CCR
+I2C_Register_CR1
+I2C_Register_CR2
+I2C_Register_DR
+I2C_Register_OAR1
+I2C_Register_OAR2
+I2C_Register_SR1
+I2C_Register_SR2
+I2C_Register_TRISE
+I2C_Send7bitAddress(I2C_TypeDef* I2Cx, uint8_t Address, uint8_t I2C_Direction);
+I2C_SendData(I2C_TypeDef* I2Cx, uint8_t Data);
+I2C_SMBusAlertConfig(I2C_TypeDef* I2Cx, uint16_t I2C_SMBusAlert);
+I2C_SMBusAlert_High
+I2C_SMBusAlert_Low
+I2C_SoftwareResetCmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_SR1_ADD10
+I2C_SR1_ADDR
+I2C_SR1_AF
+I2C_SR1_ARLO
+I2C_SR1_BERR
+I2C_SR1_BTF
+I2C_SR1_OVR
+I2C_SR1_PECERR
+I2C_SR1_RXNE
+I2C_SR1_SB
+I2C_SR1_SMBALERT
+I2C_SR1_STOPF
+I2C_SR1_TIMEOUT
+I2C_SR1_TXE
+I2C_SR2_BUSY
+I2C_SR2_DUALF
+I2C_SR2_GENCALL
+I2C_SR2_MSL
+I2C_SR2_PEC
+I2C_SR2_SMBDEFAULT
+I2C_SR2_SMBHOST
+I2C_SR2_TRA
+I2C_StretchClockCmd(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_StructInit(I2C_InitTypeDef* I2C_InitStruct);
+I2C_TransmitPEC(I2C_TypeDef* I2Cx, FunctionalState NewState);
+I2C_TRISE_TRISE
+I2S2ext_BASE          (APB1PERIPH_BASE + 0x3400)
+I2S2ext             ((SPI_TypeDef *)
+I2S3ext_BASE          (APB1PERIPH_BASE + 0x4000)
+I2S3ext             ((SPI_TypeDef *)
+I2S_AudioFreq_11k
+I2S_AudioFreq_16k
+I2S_AudioFreq_192k
+I2S_AudioFreq_22k
+I2S_AudioFreq_32k
+I2S_AudioFreq_44k
+I2S_AudioFreq_48k
+I2S_AudioFreq_8k
+I2S_AudioFreq_96k
+I2S_AudioFreq_Default
+I2S_Cmd(SPI_TypeDef* SPIx, FunctionalState NewState);
+I2S_CPOL_High
+I2S_CPOL_Low
+I2S_DataFormat_16b
+I2S_DataFormat_16bextended
+I2S_DataFormat_24b
+I2S_DataFormat_32b
+I2S_EXTERNAL_CLOCK_VAL
+I2S_FLAG_CHSIDE
+I2S_FLAG_UDR
+I2S_FullDuplexConfig(SPI_TypeDef* I2Sxext, I2S_InitTypeDef* I2S_InitStruct);
+I2S_Init(SPI_TypeDef* SPIx, I2S_InitTypeDef* I2S_InitStruct);
+I2S_IT_UDR
+I2S_MCLKOutput_Disable
+I2S_MCLKOutput_Enable
+I2S_Mode_MasterRx
+I2S_Mode_MasterTx
+I2S_Mode_SlaveRx
+I2S_Mode_SlaveTx
+I2S_Standard_LSB
+I2S_Standard_MSB
+I2S_Standard_PCMLong
+I2S_Standard_PCMShort
+I2S_Standard_Phillips
+I2S_StructInit(I2S_InitTypeDef* I2S_InitStruct);
+IS_ADC_ALL_PERIPH(PERIPH)
+IS_ADC_ANALOG_WATCHDOG(WATCHDOG)
+IS_ADC_CHANNEL(CHANNEL)
+IS_ADC_CLEAR_FLAG(FLAG)
+IS_ADC_DATA_ALIGN(ALIGN)
+IS_ADC_DMA_ACCESS_MODE(MODE)
+IS_ADC_EXT_INJEC_TRIG_EDGE(EDGE)
+IS_ADC_EXT_INJEC_TRIG(INJTRIG)
+IS_ADC_EXT_TRIG_EDGE(EDGE)
+IS_ADC_EXT_TRIG(REGTRIG)
+IS_ADC_GET_FLAG(FLAG)
+IS_ADC_INJECTED_CHANNEL(CHANNEL)
+IS_ADC_INJECTED_LENGTH(LENGTH)
+IS_ADC_INJECTED_RANK(RANK)
+IS_ADC_IT(IT)
+IS_ADC_MODE(MODE)
+IS_ADC_OFFSET(OFFSET)
+IS_ADC_PRESCALER(PRESCALER)
+IS_ADC_REGULAR_DISC_NUMBER(NUMBER)
+IS_ADC_REGULAR_LENGTH(LENGTH)
+IS_ADC_REGULAR_RANK(RANK)
+IS_ADC_RESOLUTION(RESOLUTION)
+IS_ADC_SAMPLE_TIME(TIME)
+IS_ADC_SAMPLING_DELAY(DELAY)
+IS_ADC_THRESHOLD(THRESHOLD)
+IS_ALARM_MASK(MASK)
+IS_CAN_ALL_PERIPH(PERIPH)
+IS_CAN_BANKNUMBER(BANKNUMBER)
+IS_CAN_BS1(BS1)
+IS_CAN_BS2(BS2)
+IS_CAN_CLEAR_IT(IT)
+IS_CAN_DLC(DLC)
+IS_CAN_EXTID(EXTID)
+IS_CAN_FIFO(FIFO)
+IS_CAN_FILTER_FIFO(FIFO)
+IS_CAN_FILTER_MODE(MODE)
+IS_CAN_FILTER_NUMBER(NUMBER)
+IS_CAN_FILTER_SCALE(SCALE)
+IS_CAN_GET_FLAG(FLAG)
+IS_CAN_IDTYPE(IDTYPE)
+IS_CAN_IT(IT)
+IS_CAN_MODE(MODE)
+IS_CAN_OPERATING_MODE(MODE)
+IS_CAN_PRESCALER(PRESCALER)
+IS_CAN_RTR(RTR)
+IS_CAN_SJW(SJW)
+IS_CAN_STDID(STDID)
+IS_CAN_TRANSMITMAILBOX(TRANSMITMAILBOX)
+IS_CRYP_ALGODIR(ALGODIR)
+IS_CRYP_ALGOMODE(ALGOMODE)
+IS_CRYP_CONFIG_IT(IT)
+IS_CRYP_DATATYPE(DATATYPE)
+IS_CRYP_DMAREQ(DMAREQ)
+IS_CRYP_GET_FLAG(FLAG)
+IS_CRYP_GET_IT(IT)
+IS_CRYP_KEYSIZE(KEYSIZE)
+IS_DAC_ALIGN(ALIGN)
+IS_DAC_CHANNEL(CHANNEL)
+IS_DAC_DATA(DATA)
+IS_DAC_FLAG(FLAG)
+IS_DAC_GENERATE_WAVE(WAVE)
+IS_DAC_IT(IT)
+IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE(VALUE)
+IS_DAC_OUTPUT_BUFFER_STATE(STATE)
+IS_DAC_TRIGGER(TRIGGER)
+IS_DAC_WAVE(WAVE)
+IS_DBGMCU_APB1PERIPH(PERIPH)
+IS_DBGMCU_APB2PERIPH(PERIPH)
+IS_DBGMCU_PERIPH(PERIPH)
+IS_DCMI_CAPTURE_RATE(RATE)
+IS_DCMI_CLEAR_FLAG(FLAG)
+IS_DCMI_CONFIG_IT(IT)
+IS_DCMI_GET_FLAG(FLAG)
+IS_DCMI_GET_IT(IT)
+IS_DMA_ALL_CONTROLLER(CONTROLLER)
+IS_DMA_ALL_PERIPH(PERIPH)
+IS_DMA_BUFFER_SIZE(SIZE)
+IS_DMA_CHANNEL(CHANNEL)
+IS_DMA_CLEAR_FLAG(FLAG)
+IS_DMA_CLEAR_IT(IT)
+IS_DMA_CONFIG_IT(IT)
+IS_DMA_CURRENT_MEM(MEM)
+IS_DMA_DIRECTION(DIRECTION)
+IS_DMA_FIFO_MODE_STATE(STATE)
+IS_DMA_FIFO_STATUS(STATUS)
+IS_DMA_FIFO_THRESHOLD(THRESHOLD)
+IS_DMA_FLOW_CTRL(CTRL)
+IS_DMA_GET_FLAG(FLAG)
+IS_DMA_GET_IT(IT)
+IS_DMA_MEMORY_BURST(BURST)
+IS_DMA_MEMORY_DATA_SIZE(SIZE)
+IS_DMA_MEMORY_INC_STATE(STATE)
+IS_DMA_MODE(MODE)
+IS_DMA_PERIPHERAL_BURST(BURST)
+IS_DMA_PERIPHERAL_DATA_SIZE(SIZE)
+IS_DMA_PERIPHERAL_INC_STATE(STATE)
+IS_DMA_PINCOS_SIZE(SIZE)
+IS_DMA_PRIORITY(PRIORITY)
+IS_EXTI_LINE(LINE)
+IS_EXTI_MODE(MODE)
+IS_EXTI_PIN_SOURCE(PINSOURCE)
+IS_EXTI_PORT_SOURCE(PORTSOURCE)
+IS_EXTI_TRIGGER(TRIGGER)
+IS_FLASH_ADDRESS(ADDRESS)
+IS_FLASH_CLEAR_FLAG(FLAG)
+IS_FLASH_GET_FLAG(FLAG)
+IS_FLASH_IT(IT)
+IS_FLASH_LATENCY(LATENCY)
+IS_FLASH_SECTOR(SECTOR)
+IS_FSMC_ACCESS_MODE(MODE)
+IS_FSMC_ADDRESS_HOLD_TIME(TIME)
+IS_FSMC_ADDRESS_SETUP_TIME(TIME)
+IS_FSMC_ASYNWAIT(STATE)
+IS_FSMC_BURSTMODE(STATE)
+IS_FSMC_CLEAR_FLAG(FLAG)
+IS_FSMC_CLK_DIV(DIV)
+IS_FSMC_DATA_LATENCY(LATENCY)
+IS_FSMC_DATASETUP_TIME(TIME)
+IS_FSMC_ECCPAGE_SIZE(SIZE)
+IS_FSMC_ECC_STATE(STATE)
+IS_FSMC_EXTENDED_MODE(MODE)
+IS_FSMC_GETFLAG_BANK(BANK)
+IS_FSMC_GET_FLAG(FLAG)
+IS_FSMC_GET_IT(IT)
+IS_FSMC_HIZ_TIME(TIME)
+IS_FSMC_HOLD_TIME(TIME)
+IS_FSMC_IT_BANK(BANK)
+IS_FSMC_IT(IT)
+IS_FSMC_MEMORY(MEMORY)
+IS_FSMC_MEMORY_WIDTH(WIDTH)
+IS_FSMC_MUX(MUX)
+IS_FSMC_NAND_BANK(BANK)
+IS_FSMC_NORSRAM_BANK(BANK)
+IS_FSMC_SETUP_TIME(TIME)
+IS_FSMC_TAR_TIME(TIME)
+IS_FSMC_TCLR_TIME(TIME)
+IS_FSMC_TURNAROUND_TIME(TIME)
+IS_FSMC_WAITE_SIGNAL(SIGNAL)
+IS_FSMC_WAIT_FEATURE(FEATURE)
+IS_FSMC_WAIT_POLARITY(POLARITY)
+IS_FSMC_WAIT_SIGNAL_ACTIVE(ACTIVE)
+IS_FSMC_WAIT_TIME(TIME)
+IS_FSMC_WRAP_MODE(MODE)
+IS_FSMC_WRITE_BURST(BURST)
+IS_FSMC_WRITE_OPERATION(OPERATION)
+IS_FUNCTIONAL_STATE(STATE)
+IS_GET_EXTI_LINE(LINE)
+IS_GET_GPIO_PIN(PIN)
+IS_GPIO_AF(AF)
+IS_GPIO_ALL_PERIPH(PERIPH)
+IS_GPIO_BIT_ACTION(ACTION)
+IS_GPIO_MODE(MODE)
+IS_GPIO_OTYPE(OTYPE)
+IS_GPIO_PIN(PIN)
+IS_GPIO_PIN_SOURCE(PINSOURCE)
+IS_GPIO_PUPD(PUPD)
+IS_GPIO_SPEED(SPEED)
+IS_HASH_ALGOMODE(ALGOMODE)
+IS_HASH_ALGOSELECTION(ALGOSELECTION)
+IS_HASH_DATATYPE(DATATYPE)
+IS_HASH_GET_FLAG(FLAG)
+IS_HASH_GET_IT(IT)
+IS_HASH_HMAC_KEYTYPE(KEYTYPE)
+IS_HASH_IT(IT)
+IS_HASH_VALIDBITSNUMBER(VALIDBITS)
+IS_I2C_ACKNOWLEDGE_ADDRESS(ADDRESS)
+IS_I2C_ACK_STATE(STATE)
+IS_I2C_ALL_PERIPH(PERIPH)
+IS_I2C_CLEAR_FLAG(FLAG)
+IS_I2C_CLEAR_IT(IT)
+IS_I2C_CLOCK_SPEED(SPEED)
+IS_I2C_CONFIG_IT(IT)
+IS_I2C_DIRECTION(DIRECTION)
+IS_I2C_DUTY_CYCLE(CYCLE)
+IS_I2C_EVENT(EVENT)
+IS_I2C_GET_FLAG(FLAG)
+IS_I2C_GET_IT(IT)
+IS_I2C_MODE(MODE)
+IS_I2C_NACK_POSITION(POSITION)
+IS_I2C_OWN_ADDRESS1(ADDRESS1)
+IS_I2C_PEC_POSITION(POSITION)
+IS_I2C_REGISTER(REGISTER)
+IS_I2C_SMBUS_ALERT(ALERT)
+IS_I2S_AUDIO_FREQ(FREQ)
+IS_I2S_CPOL(CPOL)
+IS_I2S_DATA_FORMAT(FORMAT)
+IS_I2S_EXT_PERIPH(PERIPH)
+IS_I2S_MCLK_OUTPUT(OUTPUT)
+IS_I2S_MODE(MODE)
+IS_I2S_STANDARD(STANDARD)
+IS_IWDG_FLAG(FLAG)
+IS_IWDG_PRESCALER(PRESCALER)
+IS_IWDG_RELOAD(RELOAD)
+IS_IWDG_WRITE_ACCESS(ACCESS)
+IS_NVIC_LP(LP)
+IS_NVIC_OFFSET(OFFSET)
+IS_NVIC_PREEMPTION_PRIORITY(PRIORITY)
+IS_NVIC_PRIORITY_GROUP(GROUP)
+IS_NVIC_SUB_PRIORITY(PRIORITY)
+IS_NVIC_VECTTAB(VECTTAB)
+IS_OB_BOR(LEVEL)
+IS_OB_IWDG_SOURCE(SOURCE)
+IS_OB_RDP(LEVEL)
+IS_OB_STDBY_SOURCE(SOURCE)
+IS_OB_STOP_SOURCE(SOURCE)
+IS_PWR_CLEAR_FLAG(FLAG)
+IS_PWR_GET_FLAG(FLAG)
+IS_PWR_PVD_LEVEL(LEVEL)
+IS_PWR_REGULATOR(REGULATOR)
+IS_PWR_REGULATOR_VOLTAGE(VOLTAGE)
+IS_PWR_STOP_ENTRY(ENTRY)
+IS_RCC_AHB1_CLOCK_PERIPH(PERIPH)
+IS_RCC_AHB1_LPMODE_PERIPH(PERIPH)
+IS_RCC_AHB1_RESET_PERIPH(PERIPH)
+IS_RCC_AHB2_PERIPH(PERIPH)
+IS_RCC_AHB3_PERIPH(PERIPH)
+IS_RCC_APB1_PERIPH(PERIPH)
+IS_RCC_APB2_PERIPH(PERIPH)
+IS_RCC_APB2_RESET_PERIPH(PERIPH)
+IS_RCC_CALIBRATION_VALUE(VALUE)
+IS_RCC_CLEAR_IT(IT)
+IS_RCC_FLAG(FLAG)
+IS_RCC_GET_IT(IT)
+IS_RCC_HCLK(HCLK)
+IS_RCC_HSE(HSE)
+IS_RCC_I2SCLK_SOURCE(SOURCE)
+IS_RCC_IT(IT)
+IS_RCC_LSE(LSE)
+IS_RCC_MCO1DIV(DIV)
+IS_RCC_MCO1SOURCE(SOURCE)
+IS_RCC_MCO2DIV(DIV)
+IS_RCC_MCO2SOURCE(SOURCE)
+IS_RCC_PCLK(PCLK)
+IS_RCC_PLLI2SN_VALUE(VALUE)
+IS_RCC_PLLI2SR_VALUE(VALUE)
+IS_RCC_PLLM_VALUE(VALUE)
+IS_RCC_PLLN_VALUE(VALUE)
+IS_RCC_PLLP_VALUE(VALUE)
+IS_RCC_PLLQ_VALUE(VALUE)
+IS_RCC_PLL_SOURCE(SOURCE)
+IS_RCC_RTCCLK_SOURCE(SOURCE)
+IS_RCC_SYSCLK_SOURCE(SOURCE)
+IS_RNG_CLEAR_FLAG(RNG_FLAG)
+IS_RNG_GET_FLAG(RNG_FLAG)
+IS_RNG_GET_IT(RNG_IT)
+IS_RNG_IT(IT)
+IS_RTC_ALARM(ALARM)
+IS_RTC_ALARM_DATE_WEEKDAY_DATE(DATE)
+IS_RTC_ALARM_DATE_WEEKDAY_SEL(SEL)
+IS_RTC_ALARM_DATE_WEEKDAY_WEEKDAY(WEEKDAY)
+IS_RTC_ALARM_SUB_SECOND_MASK(MASK)
+IS_RTC_ALARM_SUB_SECOND_VALUE(VALUE)
+IS_RTC_ASYNCH_PREDIV(PREDIV)
+IS_RTC_BKP(BKP)
+IS_RTC_CALIB_OUTPUT(OUTPUT)
+IS_RTC_CALIB_SIGN(SIGN)
+IS_RTC_CALIB_VALUE(VALUE)
+IS_RTC_CLEAR_FLAG(FLAG)
+IS_RTC_CLEAR_IT(IT)
+IS_RTC_CMD_ALARM(ALARM)
+IS_RTC_CONFIG_IT(IT)
+IS_RTC_DATE(DATE)
+IS_RTC_DAYLIGHT_SAVING(SAVE)
+IS_RTC_FORMAT(FORMAT)
+IS_RTC_GET_FLAG(FLAG)
+IS_RTC_GET_IT(IT)
+IS_RTC_H12(PM)
+IS_RTC_HOUR12(HOUR)
+IS_RTC_HOUR24(HOUR)
+IS_RTC_HOUR_FORMAT(FORMAT)
+IS_RTC_MINUTES(MINUTES)
+IS_RTC_MONTH(MONTH)
+IS_RTC_OUTPUT(OUTPUT)
+IS_RTC_OUTPUT_POL(POL)
+IS_RTC_OUTPUT_TYPE(TYPE)
+IS_RTC_SECONDS(SECONDS)
+IS_RTC_SHIFT_ADD1S(SEL)
+IS_RTC_SHIFT_SUBFS(FS)
+IS_RTC_SMOOTH_CALIB_MINUS(VALUE)
+IS_RTC_SMOOTH_CALIB_PERIOD(PERIOD)
+IS_RTC_SMOOTH_CALIB_PLUS(PLUS)
+IS_RTC_STORE_OPERATION(OPERATION)
+IS_RTC_SYNCH_PREDIV(PREDIV)
+IS_RTC_TAMPER_FILTER(FILTER)
+IS_RTC_TAMPER_PIN(PIN)
+IS_RTC_TAMPER_PRECHARGE_DURATION(DURATION)
+IS_RTC_TAMPER_SAMPLING_FREQ(FREQ)
+IS_RTC_TAMPER(TAMPER)
+IS_RTC_TAMPER_TRIGGER(TRIGGER)
+IS_RTC_TIMESTAMP_EDGE(EDGE)
+IS_RTC_TIMESTAMP_PIN(PIN)
+IS_RTC_WAKEUP_CLOCK(CLOCK)
+IS_RTC_WAKEUP_COUNTER(COUNTER)
+IS_RTC_WEEKDAY(WEEKDAY)
+IS_RTC_YEAR(YEAR)
+IS_SDIO_BLOCK_SIZE(SIZE)
+IS_SDIO_BUS_WIDE(WIDE)
+IS_SDIO_CLEAR_FLAG(FLAG)
+IS_SDIO_CLEAR_IT(IT)
+IS_SDIO_CLOCK_BYPASS(BYPASS)
+IS_SDIO_CLOCK_EDGE(EDGE)
+IS_SDIO_CLOCK_POWER_SAVE(SAVE)
+IS_SDIO_CMD_INDEX(INDEX)
+IS_SDIO_CPSM(CPSM)
+IS_SDIO_DATA_LENGTH(LENGTH)
+IS_SDIO_DPSM(DPSM)
+IS_SDIO_FLAG(FLAG)
+IS_SDIO_GET_IT(IT)
+IS_SDIO_HARDWARE_FLOW_CONTROL(CONTROL)
+IS_SDIO_IT(IT)
+IS_SDIO_POWER_STATE(STATE)
+IS_SDIO_READWAIT_MODE(MODE)
+IS_SDIO_RESPONSE(RESPONSE)
+IS_SDIO_RESP(RESP)
+IS_SDIO_TRANSFER_DIR(DIR)
+IS_SDIO_TRANSFER_MODE(MODE)
+IS_SDIO_WAIT(WAIT)
+IS_SPI_23_PERIPH_EXT(PERIPH)
+IS_SPI_23_PERIPH(PERIPH)
+IS_SPI_ALL_PERIPH_EXT(PERIPH)
+IS_SPI_ALL_PERIPH(PERIPH)
+IS_SPI_BAUDRATE_PRESCALER(PRESCALER)
+IS_SPI_CPHA(CPHA)
+IS_SPI_CPOL(CPOL)
+IS_SPI_CRC(CRC)
+IS_SPI_CRC_POLYNOMIAL(POLYNOMIAL)
+IS_SPI_DATASIZE(DATASIZE)
+IS_SPI_DIRECTION(DIRECTION)
+IS_SPI_DIRECTION_MODE(MODE)
+IS_SPI_FIRST_BIT(BIT)
+IS_SPI_I2S_CLEAR_FLAG(FLAG)
+IS_SPI_I2S_CLEAR_IT(IT)
+IS_SPI_I2S_CONFIG_IT(IT)
+IS_SPI_I2S_DMAREQ(DMAREQ)
+IS_SPI_I2S_GET_FLAG(FLAG)
+IS_SPI_I2S_GET_IT(IT)
+IS_SPI_MODE(MODE)
+IS_SPI_NSS_INTERNAL(INTERNAL)
+IS_SPI_NSS(NSS)
+IS_SYSCFG_ETH_MEDIA_INTERFACE(INTERFACE)
+IS_SYSCFG_MEMORY_REMAP_CONFING(REMAP)
+IS_SYSTICK_CLK_SOURCE(SOURCE)
+IS_TIM_ALL_PERIPH(PERIPH)
+IS_TIM_AUTOMATIC_OUTPUT_STATE(STATE)
+IS_TIM_BREAK_POLARITY(POLARITY)
+IS_TIM_BREAK_STATE(STATE)
+IS_TIM_CCX(CCX)
+IS_TIM_CCXN(CCXN)
+IS_TIM_CHANNEL(CHANNEL)
+IS_TIM_CKD_DIV(DIV)
+IS_TIM_COMPLEMENTARY_CHANNEL(CHANNEL)
+IS_TIM_COUNTER_MODE(MODE)
+IS_TIM_DMA_BASE(BASE)
+IS_TIM_DMA_LENGTH(LENGTH)
+IS_TIM_DMA_SOURCE(SOURCE)
+IS_TIM_ENCODER_MODE(MODE)
+IS_TIM_EVENT_SOURCE(SOURCE)
+IS_TIM_EXT_FILTER(EXTFILTER)
+IS_TIM_EXT_POLARITY(POLARITY)
+IS_TIM_EXT_PRESCALER(PRESCALER)
+IS_TIM_FORCED_ACTION(ACTION)
+IS_TIM_GET_FLAG(FLAG)
+IS_TIM_GET_IT(IT)
+IS_TIM_IC_FILTER(ICFILTER)
+IS_TIM_IC_POLARITY(POLARITY)
+IS_TIM_IC_PRESCALER(PRESCALER)
+IS_TIM_IC_SELECTION(SELECTION)
+IS_TIM_INTERNAL_TRIGGER_SELECTION(SELECTION)
+IS_TIM_IT(IT)
+IS_TIM_LIST1_PERIPH(PERIPH)
+IS_TIM_LIST2_PERIPH(PERIPH)
+IS_TIM_LIST3_PERIPH(PERIPH)
+IS_TIM_LIST4_PERIPH(PERIPH)
+IS_TIM_LIST5_PERIPH(PERIPH)
+IS_TIM_LOCK_LEVEL(LEVEL)
+IS_TIM_MSM_STATE(STATE)
+IS_TIM_OCCLEAR_STATE(STATE)
+IS_TIM_OCFAST_STATE(STATE)
+IS_TIM_OCIDLE_STATE(STATE)
+IS_TIM_OCM(MODE)
+IS_TIM_OC_MODE(MODE)
+IS_TIM_OCNIDLE_STATE(STATE)
+IS_TIM_OCN_POLARITY(POLARITY)
+IS_TIM_OC_POLARITY(POLARITY)
+IS_TIM_OCPRELOAD_STATE(STATE)
+IS_TIM_OPM_MODE(MODE)
+IS_TIM_OSSI_STATE(STATE)
+IS_TIM_OSSR_STATE(STATE)
+IS_TIM_OUTPUTN_STATE(STATE)
+IS_TIM_OUTPUT_STATE(STATE)
+IS_TIM_PRESCALER_RELOAD(RELOAD)
+IS_TIM_PWMI_CHANNEL(CHANNEL)
+IS_TIM_REMAP(TIM_REMAP)
+IS_TIM_SLAVE_MODE(MODE)
+IS_TIM_TRGO_SOURCE(SOURCE)
+IS_TIM_TRIGGER_SELECTION(SELECTION)
+IS_TIM_UPDATE_SOURCE(SOURCE)
+IS_USART_1236_PERIPH(PERIPH)
+IS_USART_ADDRESS(ADDRESS)
+IS_USART_ALL_PERIPH(PERIPH)
+IS_USART_BAUDRATE(BAUDRATE)
+IS_USART_CLEAR_FLAG(FLAG)
+IS_USART_CLEAR_IT(IT)
+IS_USART_CLOCK(CLOCK)
+IS_USART_CONFIG_IT(IT)
+IS_USART_CPHA(CPHA)
+IS_USART_CPOL(CPOL)
+IS_USART_DATA(DATA)
+IS_USART_DMAREQ(DMAREQ)
+IS_USART_FLAG(FLAG)
+IS_USART_GET_IT(IT)
+IS_USART_IRDA_MODE(MODE)
+IS_USART_LASTBIT(LASTBIT)
+IS_USART_LIN_BREAK_DETECT_LENGTH(LENGTH)
+IS_USART_MODE(MODE)
+IS_USART_PARITY(PARITY)
+IS_USART_STOPBITS(STOPBITS)
+IS_USART_WAKEUP(WAKEUP)
+IS_USART_WORD_LENGTH(LENGTH)
+IS_WWDG_COUNTER(COUNTER)
+IS_WWDG_PRESCALER(PRESCALER)
+IS_WWDG_WINDOW_VALUE(VALUE)
+IWDG_BASE             (APB1PERIPH_BASE + 0x3000)
+IWDG_Enable(void);
+IWDG_FLAG_PVU
+IWDG_FLAG_RVU
+IWDG_GetFlagStatus(uint16_t IWDG_FLAG);
+IWDG                ((IWDG_TypeDef *)
+IWDG_KR_KEY
+IWDG_Prescaler_128
+IWDG_Prescaler_16
+IWDG_Prescaler_256
+IWDG_Prescaler_32
+IWDG_Prescaler_4
+IWDG_Prescaler_64
+IWDG_Prescaler_8
+IWDG_PR_PR
+IWDG_PR_PR_0
+IWDG_PR_PR_1
+IWDG_PR_PR_2
+IWDG_ReloadCounter(void);
+IWDG_RLR_RL
+IWDG_SetPrescaler(uint8_t IWDG_Prescaler);
+IWDG_SetReload(uint16_t Reload);
+IWDG_SR_PVU
+IWDG_SR_RVU
+IWDG_WriteAccessCmd(uint16_t IWDG_WriteAccess);
+IWDG_WriteAccess_Disable
+IWDG_WriteAccess_Enable
+LED3_GPIO_CLK
+LED3_GPIO_PORT
+LED3_PIN
+LED4_GPIO_CLK
+LED4_GPIO_PORT
+LED4_PIN
+LED5_GPIO_CLK
+LED5_GPIO_PORT
+LED5_PIN
+LED6_GPIO_CLK
+LED6_GPIO_PORT
+LED6_PIN
+LEDn
+lib/inc/peripherals/stm32f4xx_can.h:#define IS_CAN_CLEAR_FLAG(FLAG)(((FLAG) == CAN_FLAG_LEC) || ((FLAG) == CAN_FLAG_RQCP2) || \
+lib/inc/peripherals/stm32f4xx_dcmi.h:#define IS_DCMI_CAPTURE_MODE(MODE)(((MODE) == DCMI_CaptureMode_Continuous) || \
+lib/inc/peripherals/stm32f4xx_dcmi.h:#define IS_DCMI_EXTENDED_DATA(DATA)(((DATA) == DCMI_ExtendedDataMode_8b) || \
+lib/inc/peripherals/stm32f4xx_dcmi.h:#define IS_DCMI_HSPOLARITY(POLARITY)(((POLARITY) == DCMI_HSPolarity_Low) || \
+lib/inc/peripherals/stm32f4xx_dcmi.h:#define IS_DCMI_PCKPOLARITY(POLARITY)(((POLARITY) == DCMI_PCKPolarity_Falling) || \
+lib/inc/peripherals/stm32f4xx_dcmi.h:#define IS_DCMI_SYNCHRO(MODE)(((MODE) == DCMI_SynchroMode_Hardware) || \
+lib/inc/peripherals/stm32f4xx_dcmi.h:#define IS_DCMI_VSPOLARITY(POLARITY)(((POLARITY) == DCMI_VSPolarity_Low) || \
+lib/inc/peripherals/stm32f4xx_flash.h:#define IS_OB_WRP(SECTOR)((((SECTOR) & (uint32_t)0xFFFFF000) == 0x00000000) && ((SECTOR) != 0x00000000))
+lib/inc/peripherals/stm32f4xx_flash.h:#define IS_VOLTAGERANGE(RANGE)(((RANGE) == VoltageRange_1) || \
+lib/inc/peripherals/stm32f4xx_hash.h:#define IS_HASH_CLEAR_FLAG(FLAG)(((FLAG) == HASH_FLAG_DINIS) || \
+lib/inc/peripherals/stm32f4xx_tim.h:#define IS_TIM_LIST6_PERIPH(TIMx)(((TIMx) == TIM2) || \
+lib/inc/peripherals/stm32f4xx_usart.h:#define IS_USART_HARDWARE_FLOW_CONTROL(CONTROL)\
+lib/inc/stm32f4_discovery.h:#define __STM32F4_DISCOVERY_H
+__MISC_H
+MODE_DECRYPT
+MODE_ENCRYPT
+MODIFY_REG(REG, CLEARMASK, SETMASK)
+__MPU_PRESENT
+NVIC_Init(NVIC_InitTypeDef* NVIC_InitStruct);
+NVIC_LP_SEVONPEND
+NVIC_LP_SLEEPDEEP
+NVIC_LP_SLEEPONEXIT
+__NVIC_PRIO_BITS
+NVIC_PriorityGroup_0
+NVIC_PriorityGroup_1
+NVIC_PriorityGroup_2
+NVIC_PriorityGroup_3
+NVIC_PriorityGroup_4
+NVIC_PriorityGroupConfig(uint32_t NVIC_PriorityGroup);
+NVIC_SetVectorTable(uint32_t NVIC_VectTab, uint32_t Offset);
+NVIC_SystemLPConfig(uint8_t LowPowerMode, FunctionalState NewState);
+NVIC_VectTab_FLASH
+NVIC_VectTab_RAM
+OB_BOR_LEVEL1
+OB_BOR_LEVEL2
+OB_BOR_LEVEL3
+OB_BOR_OFF
+OB_IWDG_HW
+OB_IWDG_SW
+OB_RDP_Level_0
+OB_RDP_Level_1
+OB_RDP_Level_2
+OB_STDBY_NoRST
+OB_STDBY_RST
+OB_STOP_NoRST
+OB_STOP_RST
+OB_WRP_Sector_0
+OB_WRP_Sector_1
+OB_WRP_Sector_10
+OB_WRP_Sector_11
+OB_WRP_Sector_2
+OB_WRP_Sector_3
+OB_WRP_Sector_4
+OB_WRP_Sector_5
+OB_WRP_Sector_6
+OB_WRP_Sector_7
+OB_WRP_Sector_8
+OB_WRP_Sector_9
+OB_WRP_Sector_All
+OPTCR_BYTE0_ADDRESS
+OPTCR_BYTE1_ADDRESS
+OPTCR_BYTE2_ADDRESS
+PDM_Filter_64_LSB(uint8_t* data, uint16_t* dataOut, uint16_t MicGain,  PDMFilter_InitStruct * Filter);
+PDM_Filter_64_MSB(uint8_t* data, uint16_t* dataOut, uint16_t MicGain,  PDMFilter_InitStruct * Filter);
+PDM_Filter_80_LSB(uint8_t* data, uint16_t* dataOut, uint16_t MicGain,  PDMFilter_InitStruct * Filter);
+PDM_Filter_80_MSB(uint8_t* data, uint16_t* dataOut, uint16_t MicGain,  PDMFilter_InitStruct * Filter);
+__PDM_FILTER_H
+PDM_Filter_Init(PDMFilter_InitStruct * Filter);
+PERIPH_BASE
+PERIPH_BB_BASE
+PWR_BackupAccessCmd(FunctionalState NewState);
+PWR_BackupRegulatorCmd(FunctionalState NewState);
+PWR_BASE              (APB1PERIPH_BASE + 0x7000)
+PWR_ClearFlag(uint32_t PWR_FLAG);
+PWR_CR_CSBF
+PWR_CR_CWUF
+PWR_CR_DBP
+PWR_CR_FPDS
+PWR_CR_LPDS
+PWR_CR_PDDS
+PWR_CR_PLS
+PWR_CR_PLS_0
+PWR_CR_PLS_1
+PWR_CR_PLS_2
+PWR_CR_PLS_LEV0
+PWR_CR_PLS_LEV1
+PWR_CR_PLS_LEV2
+PWR_CR_PLS_LEV3
+PWR_CR_PLS_LEV4
+PWR_CR_PLS_LEV5
+PWR_CR_PLS_LEV6
+PWR_CR_PLS_LEV7
+PWR_CR_PMODE
+PWR_CR_PVDE
+PWR_CR_VOS
+PWR_CSR_BRE
+PWR_CSR_BRR
+PWR_CSR_EWUP
+PWR_CSR_PVDO
+PWR_CSR_REGRDY
+PWR_CSR_SBF
+PWR_CSR_VOSRDY
+PWR_CSR_WUF
+PWR_DeInit(void);
+PWR_EnterSTANDBYMode(void);
+PWR_EnterSTOPMode(uint32_t PWR_Regulator, uint8_t PWR_STOPEntry);
+PWR_FLAG_BRR
+PWR_FLAG_PVDO
+PWR_FLAG_REGRDY
+PWR_FLAG_SB
+PWR_FLAG_VOSRDY
+PWR_FLAG_WU
+PWR_FlashPowerDownCmd(FunctionalState NewState);
+PWR_GetFlagStatus(uint32_t PWR_FLAG);
+PWR_MainRegulatorModeConfig(uint32_t PWR_Regulator_Voltage);
+PWR_PVDCmd(FunctionalState NewState);
+PWR_PVDLevel_0
+PWR_PVDLevel_1
+PWR_PVDLevel_2
+PWR_PVDLevel_3
+PWR_PVDLevel_4
+PWR_PVDLevel_5
+PWR_PVDLevel_6
+PWR_PVDLevel_7
+PWR_PVDLevelConfig(uint32_t PWR_PVDLevel);
+PWR                 ((PWR_TypeDef *)
+PWR_Regulator_LowPower
+PWR_Regulator_ON
+PWR_Regulator_Voltage_Scale1
+PWR_Regulator_Voltage_Scale2
+PWR_STOPEntry_WFE
+PWR_STOPEntry_WFI
+PWR_WakeUpPinCmd(FunctionalState NewState);
+RCC_AdjustHSICalibrationValue(uint8_t HSICalibrationValue);
+RCC_AHB1ENR_BKPSRAMEN
+RCC_AHB1ENR_CCMDATARAMEN
+RCC_AHB1ENR_CRCEN
+RCC_AHB1ENR_DMA1EN
+RCC_AHB1ENR_DMA2EN
+RCC_AHB1ENR_ETHMACEN
+RCC_AHB1ENR_ETHMACPTPEN
+RCC_AHB1ENR_ETHMACRXEN
+RCC_AHB1ENR_ETHMACTXEN
+RCC_AHB1ENR_GPIOAEN
+RCC_AHB1ENR_GPIOBEN
+RCC_AHB1ENR_GPIOCEN
+RCC_AHB1ENR_GPIODEN
+RCC_AHB1ENR_GPIOEEN
+RCC_AHB1ENR_GPIOFEN
+RCC_AHB1ENR_GPIOGEN
+RCC_AHB1ENR_GPIOHEN
+RCC_AHB1ENR_GPIOIEN
+RCC_AHB1ENR_OTGHSEN
+RCC_AHB1ENR_OTGHSULPIEN
+RCC_AHB1LPENR_BKPSRAMLPEN
+RCC_AHB1LPENR_CRCLPEN
+RCC_AHB1LPENR_DMA1LPEN
+RCC_AHB1LPENR_DMA2LPEN
+RCC_AHB1LPENR_ETHMACLPEN
+RCC_AHB1LPENR_ETHMACPTPLPEN
+RCC_AHB1LPENR_ETHMACRXLPEN
+RCC_AHB1LPENR_ETHMACTXLPEN
+RCC_AHB1LPENR_FLITFLPEN
+RCC_AHB1LPENR_GPIOALPEN
+RCC_AHB1LPENR_GPIOBLPEN
+RCC_AHB1LPENR_GPIOCLPEN
+RCC_AHB1LPENR_GPIODLPEN
+RCC_AHB1LPENR_GPIOELPEN
+RCC_AHB1LPENR_GPIOFLPEN
+RCC_AHB1LPENR_GPIOGLPEN
+RCC_AHB1LPENR_GPIOHLPEN
+RCC_AHB1LPENR_GPIOILPEN
+RCC_AHB1LPENR_OTGHSLPEN
+RCC_AHB1LPENR_OTGHSULPILPEN
+RCC_AHB1LPENR_SRAM1LPEN
+RCC_AHB1LPENR_SRAM2LPEN
+RCC_AHB1Periph_BKPSRAM
+RCC_AHB1Periph_CCMDATARAMEN
+RCC_AHB1PeriphClockCmd(uint32_t RCC_AHB1Periph, FunctionalState NewState);
+RCC_AHB1PeriphClockLPModeCmd(uint32_t RCC_AHB1Periph, FunctionalState NewState);
+RCC_AHB1Periph_CRC
+RCC_AHB1Periph_DMA1
+RCC_AHB1Periph_DMA2
+RCC_AHB1Periph_ETH_MAC
+RCC_AHB1Periph_ETH_MAC_PTP
+RCC_AHB1Periph_ETH_MAC_Rx
+RCC_AHB1Periph_ETH_MAC_Tx
+RCC_AHB1Periph_FLITF
+RCC_AHB1Periph_GPIOA
+RCC_AHB1Periph_GPIOB
+RCC_AHB1Periph_GPIOC
+RCC_AHB1Periph_GPIOD
+RCC_AHB1Periph_GPIOE
+RCC_AHB1Periph_GPIOF
+RCC_AHB1Periph_GPIOG
+RCC_AHB1Periph_GPIOH
+RCC_AHB1Periph_GPIOI
+RCC_AHB1Periph_OTG_HS
+RCC_AHB1Periph_OTG_HS_ULPI
+RCC_AHB1PeriphResetCmd(uint32_t RCC_AHB1Periph, FunctionalState NewState);
+RCC_AHB1Periph_SRAM1
+RCC_AHB1Periph_SRAM2
+RCC_AHB1RSTR_CRCRST
+RCC_AHB1RSTR_DMA1RST
+RCC_AHB1RSTR_DMA2RST
+RCC_AHB1RSTR_ETHMACRST
+RCC_AHB1RSTR_GPIOARST
+RCC_AHB1RSTR_GPIOBRST
+RCC_AHB1RSTR_GPIOCRST
+RCC_AHB1RSTR_GPIODRST
+RCC_AHB1RSTR_GPIOERST
+RCC_AHB1RSTR_GPIOFRST
+RCC_AHB1RSTR_GPIOGRST
+RCC_AHB1RSTR_GPIOHRST
+RCC_AHB1RSTR_GPIOIRST
+RCC_AHB1RSTR_OTGHRST
+RCC_AHB2ENR_CRYPEN
+RCC_AHB2ENR_DCMIEN
+RCC_AHB2ENR_HASHEN
+RCC_AHB2ENR_OTGFSEN
+RCC_AHB2ENR_RNGEN
+RCC_AHB2LPENR_CRYPLPEN
+RCC_AHB2LPENR_DCMILPEN
+RCC_AHB2LPENR_HASHLPEN
+RCC_AHB2LPENR_OTGFSLPEN
+RCC_AHB2LPENR_RNGLPEN
+RCC_AHB2PeriphClockCmd(uint32_t RCC_AHB2Periph, FunctionalState NewState);
+RCC_AHB2PeriphClockLPModeCmd(uint32_t RCC_AHB2Periph, FunctionalState NewState);
+RCC_AHB2Periph_CRYP
+RCC_AHB2Periph_DCMI
+RCC_AHB2Periph_HASH
+RCC_AHB2Periph_OTG_FS
+RCC_AHB2PeriphResetCmd(uint32_t RCC_AHB2Periph, FunctionalState NewState);
+RCC_AHB2Periph_RNG
+RCC_AHB2RSTR_CRYPRST
+RCC_AHB2RSTR_DCMIRST
+RCC_AHB2RSTR_HSAHRST
+RCC_AHB2RSTR_OTGFSRST
+RCC_AHB2RSTR_RNGRST
+RCC_AHB3ENR_FSMCEN
+RCC_AHB3LPENR_FSMCLPEN
+RCC_AHB3PeriphClockCmd(uint32_t RCC_AHB3Periph, FunctionalState NewState);
+RCC_AHB3PeriphClockLPModeCmd(uint32_t RCC_AHB3Periph, FunctionalState NewState);
+RCC_AHB3Periph_FSMC
+RCC_AHB3PeriphResetCmd(uint32_t RCC_AHB3Periph, FunctionalState NewState);
+RCC_AHB3RSTR_FSMCRST
+RCC_APB1ENR_CAN1EN
+RCC_APB1ENR_CAN2EN
+RCC_APB1ENR_DACEN
+RCC_APB1ENR_I2C1EN
+RCC_APB1ENR_I2C2EN
+RCC_APB1ENR_I2C3EN
+RCC_APB1ENR_PWREN
+RCC_APB1ENR_SPI2EN
+RCC_APB1ENR_SPI3EN
+RCC_APB1ENR_TIM12EN
+RCC_APB1ENR_TIM13EN
+RCC_APB1ENR_TIM14EN
+RCC_APB1ENR_TIM2EN
+RCC_APB1ENR_TIM3EN
+RCC_APB1ENR_TIM4EN
+RCC_APB1ENR_TIM5EN
+RCC_APB1ENR_TIM6EN
+RCC_APB1ENR_TIM7EN
+RCC_APB1ENR_UART4EN
+RCC_APB1ENR_UART5EN
+RCC_APB1ENR_USART2EN
+RCC_APB1ENR_USART3EN
+RCC_APB1ENR_WWDGEN
+RCC_APB1LPENR_CAN1LPEN
+RCC_APB1LPENR_CAN2LPEN
+RCC_APB1LPENR_DACLPEN
+RCC_APB1LPENR_I2C1LPEN
+RCC_APB1LPENR_I2C2LPEN
+RCC_APB1LPENR_I2C3LPEN
+RCC_APB1LPENR_PWRLPEN
+RCC_APB1LPENR_SPI2LPEN
+RCC_APB1LPENR_SPI3LPEN
+RCC_APB1LPENR_TIM12LPEN
+RCC_APB1LPENR_TIM13LPEN
+RCC_APB1LPENR_TIM14LPEN
+RCC_APB1LPENR_TIM2LPEN
+RCC_APB1LPENR_TIM3LPEN
+RCC_APB1LPENR_TIM4LPEN
+RCC_APB1LPENR_TIM5LPEN
+RCC_APB1LPENR_TIM6LPEN
+RCC_APB1LPENR_TIM7LPEN
+RCC_APB1LPENR_UART4LPEN
+RCC_APB1LPENR_UART5LPEN
+RCC_APB1LPENR_USART2LPEN
+RCC_APB1LPENR_USART3LPEN
+RCC_APB1LPENR_WWDGLPEN
+RCC_APB1Periph_CAN1
+RCC_APB1Periph_CAN2
+RCC_APB1PeriphClockCmd(uint32_t RCC_APB1Periph, FunctionalState NewState);
+RCC_APB1PeriphClockLPModeCmd(uint32_t RCC_APB1Periph, FunctionalState NewState);
+RCC_APB1Periph_DAC
+RCC_APB1Periph_I2C1
+RCC_APB1Periph_I2C2
+RCC_APB1Periph_I2C3
+RCC_APB1Periph_PWR
+RCC_APB1PeriphResetCmd(uint32_t RCC_APB1Periph, FunctionalState NewState);
+RCC_APB1Periph_SPI2
+RCC_APB1Periph_SPI3
+RCC_APB1Periph_TIM12
+RCC_APB1Periph_TIM13
+RCC_APB1Periph_TIM14
+RCC_APB1Periph_TIM2
+RCC_APB1Periph_TIM3
+RCC_APB1Periph_TIM4
+RCC_APB1Periph_TIM5
+RCC_APB1Periph_TIM6
+RCC_APB1Periph_TIM7
+RCC_APB1Periph_UART4
+RCC_APB1Periph_UART5
+RCC_APB1Periph_USART2
+RCC_APB1Periph_USART3
+RCC_APB1Periph_WWDG
+RCC_APB1RSTR_CAN1RST
+RCC_APB1RSTR_CAN2RST
+RCC_APB1RSTR_DACRST
+RCC_APB1RSTR_I2C1RST
+RCC_APB1RSTR_I2C2RST
+RCC_APB1RSTR_I2C3RST
+RCC_APB1RSTR_PWRRST
+RCC_APB1RSTR_SPI2RST
+RCC_APB1RSTR_SPI3RST
+RCC_APB1RSTR_TIM12RST
+RCC_APB1RSTR_TIM13RST
+RCC_APB1RSTR_TIM14RST
+RCC_APB1RSTR_TIM2RST
+RCC_APB1RSTR_TIM3RST
+RCC_APB1RSTR_TIM4RST
+RCC_APB1RSTR_TIM5RST
+RCC_APB1RSTR_TIM6RST
+RCC_APB1RSTR_TIM7RST
+RCC_APB1RSTR_UART4RST
+RCC_APB1RSTR_UART5RST
+RCC_APB1RSTR_USART2RST
+RCC_APB1RSTR_USART3RST
+RCC_APB1RSTR_WWDGEN
+RCC_APB2ENR_ADC1EN
+RCC_APB2ENR_ADC2EN
+RCC_APB2ENR_ADC3EN
+RCC_APB2ENR_SDIOEN
+RCC_APB2ENR_SPI1EN
+RCC_APB2ENR_SYSCFGEN
+RCC_APB2ENR_TIM10EN
+RCC_APB2ENR_TIM11EN
+RCC_APB2ENR_TIM1EN
+RCC_APB2ENR_TIM8EN
+RCC_APB2ENR_TIM9EN
+RCC_APB2ENR_USART1EN
+RCC_APB2ENR_USART6EN
+RCC_APB2LPENR_ADC1LPEN
+RCC_APB2LPENR_ADC2PEN
+RCC_APB2LPENR_ADC3LPEN
+RCC_APB2LPENR_SDIOLPEN
+RCC_APB2LPENR_SPI1LPEN
+RCC_APB2LPENR_SYSCFGLPEN
+RCC_APB2LPENR_TIM10LPEN
+RCC_APB2LPENR_TIM11LPEN
+RCC_APB2LPENR_TIM1LPEN
+RCC_APB2LPENR_TIM8LPEN
+RCC_APB2LPENR_TIM9LPEN
+RCC_APB2LPENR_USART1LPEN
+RCC_APB2LPENR_USART6LPEN
+RCC_APB2Periph_ADC
+RCC_APB2Periph_ADC1
+RCC_APB2Periph_ADC2
+RCC_APB2Periph_ADC3
+RCC_APB2PeriphClockCmd(uint32_t RCC_APB2Periph, FunctionalState NewState);
+RCC_APB2PeriphClockLPModeCmd(uint32_t RCC_APB2Periph, FunctionalState NewState);
+RCC_APB2PeriphResetCmd(uint32_t RCC_APB2Periph, FunctionalState NewState);
+RCC_APB2Periph_SDIO
+RCC_APB2Periph_SPI1
+RCC_APB2Periph_SYSCFG
+RCC_APB2Periph_TIM1
+RCC_APB2Periph_TIM10
+RCC_APB2Periph_TIM11
+RCC_APB2Periph_TIM8
+RCC_APB2Periph_TIM9
+RCC_APB2Periph_USART1
+RCC_APB2Periph_USART6
+RCC_APB2RSTR_ADCRST
+RCC_APB2RSTR_SDIORST
+RCC_APB2RSTR_SPI1
+RCC_APB2RSTR_SPI1RST
+RCC_APB2RSTR_SYSCFGRST
+RCC_APB2RSTR_TIM10RST
+RCC_APB2RSTR_TIM11RST
+RCC_APB2RSTR_TIM1RST
+RCC_APB2RSTR_TIM8RST
+RCC_APB2RSTR_TIM9RST
+RCC_APB2RSTR_USART1RST
+RCC_APB2RSTR_USART6RST
+RCC_BackupResetCmd(FunctionalState NewState);
+RCC_BASE              (AHB1PERIPH_BASE + 0x3800)
+RCC_BDCR_BDRST
+RCC_BDCR_LSEBYP
+RCC_BDCR_LSEON
+RCC_BDCR_LSERDY
+RCC_BDCR_RTCEN
+RCC_BDCR_RTCSEL
+RCC_BDCR_RTCSEL_0
+RCC_BDCR_RTCSEL_1
+RCC_CFGR_HPRE
+RCC_CFGR_HPRE_0
+RCC_CFGR_HPRE_1
+RCC_CFGR_HPRE_2
+RCC_CFGR_HPRE_3
+RCC_CFGR_HPRE_DIV1
+RCC_CFGR_HPRE_DIV128
+RCC_CFGR_HPRE_DIV16
+RCC_CFGR_HPRE_DIV2
+RCC_CFGR_HPRE_DIV256
+RCC_CFGR_HPRE_DIV4
+RCC_CFGR_HPRE_DIV512
+RCC_CFGR_HPRE_DIV64
+RCC_CFGR_HPRE_DIV8
+RCC_CFGR_I2SSRC
+RCC_CFGR_MCO1
+RCC_CFGR_MCO1_0
+RCC_CFGR_MCO1_1
+RCC_CFGR_MCO1PRE
+RCC_CFGR_MCO1PRE_0
+RCC_CFGR_MCO1PRE_1
+RCC_CFGR_MCO1PRE_2
+RCC_CFGR_MCO2
+RCC_CFGR_MCO2_0
+RCC_CFGR_MCO2_1
+RCC_CFGR_MCO2PRE
+RCC_CFGR_MCO2PRE_0
+RCC_CFGR_MCO2PRE_1
+RCC_CFGR_MCO2PRE_2
+RCC_CFGR_PPRE1
+RCC_CFGR_PPRE1_0
+RCC_CFGR_PPRE1_1
+RCC_CFGR_PPRE1_2
+RCC_CFGR_PPRE1_DIV1
+RCC_CFGR_PPRE1_DIV16
+RCC_CFGR_PPRE1_DIV2
+RCC_CFGR_PPRE1_DIV4
+RCC_CFGR_PPRE1_DIV8
+RCC_CFGR_PPRE2
+RCC_CFGR_PPRE2_0
+RCC_CFGR_PPRE2_1
+RCC_CFGR_PPRE2_2
+RCC_CFGR_PPRE2_DIV1
+RCC_CFGR_PPRE2_DIV16
+RCC_CFGR_PPRE2_DIV2
+RCC_CFGR_PPRE2_DIV4
+RCC_CFGR_PPRE2_DIV8
+RCC_CFGR_RTCPRE
+RCC_CFGR_RTCPRE_0
+RCC_CFGR_RTCPRE_1
+RCC_CFGR_RTCPRE_2
+RCC_CFGR_RTCPRE_3
+RCC_CFGR_RTCPRE_4
+RCC_CFGR_SW
+RCC_CFGR_SW_0
+RCC_CFGR_SW_1
+RCC_CFGR_SW_HSE
+RCC_CFGR_SW_HSI
+RCC_CFGR_SW_PLL
+RCC_CFGR_SWS
+RCC_CFGR_SWS_0
+RCC_CFGR_SWS_1
+RCC_CFGR_SWS_HSE
+RCC_CFGR_SWS_HSI
+RCC_CFGR_SWS_PLL
+RCC_CIR_CSSC
+RCC_CIR_CSSF
+RCC_CIR_HSERDYC
+RCC_CIR_HSERDYF
+RCC_CIR_HSERDYIE
+RCC_CIR_HSIRDYC
+RCC_CIR_HSIRDYF
+RCC_CIR_HSIRDYIE
+RCC_CIR_LSERDYC
+RCC_CIR_LSERDYF
+RCC_CIR_LSERDYIE
+RCC_CIR_LSIRDYC
+RCC_CIR_LSIRDYF
+RCC_CIR_LSIRDYIE
+RCC_CIR_PLLI2SRDYC
+RCC_CIR_PLLI2SRDYF
+RCC_CIR_PLLI2SRDYIE
+RCC_CIR_PLLRDYC
+RCC_CIR_PLLRDYF
+RCC_CIR_PLLRDYIE
+RCC_ClearFlag(void);
+RCC_ClearITPendingBit(uint8_t RCC_IT);
+RCC_ClockSecuritySystemCmd(FunctionalState NewState);
+RCC_CR_CSSON
+RCC_CR_HSEBYP
+RCC_CR_HSEON
+RCC_CR_HSERDY
+RCC_CR_HSICAL
+RCC_CR_HSICAL_0
+RCC_CR_HSICAL_1
+RCC_CR_HSICAL_2
+RCC_CR_HSICAL_3
+RCC_CR_HSICAL_4
+RCC_CR_HSICAL_5
+RCC_CR_HSICAL_6
+RCC_CR_HSICAL_7
+RCC_CR_HSION
+RCC_CR_HSIRDY
+RCC_CR_HSITRIM
+RCC_CR_HSITRIM_0
+RCC_CR_HSITRIM_1
+RCC_CR_HSITRIM_2
+RCC_CR_HSITRIM_3
+RCC_CR_HSITRIM_4
+RCC_CR_PLLI2SON
+RCC_CR_PLLI2SRDY
+RCC_CR_PLLON
+RCC_CR_PLLRDY
+RCC_CSR_BORRSTF
+RCC_CSR_LPWRRSTF
+RCC_CSR_LSION
+RCC_CSR_LSIRDY
+RCC_CSR_PADRSTF
+RCC_CSR_PORRSTF
+RCC_CSR_RMVF
+RCC_CSR_SFTRSTF
+RCC_CSR_WDGRSTF
+RCC_CSR_WWDGRSTF
+RCC_DeInit(void);
+RCC_FLAG_BORRST
+RCC_FLAG_HSERDY
+RCC_FLAG_HSIRDY
+RCC_FLAG_IWDGRST
+RCC_FLAG_LPWRRST
+RCC_FLAG_LSERDY
+RCC_FLAG_LSIRDY
+RCC_FLAG_PINRST
+RCC_FLAG_PLLI2SRDY
+RCC_FLAG_PLLRDY
+RCC_FLAG_PORRST
+RCC_FLAG_SFTRST
+RCC_FLAG_WWDGRST
+RCC_GetClocksFreq(RCC_ClocksTypeDef* RCC_Clocks);
+RCC_GetFlagStatus(uint8_t RCC_FLAG);
+RCC_GetITStatus(uint8_t RCC_IT);
+RCC_GetSYSCLKSource(void);
+RCC_HCLKConfig(uint32_t RCC_SYSCLK);
+RCC_HCLK_Div1
+RCC_HCLK_Div16
+RCC_HCLK_Div2
+RCC_HCLK_Div4
+RCC_HCLK_Div8
+RCC_HSE_Bypass
+RCC_HSEConfig(uint8_t RCC_HSE);
+RCC_HSE_OFF
+RCC_HSE_ON
+RCC_HSICmd(FunctionalState NewState);
+RCC_I2S2CLKSource_Ext
+RCC_I2S2CLKSource_PLLI2S
+RCC_I2SCLKConfig(uint32_t RCC_I2SCLKSource); 
+RCC_ITConfig(uint8_t RCC_IT, FunctionalState NewState);
+RCC_IT_CSS
+RCC_IT_HSERDY
+RCC_IT_HSIRDY
+RCC_IT_LSERDY
+RCC_IT_LSIRDY
+RCC_IT_PLLI2SRDY
+RCC_IT_PLLRDY
+RCC_LSE_Bypass
+RCC_LSEConfig(uint8_t RCC_LSE);
+RCC_LSE_OFF
+RCC_LSE_ON
+RCC_LSICmd(FunctionalState NewState);
+RCC_MCO1Config(uint32_t RCC_MCO1Source, uint32_t RCC_MCO1Div);
+RCC_MCO1Div_1
+RCC_MCO1Div_2
+RCC_MCO1Div_3
+RCC_MCO1Div_4
+RCC_MCO1Div_5
+RCC_MCO1Source_HSE
+RCC_MCO1Source_HSI
+RCC_MCO1Source_LSE
+RCC_MCO1Source_PLLCLK
+RCC_MCO2Config(uint32_t RCC_MCO2Source, uint32_t RCC_MCO2Div);
+RCC_MCO2Div_1
+RCC_MCO2Div_2
+RCC_MCO2Div_3
+RCC_MCO2Div_4
+RCC_MCO2Div_5
+RCC_MCO2Source_HSE
+RCC_MCO2Source_PLLCLK
+RCC_MCO2Source_PLLI2SCLK
+RCC_MCO2Source_SYSCLK
+RCC_PCLK1Config(uint32_t RCC_HCLK);
+RCC_PCLK2Config(uint32_t RCC_HCLK);
+RCC_PLLCFGR_PLLM
+RCC_PLLCFGR_PLLM_0
+RCC_PLLCFGR_PLLM_1
+RCC_PLLCFGR_PLLM_2
+RCC_PLLCFGR_PLLM_3
+RCC_PLLCFGR_PLLM_4
+RCC_PLLCFGR_PLLM_5
+RCC_PLLCFGR_PLLN
+RCC_PLLCFGR_PLLN_0
+RCC_PLLCFGR_PLLN_1
+RCC_PLLCFGR_PLLN_2
+RCC_PLLCFGR_PLLN_3
+RCC_PLLCFGR_PLLN_4
+RCC_PLLCFGR_PLLN_5
+RCC_PLLCFGR_PLLN_6
+RCC_PLLCFGR_PLLN_7
+RCC_PLLCFGR_PLLN_8
+RCC_PLLCFGR_PLLP
+RCC_PLLCFGR_PLLP_0
+RCC_PLLCFGR_PLLP_1
+RCC_PLLCFGR_PLLQ
+RCC_PLLCFGR_PLLQ_0
+RCC_PLLCFGR_PLLQ_1
+RCC_PLLCFGR_PLLQ_2
+RCC_PLLCFGR_PLLQ_3
+RCC_PLLCFGR_PLLSRC
+RCC_PLLCFGR_PLLSRC_HSE
+RCC_PLLCFGR_PLLSRC_HSI
+RCC_PLLCmd(FunctionalState NewState);
+RCC_PLLConfig(uint32_t RCC_PLLSource, uint32_t PLLM, uint32_t PLLN, uint32_t PLLP, uint32_t PLLQ);
+RCC_PLLI2SCFGR_PLLI2SN
+RCC_PLLI2SCFGR_PLLI2SR
+RCC_PLLI2SCmd(FunctionalState NewState);
+RCC_PLLI2SConfig(uint32_t PLLI2SN, uint32_t PLLI2SR);
+RCC_PLLSource_HSE
+RCC_PLLSource_HSI
+RCC                 ((RCC_TypeDef *)
+RCC_RTCCLKCmd(FunctionalState NewState);
+RCC_RTCCLKConfig(uint32_t RCC_RTCCLKSource);
+RCC_RTCCLKSource_HSE_Div10
+RCC_RTCCLKSource_HSE_Div11
+RCC_RTCCLKSource_HSE_Div12
+RCC_RTCCLKSource_HSE_Div13
+RCC_RTCCLKSource_HSE_Div14
+RCC_RTCCLKSource_HSE_Div15
+RCC_RTCCLKSource_HSE_Div16
+RCC_RTCCLKSource_HSE_Div17
+RCC_RTCCLKSource_HSE_Div18
+RCC_RTCCLKSource_HSE_Div19
+RCC_RTCCLKSource_HSE_Div2
+RCC_RTCCLKSource_HSE_Div20
+RCC_RTCCLKSource_HSE_Div21
+RCC_RTCCLKSource_HSE_Div22
+RCC_RTCCLKSource_HSE_Div23
+RCC_RTCCLKSource_HSE_Div24
+RCC_RTCCLKSource_HSE_Div25
+RCC_RTCCLKSource_HSE_Div26
+RCC_RTCCLKSource_HSE_Div27
+RCC_RTCCLKSource_HSE_Div28
+RCC_RTCCLKSource_HSE_Div29
+RCC_RTCCLKSource_HSE_Div3
+RCC_RTCCLKSource_HSE_Div30
+RCC_RTCCLKSource_HSE_Div31
+RCC_RTCCLKSource_HSE_Div4
+RCC_RTCCLKSource_HSE_Div5
+RCC_RTCCLKSource_HSE_Div6
+RCC_RTCCLKSource_HSE_Div7
+RCC_RTCCLKSource_HSE_Div8
+RCC_RTCCLKSource_HSE_Div9
+RCC_RTCCLKSource_LSE
+RCC_RTCCLKSource_LSI
+RCC_SSCGR_INCSTEP
+RCC_SSCGR_MODPER
+RCC_SSCGR_SPREADSEL
+RCC_SSCGR_SSCGEN
+RCC_SYSCLKConfig(uint32_t RCC_SYSCLKSource);
+RCC_SYSCLK_Div1
+RCC_SYSCLK_Div128
+RCC_SYSCLK_Div16
+RCC_SYSCLK_Div2
+RCC_SYSCLK_Div256
+RCC_SYSCLK_Div4
+RCC_SYSCLK_Div512
+RCC_SYSCLK_Div64
+RCC_SYSCLK_Div8
+RCC_SYSCLKSource_HSE
+RCC_SYSCLKSource_HSI
+RCC_SYSCLKSource_PLLCLK
+RCC_WaitForHSEStartUp(void);
+RDP_KEY
+READ_BIT(REG, BIT)
+READ_REG(REG)
+RNG_BASE              (AHB2PERIPH_BASE + 0x60800)
+RNG_ClearFlag(uint8_t RNG_FLAG);
+RNG_ClearITPendingBit(uint8_t RNG_IT);
+RNG_Cmd(FunctionalState NewState);
+RNG_CR_IE
+RNG_CR_RNGEN
+RNG_DeInit(void);
+RNG_FLAG_CECS
+RNG_FLAG_DRDY
+RNG_FLAG_SECS
+RNG_GetFlagStatus(uint8_t RNG_FLAG);
+RNG_GetITStatus(uint8_t RNG_IT);
+RNG_GetRandomNumber(void);
+RNG_IT_CEI
+RNG_ITConfig(FunctionalState NewState);
+RNG_IT_SEI
+RNG                 ((RNG_TypeDef *)
+RNG_SR_CECS
+RNG_SR_CEIS
+RNG_SR_DRDY
+RNG_SR_SECS
+RNG_SR_SEIS
+RTC_Alarm_A
+RTC_Alarm_B
+RTC_AlarmCmd(uint32_t RTC_Alarm, FunctionalState NewState);
+RTC_AlarmDateWeekDaySel_Date
+RTC_AlarmDateWeekDaySel_WeekDay
+RTC_AlarmMask_All
+RTC_AlarmMask_DateWeekDay
+RTC_AlarmMask_Hours
+RTC_AlarmMask_Minutes
+RTC_AlarmMask_None
+RTC_AlarmMask_Seconds
+RTC_AlarmStructInit(RTC_AlarmTypeDef* RTC_AlarmStruct);
+RTC_AlarmSubSecondConfig(uint32_t RTC_Alarm, uint32_t RTC_AlarmSubSecondValue, uint32_t RTC_AlarmSubSecondMask);
+RTC_AlarmSubSecondMask_All
+RTC_AlarmSubSecondMask_None
+RTC_AlarmSubSecondMask_SS14
+RTC_AlarmSubSecondMask_SS14_1
+RTC_AlarmSubSecondMask_SS14_10
+RTC_AlarmSubSecondMask_SS14_11
+RTC_AlarmSubSecondMask_SS14_12
+RTC_AlarmSubSecondMask_SS14_13
+RTC_AlarmSubSecondMask_SS14_2
+RTC_AlarmSubSecondMask_SS14_3
+RTC_AlarmSubSecondMask_SS14_4
+RTC_AlarmSubSecondMask_SS14_5
+RTC_AlarmSubSecondMask_SS14_6
+RTC_AlarmSubSecondMask_SS14_7
+RTC_AlarmSubSecondMask_SS14_8
+RTC_AlarmSubSecondMask_SS14_9
+RTC_ALRMAR_DT
+RTC_ALRMAR_DT_0
+RTC_ALRMAR_DT_1
+RTC_ALRMAR_DU
+RTC_ALRMAR_DU_0
+RTC_ALRMAR_DU_1
+RTC_ALRMAR_DU_2
+RTC_ALRMAR_DU_3
+RTC_ALRMAR_HT
+RTC_ALRMAR_HT_0
+RTC_ALRMAR_HT_1
+RTC_ALRMAR_HU
+RTC_ALRMAR_HU_0
+RTC_ALRMAR_HU_1
+RTC_ALRMAR_HU_2
+RTC_ALRMAR_HU_3
+RTC_ALRMAR_MNT
+RTC_ALRMAR_MNT_0
+RTC_ALRMAR_MNT_1
+RTC_ALRMAR_MNT_2
+RTC_ALRMAR_MNU
+RTC_ALRMAR_MNU_0
+RTC_ALRMAR_MNU_1
+RTC_ALRMAR_MNU_2
+RTC_ALRMAR_MNU_3
+RTC_ALRMAR_MSK1
+RTC_ALRMAR_MSK2
+RTC_ALRMAR_MSK3
+RTC_ALRMAR_MSK4
+RTC_ALRMAR_PM
+RTC_ALRMAR_ST
+RTC_ALRMAR_ST_0
+RTC_ALRMAR_ST_1
+RTC_ALRMAR_ST_2
+RTC_ALRMAR_SU
+RTC_ALRMAR_SU_0
+RTC_ALRMAR_SU_1
+RTC_ALRMAR_SU_2
+RTC_ALRMAR_SU_3
+RTC_ALRMAR_WDSEL
+RTC_ALRMASSR_MASKSS
+RTC_ALRMASSR_MASKSS_0
+RTC_ALRMASSR_MASKSS_1
+RTC_ALRMASSR_MASKSS_2
+RTC_ALRMASSR_MASKSS_3
+RTC_ALRMASSR_SS
+RTC_ALRMBR_DT
+RTC_ALRMBR_DT_0
+RTC_ALRMBR_DT_1
+RTC_ALRMBR_DU
+RTC_ALRMBR_DU_0
+RTC_ALRMBR_DU_1
+RTC_ALRMBR_DU_2
+RTC_ALRMBR_DU_3
+RTC_ALRMBR_HT
+RTC_ALRMBR_HT_0
+RTC_ALRMBR_HT_1
+RTC_ALRMBR_HU
+RTC_ALRMBR_HU_0
+RTC_ALRMBR_HU_1
+RTC_ALRMBR_HU_2
+RTC_ALRMBR_HU_3
+RTC_ALRMBR_MNT
+RTC_ALRMBR_MNT_0
+RTC_ALRMBR_MNT_1
+RTC_ALRMBR_MNT_2
+RTC_ALRMBR_MNU
+RTC_ALRMBR_MNU_0
+RTC_ALRMBR_MNU_1
+RTC_ALRMBR_MNU_2
+RTC_ALRMBR_MNU_3
+RTC_ALRMBR_MSK1
+RTC_ALRMBR_MSK2
+RTC_ALRMBR_MSK3
+RTC_ALRMBR_MSK4
+RTC_ALRMBR_PM
+RTC_ALRMBR_ST
+RTC_ALRMBR_ST_0
+RTC_ALRMBR_ST_1
+RTC_ALRMBR_ST_2
+RTC_ALRMBR_SU
+RTC_ALRMBR_SU_0
+RTC_ALRMBR_SU_1
+RTC_ALRMBR_SU_2
+RTC_ALRMBR_SU_3
+RTC_ALRMBR_WDSEL
+RTC_ALRMBSSR_MASKSS
+RTC_ALRMBSSR_MASKSS_0
+RTC_ALRMBSSR_MASKSS_1
+RTC_ALRMBSSR_MASKSS_2
+RTC_ALRMBSSR_MASKSS_3
+RTC_ALRMBSSR_SS
+RTC_BASE              (APB1PERIPH_BASE + 0x2800)
+RTC_BKP0R
+RTC_BKP10R
+RTC_BKP11R
+RTC_BKP12R
+RTC_BKP13R
+RTC_BKP14R
+RTC_BKP15R
+RTC_BKP16R
+RTC_BKP17R
+RTC_BKP18R
+RTC_BKP19R
+RTC_BKP1R
+RTC_BKP2R
+RTC_BKP3R
+RTC_BKP4R
+RTC_BKP5R
+RTC_BKP6R
+RTC_BKP7R
+RTC_BKP8R
+RTC_BKP9R
+RTC_BKP_DR0
+RTC_BKP_DR1
+RTC_BKP_DR10
+RTC_BKP_DR11
+RTC_BKP_DR12
+RTC_BKP_DR13
+RTC_BKP_DR14
+RTC_BKP_DR15
+RTC_BKP_DR16
+RTC_BKP_DR17
+RTC_BKP_DR18
+RTC_BKP_DR19
+RTC_BKP_DR2
+RTC_BKP_DR3
+RTC_BKP_DR4
+RTC_BKP_DR5
+RTC_BKP_DR6
+RTC_BKP_DR7
+RTC_BKP_DR8
+RTC_BKP_DR9
+RTC_BypassShadowCmd(FunctionalState NewState);
+RTC_CalibOutput_1Hz
+RTC_CalibOutput_512Hz
+RTC_CalibOutputCmd(FunctionalState NewState);
+RTC_CalibOutputConfig(uint32_t RTC_CalibOutput);
+RTC_CALIBR_DC
+RTC_CALIBR_DCS
+RTC_CalibSign_Negative
+RTC_CalibSign_Positive
+RTC_CALR_CALM
+RTC_CALR_CALM_0
+RTC_CALR_CALM_1
+RTC_CALR_CALM_2
+RTC_CALR_CALM_3
+RTC_CALR_CALM_4
+RTC_CALR_CALM_5
+RTC_CALR_CALM_6
+RTC_CALR_CALM_7
+RTC_CALR_CALM_8
+RTC_CALR_CALP
+RTC_CALR_CALW16
+RTC_CALR_CALW8
+RTC_ClearFlag(uint32_t RTC_FLAG);
+RTC_ClearITPendingBit(uint32_t RTC_IT);
+RTC_CoarseCalibCmd(FunctionalState NewState);
+RTC_CoarseCalibConfig(uint32_t RTC_CalibSign, uint32_t Value);
+RTC_CR_ADD1H
+RTC_CR_ALRAE
+RTC_CR_ALRAIE
+RTC_CR_ALRBE
+RTC_CR_ALRBIE
+RTC_CR_BCK
+RTC_CR_BYPSHAD
+RTC_CR_COE
+RTC_CR_COSEL
+RTC_CR_DCE
+RTC_CR_FMT
+RTC_CR_OSEL
+RTC_CR_OSEL_0
+RTC_CR_OSEL_1
+RTC_CR_POL
+RTC_CR_REFCKON
+RTC_CR_SUB1H
+RTC_CR_TSE
+RTC_CR_TSEDGE
+RTC_CR_TSIE
+RTC_CR_WUCKSEL
+RTC_CR_WUCKSEL_0
+RTC_CR_WUCKSEL_1
+RTC_CR_WUCKSEL_2
+RTC_CR_WUTE
+RTC_CR_WUTIE
+RTC_DateStructInit(RTC_DateTypeDef* RTC_DateStruct);
+RTC_DayLightSaving_ADD1H
+RTC_DayLightSavingConfig(uint32_t RTC_DayLightSaving, uint32_t RTC_StoreOperation);
+RTC_DayLightSaving_SUB1H
+RTC_DeInit(void);
+RTC_DigitalCalibCmd
+RTC_DigitalCalibConfig
+RTC_DR_DT
+RTC_DR_DT_0
+RTC_DR_DT_1
+RTC_DR_DU
+RTC_DR_DU_0
+RTC_DR_DU_1
+RTC_DR_DU_2
+RTC_DR_DU_3
+RTC_DR_MT
+RTC_DR_MU
+RTC_DR_MU_0
+RTC_DR_MU_1
+RTC_DR_MU_2
+RTC_DR_MU_3
+RTC_DR_WDU
+RTC_DR_WDU_0
+RTC_DR_WDU_1
+RTC_DR_WDU_2
+RTC_DR_YT
+RTC_DR_YT_0
+RTC_DR_YT_1
+RTC_DR_YT_2
+RTC_DR_YT_3
+RTC_DR_YU
+RTC_DR_YU_0
+RTC_DR_YU_1
+RTC_DR_YU_2
+RTC_DR_YU_3
+RTC_EnterInitMode(void);
+RTC_ExitInitMode(void);
+RTC_FLAG_ALRAF
+RTC_FLAG_ALRAWF
+RTC_FLAG_ALRBF
+RTC_FLAG_ALRBWF
+RTC_FLAG_INITF
+RTC_FLAG_INITS
+RTC_FLAG_RECALPF
+RTC_FLAG_RSF
+RTC_FLAG_SHPF
+RTC_FLAG_TAMP1F
+RTC_FLAG_TSF
+RTC_FLAG_TSOVF
+RTC_FLAG_WUTF
+RTC_FLAG_WUTWF
+RTC_Format_BCD
+RTC_Format_BIN
+RTC_GetAlarmSubSecond(uint32_t RTC_Alarm);
+RTC_GetAlarm(uint32_t RTC_Format, uint32_t RTC_Alarm, RTC_AlarmTypeDef* RTC_AlarmStruct);
+RTC_GetDate(uint32_t RTC_Format, RTC_DateTypeDef* RTC_DateStruct);
+RTC_GetFlagStatus(uint32_t RTC_FLAG);
+RTC_GetITStatus(uint32_t RTC_IT);
+RTC_GetStoreOperation(void);
+RTC_GetSubSecond(void);
+RTC_GetTimeStampSubSecond(void);
+RTC_GetTimeStamp(uint32_t RTC_Format, RTC_TimeTypeDef* RTC_StampTimeStruct,
+RTC_GetTime(uint32_t RTC_Format, RTC_TimeTypeDef* RTC_TimeStruct);
+RTC_GetWakeUpCounter(void);
+RTC_H12_AM
+RTC_H12_PM
+RTC_HourFormat_12
+RTC_HourFormat_24
+RTC_Init(RTC_InitTypeDef* RTC_InitStruct);
+RTC_ISR_ALRAF
+RTC_ISR_ALRAWF
+RTC_ISR_ALRBF
+RTC_ISR_ALRBWF
+RTC_ISR_INIT
+RTC_ISR_INITF
+RTC_ISR_INITS
+RTC_ISR_RECALPF
+RTC_ISR_RSF
+RTC_ISR_SHPF
+RTC_ISR_TAMP1F
+RTC_ISR_TSF
+RTC_ISR_TSOVF
+RTC_ISR_WUTF
+RTC_ISR_WUTWF
+RTC_IT_ALRA
+RTC_IT_ALRB
+RTC_ITConfig(uint32_t RTC_IT, FunctionalState NewState);
+RTC_IT_TAMP
+RTC_IT_TAMP1
+RTC_IT_TS
+RTC_IT_WUT
+RTC_Month_April
+RTC_Month_August
+RTC_Month_December
+RTC_Month_February
+RTC_Month_January
+RTC_Month_July
+RTC_Month_June
+RTC_Month_March
+RTC_Month_May
+RTC_Month_November
+RTC_Month_October
+RTC_Month_September
+RTC_Output_AlarmA
+RTC_Output_AlarmB
+RTC_OutputConfig(uint32_t RTC_Output, uint32_t RTC_OutputPolarity);
+RTC_Output_Disable
+RTC_OutputPolarity_High
+RTC_OutputPolarity_Low
+RTC_OutputTypeConfig(uint32_t RTC_OutputType);
+RTC_OutputType_OpenDrain
+RTC_OutputType_PushPull
+RTC_Output_WakeUp
+RTC_PRER_PREDIV_A
+RTC_PRER_PREDIV_S
+RTC_ReadBackupRegister(uint32_t RTC_BKP_DR);
+RTC_RefClockCmd(FunctionalState NewState);
+RTC                 ((RTC_TypeDef *)
+RTC_SetAlarm(uint32_t RTC_Format, uint32_t RTC_Alarm, RTC_AlarmTypeDef* RTC_AlarmStruct);
+RTC_SetDate(uint32_t RTC_Format, RTC_DateTypeDef* RTC_DateStruct);
+RTC_SetTime(uint32_t RTC_Format, RTC_TimeTypeDef* RTC_TimeStruct);
+RTC_SetWakeUpCounter(uint32_t RTC_WakeUpCounter);
+RTC_ShiftAdd1S_Reset
+RTC_ShiftAdd1S_Set
+RTC_SHIFTR_ADD1S
+RTC_SHIFTR_SUBFS
+RTC_SmoothCalibConfig(uint32_t RTC_SmoothCalibPeriod, 
+RTC_SmoothCalibPeriod_16sec
+RTC_SmoothCalibPeriod_32sec
+RTC_SmoothCalibPeriod_8sec
+RTC_SmoothCalibPlusPulses_Reset
+RTC_SmoothCalibPlusPulses_Set
+RTC_SSR_SS
+RTC_StoreOperation_Reset
+RTC_StoreOperation_Set
+RTC_StructInit(RTC_InitTypeDef* RTC_InitStruct);
+RTC_SynchroShiftConfig(uint32_t RTC_ShiftAdd1S, uint32_t RTC_ShiftSubFS);
+RTC_TAFCR_ALARMOUTTYPE
+RTC_TAFCR_TAMP1E
+RTC_TAFCR_TAMP1TRG
+RTC_TAFCR_TAMPFLT
+RTC_TAFCR_TAMPFLT_0
+RTC_TAFCR_TAMPFLT_1
+RTC_TAFCR_TAMPFREQ
+RTC_TAFCR_TAMPFREQ_0
+RTC_TAFCR_TAMPFREQ_1
+RTC_TAFCR_TAMPFREQ_2
+RTC_TAFCR_TAMPIE
+RTC_TAFCR_TAMPINSEL
+RTC_TAFCR_TAMPPRCH
+RTC_TAFCR_TAMPPRCH_0
+RTC_TAFCR_TAMPPRCH_1
+RTC_TAFCR_TAMPPUDIS
+RTC_TAFCR_TAMPTS
+RTC_TAFCR_TSINSEL
+RTC_Tamper_1
+RTC_TamperCmd(uint32_t RTC_Tamper, FunctionalState NewState);
+RTC_TamperFilter_2Sample
+RTC_TamperFilter_4Sample
+RTC_TamperFilter_8Sample
+RTC_TamperFilterConfig(uint32_t RTC_TamperFilter);
+RTC_TamperFilter_Disable
+RTC_TamperPin_PC13
+RTC_TamperPin_PI8
+RTC_TamperPinSelection(uint32_t RTC_TamperPin);
+RTC_TamperPinsPrechargeDuration(uint32_t RTC_TamperPrechargeDuration);
+RTC_TamperPrechargeDuration_1RTCCLK
+RTC_TamperPrechargeDuration_2RTCCLK
+RTC_TamperPrechargeDuration_4RTCCLK
+RTC_TamperPrechargeDuration_8RTCCLK
+RTC_TamperPullUpCmd(FunctionalState NewState);
+RTC_TamperSamplingFreqConfig(uint32_t RTC_TamperSamplingFreq);
+RTC_TamperSamplingFreq_RTCCLK_Div1024
+RTC_TamperSamplingFreq_RTCCLK_Div16384
+RTC_TamperSamplingFreq_RTCCLK_Div2048
+RTC_TamperSamplingFreq_RTCCLK_Div256
+RTC_TamperSamplingFreq_RTCCLK_Div32768
+RTC_TamperSamplingFreq_RTCCLK_Div4096
+RTC_TamperSamplingFreq_RTCCLK_Div512
+RTC_TamperSamplingFreq_RTCCLK_Div8192
+RTC_TamperTriggerConfig(uint32_t RTC_Tamper, uint32_t RTC_TamperTrigger);
+RTC_TamperTrigger_FallingEdge
+RTC_TamperTrigger_HighLevel
+RTC_TamperTrigger_LowLevel
+RTC_TamperTrigger_RisingEdge
+RTC_TimeStampCmd(uint32_t RTC_TimeStampEdge, FunctionalState NewState);
+RTC_TimeStampEdge_Falling
+RTC_TimeStampEdge_Rising
+RTC_TimeStampOnTamperDetectionCmd(FunctionalState NewState);
+RTC_TimeStampPin_PC13
+RTC_TimeStampPin_PI8
+RTC_TimeStampPinSelection(uint32_t RTC_TimeStampPin);
+RTC_TimeStructInit(RTC_TimeTypeDef* RTC_TimeStruct);
+RTC_TR_HT
+RTC_TR_HT_0
+RTC_TR_HT_1
+RTC_TR_HU
+RTC_TR_HU_0
+RTC_TR_HU_1
+RTC_TR_HU_2
+RTC_TR_HU_3
+RTC_TR_MNT
+RTC_TR_MNT_0
+RTC_TR_MNT_1
+RTC_TR_MNT_2
+RTC_TR_MNU
+RTC_TR_MNU_0
+RTC_TR_MNU_1
+RTC_TR_MNU_2
+RTC_TR_MNU_3
+RTC_TR_PM
+RTC_TR_ST
+RTC_TR_ST_0
+RTC_TR_ST_1
+RTC_TR_ST_2
+RTC_TR_SU
+RTC_TR_SU_0
+RTC_TR_SU_1
+RTC_TR_SU_2
+RTC_TR_SU_3
+RTC_TSDR_DT
+RTC_TSDR_DT_0
+RTC_TSDR_DT_1
+RTC_TSDR_DU
+RTC_TSDR_DU_0
+RTC_TSDR_DU_1
+RTC_TSDR_DU_2
+RTC_TSDR_DU_3
+RTC_TSDR_MT
+RTC_TSDR_MU
+RTC_TSDR_MU_0
+RTC_TSDR_MU_1
+RTC_TSDR_MU_2
+RTC_TSDR_MU_3
+RTC_TSDR_WDU
+RTC_TSDR_WDU_0
+RTC_TSDR_WDU_1
+RTC_TSDR_WDU_2
+RTC_TSSSR_SS
+RTC_TSTR_HT
+RTC_TSTR_HT_0
+RTC_TSTR_HT_1
+RTC_TSTR_HU
+RTC_TSTR_HU_0
+RTC_TSTR_HU_1
+RTC_TSTR_HU_2
+RTC_TSTR_HU_3
+RTC_TSTR_MNT
+RTC_TSTR_MNT_0
+RTC_TSTR_MNT_1
+RTC_TSTR_MNT_2
+RTC_TSTR_MNU
+RTC_TSTR_MNU_0
+RTC_TSTR_MNU_1
+RTC_TSTR_MNU_2
+RTC_TSTR_MNU_3
+RTC_TSTR_PM
+RTC_TSTR_ST
+RTC_TSTR_ST_0
+RTC_TSTR_ST_1
+RTC_TSTR_ST_2
+RTC_TSTR_SU
+RTC_TSTR_SU_0
+RTC_TSTR_SU_1
+RTC_TSTR_SU_2
+RTC_TSTR_SU_3
+RTC_WaitForSynchro(void);
+RTC_WakeUpClock_CK_SPRE_16bits
+RTC_WakeUpClock_CK_SPRE_17bits
+RTC_WakeUpClockConfig(uint32_t RTC_WakeUpClock);
+RTC_WakeUpClock_RTCCLK_Div16
+RTC_WakeUpClock_RTCCLK_Div2
+RTC_WakeUpClock_RTCCLK_Div4
+RTC_WakeUpClock_RTCCLK_Div8
+RTC_WakeUpCmd(FunctionalState NewState);
+RTC_Weekday_Friday
+RTC_Weekday_Monday
+RTC_Weekday_Saturday
+RTC_Weekday_Sunday
+RTC_Weekday_Thursday
+RTC_Weekday_Tuesday
+RTC_Weekday_Wednesday
+RTC_WPR_KEY
+RTC_WriteBackupRegister(uint32_t RTC_BKP_DR, uint32_t Data);
+RTC_WriteProtectionCmd(FunctionalState NewState);
+RTC_WUTR_WUT
+SDIO_ARG_CMDARG
+SDIO_BASE             (APB2PERIPH_BASE + 0x2C00)
+SDIO_BusWide_1b
+SDIO_BusWide_4b
+SDIO_BusWide_8b
+SDIO_CEATAITCmd(FunctionalState NewState);
+SDIO_ClearFlag(uint32_t SDIO_FLAG);
+SDIO_ClearITPendingBit(uint32_t SDIO_IT);
+SDIO_CLKCR_BYPASS
+SDIO_CLKCR_CLKDIV
+SDIO_CLKCR_CLKEN
+SDIO_CLKCR_HWFC_EN
+SDIO_CLKCR_NEGEDGE
+SDIO_CLKCR_PWRSAV
+SDIO_CLKCR_WIDBUS
+SDIO_CLKCR_WIDBUS_0
+SDIO_CLKCR_WIDBUS_1
+SDIO_ClockBypass_Disable
+SDIO_ClockBypass_Enable
+SDIO_ClockCmd(FunctionalState NewState);
+SDIO_ClockEdge_Falling
+SDIO_ClockEdge_Rising
+SDIO_ClockPowerSave_Disable
+SDIO_ClockPowerSave_Enable
+SDIO_CMD_CEATACMD
+SDIO_CMD_CMDINDEX
+SDIO_CMD_CPSMEN
+SDIO_CMD_ENCMDCOMPL
+SDIO_CMD_NIEN
+SDIO_CMD_SDIOSUSPEND
+SDIO_CmdStructInit(SDIO_CmdInitTypeDef* SDIO_CmdInitStruct);
+SDIO_CMD_WAITINT
+SDIO_CMD_WAITPEND
+SDIO_CMD_WAITRESP
+SDIO_CMD_WAITRESP_0
+SDIO_CMD_WAITRESP_1
+SDIO_CommandCompletionCmd(FunctionalState NewState);
+SDIO_CPSM_Disable
+SDIO_CPSM_Enable
+SDIO_DataBlockSize_1024b
+SDIO_DataBlockSize_128b
+SDIO_DataBlockSize_16384b
+SDIO_DataBlockSize_16b
+SDIO_DataBlockSize_1b
+SDIO_DataBlockSize_2048b
+SDIO_DataBlockSize_256b
+SDIO_DataBlockSize_2b
+SDIO_DataBlockSize_32b
+SDIO_DataBlockSize_4096b
+SDIO_DataBlockSize_4b
+SDIO_DataBlockSize_512b
+SDIO_DataBlockSize_64b
+SDIO_DataBlockSize_8192b
+SDIO_DataBlockSize_8b
+SDIO_DataConfig(SDIO_DataInitTypeDef* SDIO_DataInitStruct);
+SDIO_DataStructInit(SDIO_DataInitTypeDef* SDIO_DataInitStruct);
+SDIO_DCOUNT_DATACOUNT
+SDIO_DCTRL_DBLOCKSIZE
+SDIO_DCTRL_DBLOCKSIZE_0
+SDIO_DCTRL_DBLOCKSIZE_1
+SDIO_DCTRL_DBLOCKSIZE_2
+SDIO_DCTRL_DBLOCKSIZE_3
+SDIO_DCTRL_DMAEN
+SDIO_DCTRL_DTDIR
+SDIO_DCTRL_DTEN
+SDIO_DCTRL_DTMODE
+SDIO_DCTRL_RWMOD
+SDIO_DCTRL_RWSTART
+SDIO_DCTRL_RWSTOP
+SDIO_DCTRL_SDIOEN
+SDIO_DeInit(void);
+SDIO_DLEN_DATALENGTH
+SDIO_DMACmd(FunctionalState NewState);
+SDIO_DPSM_Disable
+SDIO_DPSM_Enable
+SDIO_DTIMER_DATATIME
+SDIO_FIFOCNT_FIFOCOUNT
+SDIO_FIFO_FIFODATA
+SDIO_FLAG_CCRCFAIL
+SDIO_FLAG_CEATAEND
+SDIO_FLAG_CMDACT
+SDIO_FLAG_CMDREND
+SDIO_FLAG_CMDSENT
+SDIO_FLAG_CTIMEOUT
+SDIO_FLAG_DATAEND
+SDIO_FLAG_DBCKEND
+SDIO_FLAG_DCRCFAIL
+SDIO_FLAG_DTIMEOUT
+SDIO_FLAG_RXACT
+SDIO_FLAG_RXDAVL
+SDIO_FLAG_RXFIFOE
+SDIO_FLAG_RXFIFOF
+SDIO_FLAG_RXFIFOHF
+SDIO_FLAG_RXOVERR
+SDIO_FLAG_SDIOIT
+SDIO_FLAG_STBITERR
+SDIO_FLAG_TXACT
+SDIO_FLAG_TXDAVL
+SDIO_FLAG_TXFIFOE
+SDIO_FLAG_TXFIFOF
+SDIO_FLAG_TXFIFOHE
+SDIO_FLAG_TXUNDERR
+SDIO_GetCommandResponse(void);
+SDIO_GetDataCounter(void);
+SDIO_GetFIFOCount(void);
+SDIO_GetFlagStatus(uint32_t SDIO_FLAG);
+SDIO_GetITStatus(uint32_t SDIO_IT);
+SDIO_GetPowerState(void);
+SDIO_GetResponse(uint32_t SDIO_RESP);
+SDIO_HardwareFlowControl_Disable
+SDIO_HardwareFlowControl_Enable
+SDIO_ICR_CCRCFAILC
+SDIO_ICR_CEATAENDC
+SDIO_ICR_CMDRENDC
+SDIO_ICR_CMDSENTC
+SDIO_ICR_CTIMEOUTC
+SDIO_ICR_DATAENDC
+SDIO_ICR_DBCKENDC
+SDIO_ICR_DCRCFAILC
+SDIO_ICR_DTIMEOUTC
+SDIO_ICR_RXOVERRC
+SDIO_ICR_SDIOITC
+SDIO_ICR_STBITERRC
+SDIO_ICR_TXUNDERRC
+SDIO_Init(SDIO_InitTypeDef* SDIO_InitStruct);
+SDIO_IT_CCRCFAIL
+SDIO_IT_CEATAEND
+SDIO_IT_CMDACT
+SDIO_IT_CMDREND
+SDIO_IT_CMDSENT
+SDIO_ITConfig(uint32_t SDIO_IT, FunctionalState NewState);
+SDIO_IT_CTIMEOUT
+SDIO_IT_DATAEND
+SDIO_IT_DBCKEND
+SDIO_IT_DCRCFAIL
+SDIO_IT_DTIMEOUT
+SDIO_IT_RXACT
+SDIO_IT_RXDAVL
+SDIO_IT_RXFIFOE
+SDIO_IT_RXFIFOF
+SDIO_IT_RXFIFOHF
+SDIO_IT_RXOVERR
+SDIO_IT_SDIOIT
+SDIO_IT_STBITERR
+SDIO_IT_TXACT
+SDIO_IT_TXDAVL
+SDIO_IT_TXFIFOE
+SDIO_IT_TXFIFOF
+SDIO_IT_TXFIFOHE
+SDIO_IT_TXUNDERR
+SDIO_MASK_CCRCFAILIE
+SDIO_MASK_CEATAENDIE
+SDIO_MASK_CMDACTIE
+SDIO_MASK_CMDRENDIE
+SDIO_MASK_CMDSENTIE
+SDIO_MASK_CTIMEOUTIE
+SDIO_MASK_DATAENDIE
+SDIO_MASK_DBCKENDIE
+SDIO_MASK_DCRCFAILIE
+SDIO_MASK_DTIMEOUTIE
+SDIO_MASK_RXACTIE
+SDIO_MASK_RXDAVLIE
+SDIO_MASK_RXFIFOEIE
+SDIO_MASK_RXFIFOFIE
+SDIO_MASK_RXFIFOHFIE
+SDIO_MASK_RXOVERRIE
+SDIO_MASK_SDIOITIE
+SDIO_MASK_STBITERRIE
+SDIO_MASK_TXACTIE
+SDIO_MASK_TXDAVLIE
+SDIO_MASK_TXFIFOEIE
+SDIO_MASK_TXFIFOFIE
+SDIO_MASK_TXFIFOHEIE
+SDIO_MASK_TXUNDERRIE
+SDIO_POWER_PWRCTRL
+SDIO_POWER_PWRCTRL_0
+SDIO_POWER_PWRCTRL_1
+SDIO_PowerState_OFF
+SDIO_PowerState_ON
+SDIO_ReadData(void);
+SDIO_ReadWaitMode_CLK
+SDIO_ReadWaitMode_DATA2
+SDIO_RESP0_CARDSTATUS0
+SDIO_RESP1
+SDIO_RESP1_CARDSTATUS1
+SDIO_RESP2
+SDIO_RESP2_CARDSTATUS2
+SDIO_RESP3
+SDIO_RESP3_CARDSTATUS3
+SDIO_RESP4
+SDIO_RESP4_CARDSTATUS4
+SDIO_RESPCMD_RESPCMD
+SDIO_Response_Long
+SDIO_Response_No
+SDIO_Response_Short
+SDIO                ((SDIO_TypeDef *)
+SDIO_SendCEATACmd(FunctionalState NewState);
+SDIO_SendCommand(SDIO_CmdInitTypeDef *SDIO_CmdInitStruct);
+SDIO_SendSDIOSuspendCmd(FunctionalState NewState);
+SDIO_SetPowerState(uint32_t SDIO_PowerState);
+SDIO_SetSDIOOperation(FunctionalState NewState);
+SDIO_SetSDIOReadWaitMode(uint32_t SDIO_ReadWaitMode);
+SDIO_STA_CCRCFAIL
+SDIO_STA_CEATAEND
+SDIO_STA_CMDACT
+SDIO_STA_CMDREND
+SDIO_STA_CMDSENT
+SDIO_STA_CTIMEOUT
+SDIO_STA_DATAEND
+SDIO_STA_DBCKEND
+SDIO_STA_DCRCFAIL
+SDIO_STA_DTIMEOUT
+SDIO_StartSDIOReadWait(FunctionalState NewState);
+SDIO_STA_RXACT
+SDIO_STA_RXDAVL
+SDIO_STA_RXFIFOE
+SDIO_STA_RXFIFOF
+SDIO_STA_RXFIFOHF
+SDIO_STA_RXOVERR
+SDIO_STA_SDIOIT
+SDIO_STA_STBITERR
+SDIO_STA_TXACT
+SDIO_STA_TXDAVL
+SDIO_STA_TXFIFOE
+SDIO_STA_TXFIFOF
+SDIO_STA_TXFIFOHE
+SDIO_STA_TXUNDERR
+SDIO_StopSDIOReadWait(FunctionalState NewState);
+SDIO_StructInit(SDIO_InitTypeDef* SDIO_InitStruct);
+SDIO_TransferDir_ToCard
+SDIO_TransferDir_ToSDIO
+SDIO_TransferMode_Block
+SDIO_TransferMode_Stream
+SDIO_Wait_IT
+SDIO_Wait_No
+SDIO_Wait_Pend
+SDIO_WriteData(uint32_t Data);
+SET_BIT(REG, BIT)
+SPI1_BASE             (APB2PERIPH_BASE + 0x3000)
+SPI1                ((SPI_TypeDef *)
+SPI2_BASE             (APB1PERIPH_BASE + 0x3800)
+SPI2                ((SPI_TypeDef *)
+SPI3_BASE             (APB1PERIPH_BASE + 0x3C00)
+SPI3                ((SPI_TypeDef *)
+SPI_BaudRatePrescaler_128
+SPI_BaudRatePrescaler_16
+SPI_BaudRatePrescaler_2
+SPI_BaudRatePrescaler_256
+SPI_BaudRatePrescaler_32
+SPI_BaudRatePrescaler_4
+SPI_BaudRatePrescaler_64
+SPI_BaudRatePrescaler_8
+SPI_BiDirectionalLineConfig(SPI_TypeDef* SPIx, uint16_t SPI_Direction);
+SPI_CalculateCRC(SPI_TypeDef* SPIx, FunctionalState NewState);
+SPI_ClearFlag
+SPI_ClearITPendingBit
+SPI_Cmd(SPI_TypeDef* SPIx, FunctionalState NewState);
+SPI_CPHA_1Edge
+SPI_CPHA_2Edge
+SPI_CPOL_High
+SPI_CPOL_Low
+SPI_CR1_BIDIMODE
+SPI_CR1_BIDIOE
+SPI_CR1_BR
+SPI_CR1_BR_0
+SPI_CR1_BR_1
+SPI_CR1_BR_2
+SPI_CR1_CPHA
+SPI_CR1_CPOL
+SPI_CR1_CRCEN
+SPI_CR1_CRCNEXT
+SPI_CR1_DFF
+SPI_CR1_LSBFIRST
+SPI_CR1_MSTR
+SPI_CR1_RXONLY
+SPI_CR1_SPE
+SPI_CR1_SSI
+SPI_CR1_SSM
+SPI_CR2_ERRIE
+SPI_CR2_RXDMAEN
+SPI_CR2_RXNEIE
+SPI_CR2_SSOE
+SPI_CR2_TXDMAEN
+SPI_CR2_TXEIE
+SPI_CRCPR_CRCPOLY
+SPI_CRC_Rx
+SPI_CRC_Tx
+SPI_DataSize_16b
+SPI_DataSize_8b
+SPI_DataSizeConfig(SPI_TypeDef* SPIx, uint16_t SPI_DataSize);
+SPI_DeInit
+SPI_Direction_1Line_Rx
+SPI_Direction_1Line_Tx
+SPI_Direction_2Lines_FullDuplex
+SPI_Direction_2Lines_RxOnly
+SPI_Direction_Rx
+SPI_Direction_Tx
+SPI_DMACmd
+SPI_DMAReq_Rx
+SPI_DMAReq_Tx
+SPI_DR_DR
+SPI_FirstBit_LSB
+SPI_FirstBit_MSB
+SPI_FLAG_BSY
+SPI_FLAG_CRCERR
+SPI_FLAG_MODF
+SPI_FLAG_OVR
+SPI_FLAG_RXNE
+SPI_FLAG_TXE
+SPI_GetCRCPolynomial(SPI_TypeDef* SPIx);
+SPI_GetCRC(SPI_TypeDef* SPIx, uint8_t SPI_CRC);
+SPI_GetFlagStatus
+SPI_GetITStatus
+SPI_I2SCFGR_CHLEN
+SPI_I2SCFGR_CKPOL
+SPI_I2SCFGR_DATLEN
+SPI_I2SCFGR_DATLEN_0
+SPI_I2SCFGR_DATLEN_1
+SPI_I2SCFGR_I2SCFG
+SPI_I2SCFGR_I2SCFG_0
+SPI_I2SCFGR_I2SCFG_1
+SPI_I2SCFGR_I2SE
+SPI_I2SCFGR_I2SMOD
+SPI_I2SCFGR_I2SSTD
+SPI_I2SCFGR_I2SSTD_0
+SPI_I2SCFGR_I2SSTD_1
+SPI_I2SCFGR_PCMSYNC
+SPI_I2S_ClearFlag(SPI_TypeDef* SPIx, uint16_t SPI_I2S_FLAG);
+SPI_I2S_ClearITPendingBit(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT);
+SPI_I2S_DeInit(SPI_TypeDef* SPIx);
+SPI_I2S_DMACmd(SPI_TypeDef* SPIx, uint16_t SPI_I2S_DMAReq, FunctionalState NewState);
+SPI_I2S_DMAReq_Rx
+SPI_I2S_DMAReq_Tx
+SPI_I2S_FLAG_BSY
+SPI_I2S_FLAG_OVR
+SPI_I2S_FLAG_RXNE
+SPI_I2S_FLAG_TIFRFE
+SPI_I2S_FLAG_TXE
+SPI_I2S_GetFlagStatus(SPI_TypeDef* SPIx, uint16_t SPI_I2S_FLAG);
+SPI_I2S_GetITStatus(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT);
+SPI_I2S_ITConfig(SPI_TypeDef* SPIx, uint8_t SPI_I2S_IT, FunctionalState NewState);
+SPI_I2S_IT_ERR
+SPI_I2S_IT_OVR
+SPI_I2S_IT_RXNE
+SPI_I2S_IT_TIFRFE
+SPI_I2S_IT_TXE
+SPI_I2SPR_I2SDIV
+SPI_I2SPR_MCKOE
+SPI_I2SPR_ODD
+SPI_I2S_ReceiveData(SPI_TypeDef* SPIx);
+SPI_I2S_SendData(SPI_TypeDef* SPIx, uint16_t Data);
+SPI_Init(SPI_TypeDef* SPIx, SPI_InitTypeDef* SPI_InitStruct);
+SPI_ITConfig
+SPI_IT_CRCERR
+SPI_IT_ERR
+SPI_IT_MODF
+SPI_IT_OVR
+SPI_IT_RXNE
+SPI_IT_TXE
+SPI_Mode_Master
+SPI_Mode_Slave
+SPI_NSS_Hard
+SPI_NSSInternalSoft_Reset
+SPI_NSSInternalSoft_Set
+SPI_NSSInternalSoftwareConfig(SPI_TypeDef* SPIx, uint16_t SPI_NSSInternalSoft);
+SPI_NSS_Soft
+SPI_ReceiveData
+SPI_RXCRCR_RXCRC
+SPI_SendData
+SPI_SR_BSY
+SPI_SR_CHSIDE
+SPI_SR_CRCERR
+SPI_SR_MODF
+SPI_SR_OVR
+SPI_SR_RXNE
+SPI_SR_TXE
+SPI_SR_UDR
+SPI_SSOutputCmd(SPI_TypeDef* SPIx, FunctionalState NewState);
+SPI_StructInit(SPI_InitTypeDef* SPI_InitStruct);
+SPI_TIModeCmd(SPI_TypeDef* SPIx, FunctionalState NewState);
+SPI_TransmitCRC(SPI_TypeDef* SPIx);
+SPI_TXCRCR_TXCRC
+SRAM1_BASE
+SRAM1_BB_BASE
+SRAM2_BASE
+SRAM2_BB_BASE
+SRAM_BASE
+SRAM_BB_BASE
+STM32F4XX
+__STM32F4xx_ADC_H
+__STM32F4xx_CAN_H
+__STM32F4xx_CONF_H
+__STM32F4xx_CRC_H
+__STM32F4xx_CRYP_H
+__STM32F4xx_DAC_H
+__STM32F4xx_DBGMCU_H
+__STM32F4xx_DCMI_H
+__STM32F4xx_DMA_H
+__STM32F4xx_EXTI_H
+__STM32F4xx_FLASH_H
+__STM32F4xx_FSMC_H
+__STM32F4xx_GPIO_H
+__STM32F4xx_H
+__STM32F4xx_HASH_H
+__STM32F4xx_I2C_H
+__STM32F4xx_IWDG_H
+__STM32F4xx_PWR_H
+__STM32F4xx_RCC_H
+__STM32F4xx_RNG_H
+__STM32F4xx_RTC_H
+__STM32F4xx_SDIO_H
+__STM32F4xx_SPI_H
+__STM32F4XX_STDPERIPH_VERSION
+__STM32F4XX_STDPERIPH_VERSION_MAIN   (0x01)
+__STM32F4XX_STDPERIPH_VERSION_RC     (0x00)
+__STM32F4XX_STDPERIPH_VERSION_SUB1   (0x00)
+__STM32F4XX_STDPERIPH_VERSION_SUB2   (0x00)
+__STM32F4xx_SYSCFG_H
+__STM32F4xx_TIM_H
+__STM32F4xx_USART_H
+__STM32F4xx_WWDG_H
+STM_EVAL_LEDInit(Led_TypeDef Led);
+STM_EVAL_LEDOff(Led_TypeDef Led);
+STM_EVAL_LEDOn(Led_TypeDef Led);
+STM_EVAL_LEDToggle(Led_TypeDef Led);
+STM_EVAL_PBGetState(Button_TypeDef Button);
+STM_EVAL_PBInit(Button_TypeDef Button, ButtonMode_TypeDef Button_Mode);
+SYSCFG_BASE           (APB2PERIPH_BASE + 0x3800)
+SYSCFG_CMPCR_CMP_PD
+SYSCFG_CMPCR_READY
+SYSCFG_CompensationCellCmd(FunctionalState NewState); 
+SYSCFG_DeInit(void);
+SYSCFG_ETH_MediaInterfaceConfig(uint32_t SYSCFG_ETH_MediaInterface); 
+SYSCFG_ETH_MediaInterface_MII
+SYSCFG_ETH_MediaInterface_RMII
+SYSCFG_EXTICR1_EXTI0
+SYSCFG_EXTICR1_EXTI0_PA
+SYSCFG_EXTICR1_EXTI0_PB
+SYSCFG_EXTICR1_EXTI0_PC
+SYSCFG_EXTICR1_EXTI0_PD
+SYSCFG_EXTICR1_EXTI0_PE
+SYSCFG_EXTICR1_EXTI0_PF
+SYSCFG_EXTICR1_EXTI0_PG
+SYSCFG_EXTICR1_EXTI0_PH
+SYSCFG_EXTICR1_EXTI0_PI
+SYSCFG_EXTICR1_EXTI1
+SYSCFG_EXTICR1_EXTI1_PA
+SYSCFG_EXTICR1_EXTI1_PB
+SYSCFG_EXTICR1_EXTI1_PC
+SYSCFG_EXTICR1_EXTI1_PD
+SYSCFG_EXTICR1_EXTI1_PE
+SYSCFG_EXTICR1_EXTI1_PF
+SYSCFG_EXTICR1_EXTI1_PG
+SYSCFG_EXTICR1_EXTI1_PH
+SYSCFG_EXTICR1_EXTI1_PI
+SYSCFG_EXTICR1_EXTI2
+SYSCFG_EXTICR1_EXTI2_PA
+SYSCFG_EXTICR1_EXTI2_PB
+SYSCFG_EXTICR1_EXTI2_PC
+SYSCFG_EXTICR1_EXTI2_PD
+SYSCFG_EXTICR1_EXTI2_PE
+SYSCFG_EXTICR1_EXTI2_PF
+SYSCFG_EXTICR1_EXTI2_PG
+SYSCFG_EXTICR1_EXTI2_PH
+SYSCFG_EXTICR1_EXTI2_PI
+SYSCFG_EXTICR1_EXTI3
+SYSCFG_EXTICR1_EXTI3_PA
+SYSCFG_EXTICR1_EXTI3_PB
+SYSCFG_EXTICR1_EXTI3_PC
+SYSCFG_EXTICR1_EXTI3_PD
+SYSCFG_EXTICR1_EXTI3_PE
+SYSCFG_EXTICR1_EXTI3_PF
+SYSCFG_EXTICR1_EXTI3_PG
+SYSCFG_EXTICR1_EXTI3_PH
+SYSCFG_EXTICR1_EXTI3_PI
+SYSCFG_EXTICR2_EXTI4
+SYSCFG_EXTICR2_EXTI4_PA
+SYSCFG_EXTICR2_EXTI4_PB
+SYSCFG_EXTICR2_EXTI4_PC
+SYSCFG_EXTICR2_EXTI4_PD
+SYSCFG_EXTICR2_EXTI4_PE
+SYSCFG_EXTICR2_EXTI4_PF
+SYSCFG_EXTICR2_EXTI4_PG
+SYSCFG_EXTICR2_EXTI4_PH
+SYSCFG_EXTICR2_EXTI4_PI
+SYSCFG_EXTICR2_EXTI5
+SYSCFG_EXTICR2_EXTI5_PA
+SYSCFG_EXTICR2_EXTI5_PB
+SYSCFG_EXTICR2_EXTI5_PC
+SYSCFG_EXTICR2_EXTI5_PD
+SYSCFG_EXTICR2_EXTI5_PE
+SYSCFG_EXTICR2_EXTI5_PF
+SYSCFG_EXTICR2_EXTI5_PG
+SYSCFG_EXTICR2_EXTI5_PH
+SYSCFG_EXTICR2_EXTI5_PI
+SYSCFG_EXTICR2_EXTI6
+SYSCFG_EXTICR2_EXTI6_PA
+SYSCFG_EXTICR2_EXTI6_PB
+SYSCFG_EXTICR2_EXTI6_PC
+SYSCFG_EXTICR2_EXTI6_PD
+SYSCFG_EXTICR2_EXTI6_PE
+SYSCFG_EXTICR2_EXTI6_PF
+SYSCFG_EXTICR2_EXTI6_PG
+SYSCFG_EXTICR2_EXTI6_PH
+SYSCFG_EXTICR2_EXTI6_PI
+SYSCFG_EXTICR2_EXTI7
+SYSCFG_EXTICR2_EXTI7_PA
+SYSCFG_EXTICR2_EXTI7_PB
+SYSCFG_EXTICR2_EXTI7_PC
+SYSCFG_EXTICR2_EXTI7_PD
+SYSCFG_EXTICR2_EXTI7_PE
+SYSCFG_EXTICR2_EXTI7_PF
+SYSCFG_EXTICR2_EXTI7_PG
+SYSCFG_EXTICR2_EXTI7_PH
+SYSCFG_EXTICR2_EXTI7_PI
+SYSCFG_EXTICR3_EXTI10
+SYSCFG_EXTICR3_EXTI10_PA
+SYSCFG_EXTICR3_EXTI10_PB
+SYSCFG_EXTICR3_EXTI10_PC
+SYSCFG_EXTICR3_EXTI10_PD
+SYSCFG_EXTICR3_EXTI10_PE
+SYSCFG_EXTICR3_EXTI10_PF
+SYSCFG_EXTICR3_EXTI10_PG
+SYSCFG_EXTICR3_EXTI10_PH
+SYSCFG_EXTICR3_EXTI10_PI
+SYSCFG_EXTICR3_EXTI11
+SYSCFG_EXTICR3_EXTI11_PA
+SYSCFG_EXTICR3_EXTI11_PB
+SYSCFG_EXTICR3_EXTI11_PC
+SYSCFG_EXTICR3_EXTI11_PD
+SYSCFG_EXTICR3_EXTI11_PE
+SYSCFG_EXTICR3_EXTI11_PF
+SYSCFG_EXTICR3_EXTI11_PG
+SYSCFG_EXTICR3_EXTI11_PH
+SYSCFG_EXTICR3_EXTI11_PI
+SYSCFG_EXTICR3_EXTI12_PH
+SYSCFG_EXTICR3_EXTI13_PH
+SYSCFG_EXTICR3_EXTI14_PH
+SYSCFG_EXTICR3_EXTI15_PH
+SYSCFG_EXTICR3_EXTI8
+SYSCFG_EXTICR3_EXTI8_PA
+SYSCFG_EXTICR3_EXTI8_PB
+SYSCFG_EXTICR3_EXTI8_PC
+SYSCFG_EXTICR3_EXTI8_PD
+SYSCFG_EXTICR3_EXTI8_PE
+SYSCFG_EXTICR3_EXTI8_PF
+SYSCFG_EXTICR3_EXTI8_PG
+SYSCFG_EXTICR3_EXTI8_PH
+SYSCFG_EXTICR3_EXTI8_PI
+SYSCFG_EXTICR3_EXTI9
+SYSCFG_EXTICR3_EXTI9_PA
+SYSCFG_EXTICR3_EXTI9_PB
+SYSCFG_EXTICR3_EXTI9_PC
+SYSCFG_EXTICR3_EXTI9_PD
+SYSCFG_EXTICR3_EXTI9_PE
+SYSCFG_EXTICR3_EXTI9_PF
+SYSCFG_EXTICR3_EXTI9_PG
+SYSCFG_EXTICR3_EXTI9_PH
+SYSCFG_EXTICR3_EXTI9_PI
+SYSCFG_EXTICR4_EXTI12
+SYSCFG_EXTICR4_EXTI12_PA
+SYSCFG_EXTICR4_EXTI12_PB
+SYSCFG_EXTICR4_EXTI12_PC
+SYSCFG_EXTICR4_EXTI12_PD
+SYSCFG_EXTICR4_EXTI12_PE
+SYSCFG_EXTICR4_EXTI12_PF
+SYSCFG_EXTICR4_EXTI12_PG
+SYSCFG_EXTICR4_EXTI13
+SYSCFG_EXTICR4_EXTI13_PA
+SYSCFG_EXTICR4_EXTI13_PB
+SYSCFG_EXTICR4_EXTI13_PC
+SYSCFG_EXTICR4_EXTI13_PD
+SYSCFG_EXTICR4_EXTI13_PE
+SYSCFG_EXTICR4_EXTI13_PF
+SYSCFG_EXTICR4_EXTI13_PG
+SYSCFG_EXTICR4_EXTI14
+SYSCFG_EXTICR4_EXTI14_PA
+SYSCFG_EXTICR4_EXTI14_PB
+SYSCFG_EXTICR4_EXTI14_PC
+SYSCFG_EXTICR4_EXTI14_PD
+SYSCFG_EXTICR4_EXTI14_PE
+SYSCFG_EXTICR4_EXTI14_PF
+SYSCFG_EXTICR4_EXTI14_PG
+SYSCFG_EXTICR4_EXTI15
+SYSCFG_EXTICR4_EXTI15_PA
+SYSCFG_EXTICR4_EXTI15_PB
+SYSCFG_EXTICR4_EXTI15_PC
+SYSCFG_EXTICR4_EXTI15_PD
+SYSCFG_EXTICR4_EXTI15_PE
+SYSCFG_EXTICR4_EXTI15_PF
+SYSCFG_EXTICR4_EXTI15_PG
+SYSCFG_EXTILineConfig(uint8_t EXTI_PortSourceGPIOx, uint8_t EXTI_PinSourcex);
+SYSCFG_GetCompensationCellStatus(void);
+SYSCFG_MemoryRemapConfig(uint8_t SYSCFG_MemoryRemap);
+SYSCFG_MemoryRemap_Flash
+SYSCFG_MemoryRemap_FSMC
+SYSCFG_MemoryRemap_SRAM
+SYSCFG_MemoryRemap_SystemFlash
+SYSCFG_MEMRMP_MEM_MODE
+SYSCFG_MEMRMP_MEM_MODE_0
+SYSCFG_MEMRMP_MEM_MODE_1
+SYSCFG_PMC_MII_RMII
+SYSCFG_PMC_MII_RMII_SEL
+SYSCFG              ((SYSCFG_TypeDef *)
+__SYSTEM_STM32F4XX_H
+SysTick_CLKSourceConfig(uint32_t SysTick_CLKSource);
+SysTick_CLKSource_HCLK
+SysTick_CLKSource_HCLK_Div8
+TIM10_BASE            (APB2PERIPH_BASE + 0x4400)
+TIM10               ((TIM_TypeDef *)
+TIM11_BASE            (APB2PERIPH_BASE + 0x4800)
+TIM11_GPIO
+TIM11_HSE
+TIM11               ((TIM_TypeDef *)
+TIM12_BASE            (APB1PERIPH_BASE + 0x1800)
+TIM12               ((TIM_TypeDef *)
+TIM13_BASE            (APB1PERIPH_BASE + 0x1C00)
+TIM13               ((TIM_TypeDef *)
+TIM14_BASE            (APB1PERIPH_BASE + 0x2000)
+TIM14               ((TIM_TypeDef *)
+TIM1_BASE             (APB2PERIPH_BASE + 0x0000)
+TIM1                ((TIM_TypeDef *)
+TIM2_BASE             (APB1PERIPH_BASE + 0x0000)
+TIM2_ETH_PTP
+TIM2_TIM8_TRGO
+TIM2                ((TIM_TypeDef *)
+TIM2_USBFS_SOF
+TIM2_USBHS_SOF
+TIM3_BASE             (APB1PERIPH_BASE + 0x0400)
+TIM3                ((TIM_TypeDef *)
+TIM4_BASE             (APB1PERIPH_BASE + 0x0800)
+TIM4                ((TIM_TypeDef *)
+TIM5_BASE             (APB1PERIPH_BASE + 0x0C00)
+TIM5_GPIO
+TIM5_LSE
+TIM5_LSI
+TIM5_RTC
+TIM5                ((TIM_TypeDef *)
+TIM6_BASE             (APB1PERIPH_BASE + 0x1000)
+TIM6                ((TIM_TypeDef *)
+TIM7_BASE             (APB1PERIPH_BASE + 0x1400)
+TIM7                ((TIM_TypeDef *)
+TIM8_BASE             (APB2PERIPH_BASE + 0x0400)
+TIM8                ((TIM_TypeDef *)
+TIM9_BASE             (APB2PERIPH_BASE + 0x4000)
+TIM9                ((TIM_TypeDef *)
+TIM_ARR_ARR
+TIM_ARRPreloadConfig(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_AutomaticOutput_Disable
+TIM_AutomaticOutput_Enable
+TIM_BDTR_AOE
+TIM_BDTR_BKE
+TIM_BDTR_BKP
+TIM_BDTRConfig(TIM_TypeDef* TIMx, TIM_BDTRInitTypeDef *TIM_BDTRInitStruct);
+TIM_BDTR_DTG
+TIM_BDTR_DTG_0
+TIM_BDTR_DTG_1
+TIM_BDTR_DTG_2
+TIM_BDTR_DTG_3
+TIM_BDTR_DTG_4
+TIM_BDTR_DTG_5
+TIM_BDTR_DTG_6
+TIM_BDTR_DTG_7
+TIM_BDTR_LOCK
+TIM_BDTR_LOCK_0
+TIM_BDTR_LOCK_1
+TIM_BDTR_MOE
+TIM_BDTR_OSSI
+TIM_BDTR_OSSR
+TIM_BDTRStructInit(TIM_BDTRInitTypeDef* TIM_BDTRInitStruct);
+TIM_Break_Disable
+TIM_Break_Enable
+TIM_BreakPolarity_High
+TIM_BreakPolarity_Low
+TIM_CCER_CC1E
+TIM_CCER_CC1NE
+TIM_CCER_CC1NP
+TIM_CCER_CC1P
+TIM_CCER_CC2E
+TIM_CCER_CC2NE
+TIM_CCER_CC2NP
+TIM_CCER_CC2P
+TIM_CCER_CC3E
+TIM_CCER_CC3NE
+TIM_CCER_CC3NP
+TIM_CCER_CC3P
+TIM_CCER_CC4E
+TIM_CCER_CC4NP
+TIM_CCER_CC4P
+TIM_CCMR1_CC1S
+TIM_CCMR1_CC1S_0
+TIM_CCMR1_CC1S_1
+TIM_CCMR1_CC2S
+TIM_CCMR1_CC2S_0
+TIM_CCMR1_CC2S_1
+TIM_CCMR1_IC1F
+TIM_CCMR1_IC1F_0
+TIM_CCMR1_IC1F_1
+TIM_CCMR1_IC1F_2
+TIM_CCMR1_IC1F_3
+TIM_CCMR1_IC1PSC
+TIM_CCMR1_IC1PSC_0
+TIM_CCMR1_IC1PSC_1
+TIM_CCMR1_IC2F
+TIM_CCMR1_IC2F_0
+TIM_CCMR1_IC2F_1
+TIM_CCMR1_IC2F_2
+TIM_CCMR1_IC2F_3
+TIM_CCMR1_IC2PSC
+TIM_CCMR1_IC2PSC_0
+TIM_CCMR1_IC2PSC_1
+TIM_CCMR1_OC1CE
+TIM_CCMR1_OC1FE
+TIM_CCMR1_OC1M
+TIM_CCMR1_OC1M_0
+TIM_CCMR1_OC1M_1
+TIM_CCMR1_OC1M_2
+TIM_CCMR1_OC1PE
+TIM_CCMR1_OC2CE
+TIM_CCMR1_OC2FE
+TIM_CCMR1_OC2M
+TIM_CCMR1_OC2M_0
+TIM_CCMR1_OC2M_1
+TIM_CCMR1_OC2M_2
+TIM_CCMR1_OC2PE
+TIM_CCMR2_CC3S
+TIM_CCMR2_CC3S_0
+TIM_CCMR2_CC3S_1
+TIM_CCMR2_CC4S
+TIM_CCMR2_CC4S_0
+TIM_CCMR2_CC4S_1
+TIM_CCMR2_IC3F
+TIM_CCMR2_IC3F_0
+TIM_CCMR2_IC3F_1
+TIM_CCMR2_IC3F_2
+TIM_CCMR2_IC3F_3
+TIM_CCMR2_IC3PSC
+TIM_CCMR2_IC3PSC_0
+TIM_CCMR2_IC3PSC_1
+TIM_CCMR2_IC4F
+TIM_CCMR2_IC4F_0
+TIM_CCMR2_IC4F_1
+TIM_CCMR2_IC4F_2
+TIM_CCMR2_IC4F_3
+TIM_CCMR2_IC4PSC
+TIM_CCMR2_IC4PSC_0
+TIM_CCMR2_IC4PSC_1
+TIM_CCMR2_OC3CE
+TIM_CCMR2_OC3FE
+TIM_CCMR2_OC3M
+TIM_CCMR2_OC3M_0
+TIM_CCMR2_OC3M_1
+TIM_CCMR2_OC3M_2
+TIM_CCMR2_OC3PE
+TIM_CCMR2_OC4CE
+TIM_CCMR2_OC4FE
+TIM_CCMR2_OC4M
+TIM_CCMR2_OC4M_0
+TIM_CCMR2_OC4M_1
+TIM_CCMR2_OC4M_2
+TIM_CCMR2_OC4PE
+TIM_CCPreloadControl(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_CCR1_CCR1
+TIM_CCR2_CCR2
+TIM_CCR3_CCR3
+TIM_CCR4_CCR4
+TIM_CCxCmd(TIM_TypeDef* TIMx, uint16_t TIM_Channel, uint16_t TIM_CCx);
+TIM_CCx_Disable
+TIM_CCx_Enable
+TIM_CCxNCmd(TIM_TypeDef* TIMx, uint16_t TIM_Channel, uint16_t TIM_CCxN);
+TIM_CCxN_Disable
+TIM_CCxN_Enable
+TIM_Channel_1
+TIM_Channel_2
+TIM_Channel_3
+TIM_Channel_4
+TIM_CKD_DIV1
+TIM_CKD_DIV2
+TIM_CKD_DIV4
+TIM_ClearFlag(TIM_TypeDef* TIMx, uint16_t TIM_FLAG);
+TIM_ClearITPendingBit(TIM_TypeDef* TIMx, uint16_t TIM_IT);
+TIM_ClearOC1Ref(TIM_TypeDef* TIMx, uint16_t TIM_OCClear);
+TIM_ClearOC2Ref(TIM_TypeDef* TIMx, uint16_t TIM_OCClear);
+TIM_ClearOC3Ref(TIM_TypeDef* TIMx, uint16_t TIM_OCClear);
+TIM_ClearOC4Ref(TIM_TypeDef* TIMx, uint16_t TIM_OCClear);
+TIM_Cmd(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_CNT_CNT
+TIM_CounterMode_CenterAligned1
+TIM_CounterMode_CenterAligned2
+TIM_CounterMode_CenterAligned3
+TIM_CounterModeConfig(TIM_TypeDef* TIMx, uint16_t TIM_CounterMode);
+TIM_CounterMode_Down
+TIM_CounterMode_Up
+TIM_CR1_ARPE
+TIM_CR1_CEN
+TIM_CR1_CKD
+TIM_CR1_CKD_0
+TIM_CR1_CKD_1
+TIM_CR1_CMS
+TIM_CR1_CMS_0
+TIM_CR1_CMS_1
+TIM_CR1_DIR
+TIM_CR1_OPM
+TIM_CR1_UDIS
+TIM_CR1_URS
+TIM_CR2_CCDS
+TIM_CR2_CCPC
+TIM_CR2_CCUS
+TIM_CR2_MMS
+TIM_CR2_MMS_0
+TIM_CR2_MMS_1
+TIM_CR2_MMS_2
+TIM_CR2_OIS1
+TIM_CR2_OIS1N
+TIM_CR2_OIS2
+TIM_CR2_OIS2N
+TIM_CR2_OIS3
+TIM_CR2_OIS3N
+TIM_CR2_OIS4
+TIM_CR2_TI1S
+TIM_CtrlPWMOutputs(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_DCR_DBA
+TIM_DCR_DBA_0
+TIM_DCR_DBA_1
+TIM_DCR_DBA_2
+TIM_DCR_DBA_3
+TIM_DCR_DBA_4
+TIM_DCR_DBL
+TIM_DCR_DBL_0
+TIM_DCR_DBL_1
+TIM_DCR_DBL_2
+TIM_DCR_DBL_3
+TIM_DCR_DBL_4
+TIM_DeInit(TIM_TypeDef* TIMx);
+TIM_DIER_BIE
+TIM_DIER_CC1DE
+TIM_DIER_CC1IE
+TIM_DIER_CC2DE
+TIM_DIER_CC2IE
+TIM_DIER_CC3DE
+TIM_DIER_CC3IE
+TIM_DIER_CC4DE
+TIM_DIER_CC4IE
+TIM_DIER_COMDE
+TIM_DIER_COMIE
+TIM_DIER_TDE
+TIM_DIER_TIE
+TIM_DIER_UDE
+TIM_DIER_UIE
+TIM_DMABase_ARR
+TIM_DMABase_BDTR
+TIM_DMABase_CCER
+TIM_DMABase_CCMR1
+TIM_DMABase_CCMR2
+TIM_DMABase_CCR1
+TIM_DMABase_CCR2
+TIM_DMABase_CCR3
+TIM_DMABase_CCR4
+TIM_DMABase_CNT
+TIM_DMABase_CR1
+TIM_DMABase_CR2
+TIM_DMABase_DCR
+TIM_DMABase_DIER
+TIM_DMABase_EGR
+TIM_DMABase_OR
+TIM_DMABase_PSC
+TIM_DMABase_RCR
+TIM_DMABase_SMCR
+TIM_DMABase_SR
+TIM_DMABurstLength_10Bytes
+TIM_DMABurstLength_10Transfers
+TIM_DMABurstLength_11Bytes
+TIM_DMABurstLength_11Transfers
+TIM_DMABurstLength_12Bytes
+TIM_DMABurstLength_12Transfers
+TIM_DMABurstLength_13Bytes
+TIM_DMABurstLength_13Transfers
+TIM_DMABurstLength_14Bytes
+TIM_DMABurstLength_14Transfers
+TIM_DMABurstLength_15Bytes
+TIM_DMABurstLength_15Transfers
+TIM_DMABurstLength_16Bytes
+TIM_DMABurstLength_16Transfers
+TIM_DMABurstLength_17Bytes
+TIM_DMABurstLength_17Transfers
+TIM_DMABurstLength_18Bytes
+TIM_DMABurstLength_18Transfers
+TIM_DMABurstLength_1Byte
+TIM_DMABurstLength_1Transfer
+TIM_DMABurstLength_2Bytes
+TIM_DMABurstLength_2Transfers
+TIM_DMABurstLength_3Bytes
+TIM_DMABurstLength_3Transfers
+TIM_DMABurstLength_4Bytes
+TIM_DMABurstLength_4Transfers
+TIM_DMABurstLength_5Bytes
+TIM_DMABurstLength_5Transfers
+TIM_DMABurstLength_6Bytes
+TIM_DMABurstLength_6Transfers
+TIM_DMABurstLength_7Bytes
+TIM_DMABurstLength_7Transfers
+TIM_DMABurstLength_8Bytes
+TIM_DMABurstLength_8Transfers
+TIM_DMABurstLength_9Bytes
+TIM_DMABurstLength_9Transfers
+TIM_DMA_CC1
+TIM_DMA_CC2
+TIM_DMA_CC3
+TIM_DMA_CC4
+TIM_DMACmd(TIM_TypeDef* TIMx, uint16_t TIM_DMASource, FunctionalState NewState);
+TIM_DMA_COM
+TIM_DMAConfig(TIM_TypeDef* TIMx, uint16_t TIM_DMABase, uint16_t TIM_DMABurstLength);
+TIM_DMAR_DMAB
+TIM_DMA_Trigger
+TIM_DMA_Update
+TIM_EGR_BG
+TIM_EGR_CC1G
+TIM_EGR_CC2G
+TIM_EGR_CC3G
+TIM_EGR_CC4G
+TIM_EGR_COMG
+TIM_EGR_TG
+TIM_EGR_UG
+TIM_EncoderInterfaceConfig(TIM_TypeDef* TIMx, uint16_t TIM_EncoderMode,
+TIM_EncoderMode_TI1
+TIM_EncoderMode_TI12
+TIM_EncoderMode_TI2
+TIM_ETRClockMode1Config(TIM_TypeDef* TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity,
+TIM_ETRClockMode2Config(TIM_TypeDef* TIMx, uint16_t TIM_ExtTRGPrescaler, 
+TIM_ETRConfig(TIM_TypeDef* TIMx, uint16_t TIM_ExtTRGPrescaler, uint16_t TIM_ExtTRGPolarity,
+TIM_EventSource_Break
+TIM_EventSource_CC1
+TIM_EventSource_CC2
+TIM_EventSource_CC3
+TIM_EventSource_CC4
+TIM_EventSource_COM
+TIM_EventSource_Trigger
+TIM_EventSource_Update
+TIM_ExtTRGPolarity_Inverted
+TIM_ExtTRGPolarity_NonInverted
+TIM_ExtTRGPSC_DIV2
+TIM_ExtTRGPSC_DIV4
+TIM_ExtTRGPSC_DIV8
+TIM_ExtTRGPSC_OFF
+TIM_FLAG_Break
+TIM_FLAG_CC1
+TIM_FLAG_CC1OF
+TIM_FLAG_CC2
+TIM_FLAG_CC2OF
+TIM_FLAG_CC3
+TIM_FLAG_CC3OF
+TIM_FLAG_CC4
+TIM_FLAG_CC4OF
+TIM_FLAG_COM
+TIM_FLAG_Trigger
+TIM_FLAG_Update
+TIM_ForcedAction_Active
+TIM_ForcedAction_InActive
+TIM_ForcedOC1Config(TIM_TypeDef* TIMx, uint16_t TIM_ForcedAction);
+TIM_ForcedOC2Config(TIM_TypeDef* TIMx, uint16_t TIM_ForcedAction);
+TIM_ForcedOC3Config(TIM_TypeDef* TIMx, uint16_t TIM_ForcedAction);
+TIM_ForcedOC4Config(TIM_TypeDef* TIMx, uint16_t TIM_ForcedAction);
+TIM_GenerateEvent(TIM_TypeDef* TIMx, uint16_t TIM_EventSource);
+TIM_GetCapture1(TIM_TypeDef* TIMx);
+TIM_GetCapture2(TIM_TypeDef* TIMx);
+TIM_GetCapture3(TIM_TypeDef* TIMx);
+TIM_GetCapture4(TIM_TypeDef* TIMx);
+TIM_GetCounter(TIM_TypeDef* TIMx);
+TIM_GetFlagStatus(TIM_TypeDef* TIMx, uint16_t TIM_FLAG);
+TIM_GetITStatus(TIM_TypeDef* TIMx, uint16_t TIM_IT);
+TIM_GetPrescaler(TIM_TypeDef* TIMx);
+TIM_ICInit(TIM_TypeDef* TIMx, TIM_ICInitTypeDef* TIM_ICInitStruct);
+TIM_ICPolarity_BothEdge
+TIM_ICPolarity_Falling
+TIM_ICPolarity_Rising
+TIM_ICPSC_DIV1
+TIM_ICPSC_DIV2
+TIM_ICPSC_DIV4
+TIM_ICPSC_DIV8
+TIM_ICSelection_DirectTI
+TIM_ICSelection_IndirectTI
+TIM_ICSelection_TRC
+TIM_ICStructInit(TIM_ICInitTypeDef* TIM_ICInitStruct);
+TIM_InternalClockConfig(TIM_TypeDef* TIMx);
+TIM_IT_Break
+TIM_IT_CC1
+TIM_IT_CC2
+TIM_IT_CC3
+TIM_IT_CC4
+TIM_IT_COM
+TIM_ITConfig(TIM_TypeDef* TIMx, uint16_t TIM_IT, FunctionalState NewState);
+TIM_ITRxExternalClockConfig(TIM_TypeDef* TIMx, uint16_t TIM_InputTriggerSource);
+TIM_IT_Trigger
+TIM_IT_Update
+TIM_LOCKLevel_1
+TIM_LOCKLevel_2
+TIM_LOCKLevel_3
+TIM_LOCKLevel_OFF
+TIM_MasterSlaveMode_Disable
+TIM_MasterSlaveMode_Enable
+TIM_OC1FastConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCFast);
+TIM_OC1Init(TIM_TypeDef* TIMx, TIM_OCInitTypeDef* TIM_OCInitStruct);
+TIM_OC1NPolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCNPolarity);
+TIM_OC1PolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPolarity);
+TIM_OC1PreloadConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPreload);
+TIM_OC2FastConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCFast);
+TIM_OC2Init(TIM_TypeDef* TIMx, TIM_OCInitTypeDef* TIM_OCInitStruct);
+TIM_OC2NPolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCNPolarity);
+TIM_OC2PolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPolarity);
+TIM_OC2PreloadConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPreload);
+TIM_OC3FastConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCFast);
+TIM_OC3Init(TIM_TypeDef* TIMx, TIM_OCInitTypeDef* TIM_OCInitStruct);
+TIM_OC3NPolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCNPolarity);
+TIM_OC3PolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPolarity);
+TIM_OC3PreloadConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPreload);
+TIM_OC4FastConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCFast);
+TIM_OC4Init(TIM_TypeDef* TIMx, TIM_OCInitTypeDef* TIM_OCInitStruct);
+TIM_OC4PolarityConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPolarity);
+TIM_OC4PreloadConfig(TIM_TypeDef* TIMx, uint16_t TIM_OCPreload);
+TIM_OCClear_Disable
+TIM_OCClear_Enable
+TIM_OCFast_Disable
+TIM_OCFast_Enable
+TIM_OCIdleState_Reset
+TIM_OCIdleState_Set
+TIM_OCMode_Active
+TIM_OCMode_Inactive
+TIM_OCMode_PWM1
+TIM_OCMode_PWM2
+TIM_OCMode_Timing
+TIM_OCMode_Toggle
+TIM_OCNIdleState_Reset
+TIM_OCNIdleState_Set
+TIM_OCNPolarity_High
+TIM_OCNPolarity_Low
+TIM_OCPolarity_High
+TIM_OCPolarity_Low
+TIM_OCPreload_Disable
+TIM_OCPreload_Enable
+TIM_OCStructInit(TIM_OCInitTypeDef* TIM_OCInitStruct);
+TIM_OPMode_Repetitive
+TIM_OPMode_Single
+TIM_OR_ITR1_RMP
+TIM_OR_ITR1_RMP_0
+TIM_OR_ITR1_RMP_1
+TIM_OR_TI4_RMP
+TIM_OR_TI4_RMP_0
+TIM_OR_TI4_RMP_1
+TIM_OSSIState_Disable
+TIM_OSSIState_Enable
+TIM_OSSRState_Disable
+TIM_OSSRState_Enable
+TIM_OutputNState_Disable
+TIM_OutputNState_Enable
+TIM_OutputState_Disable
+TIM_OutputState_Enable
+TIM_PrescalerConfig(TIM_TypeDef* TIMx, uint16_t Prescaler, uint16_t TIM_PSCReloadMode);
+TIM_PSC_PSC
+TIM_PSCReloadMode_Immediate
+TIM_PSCReloadMode_Update
+TIM_PWMIConfig(TIM_TypeDef* TIMx, TIM_ICInitTypeDef* TIM_ICInitStruct);
+TIM_RCR_REP
+TIM_RemapConfig(TIM_TypeDef* TIMx, uint16_t TIM_Remap);
+TIM_SelectCCDMA(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_SelectCOM(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_SelectHallSensor(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_SelectInputTrigger(TIM_TypeDef* TIMx, uint16_t TIM_InputTriggerSource);
+TIM_SelectMasterSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_MasterSlaveMode);
+TIM_SelectOCxM(TIM_TypeDef* TIMx, uint16_t TIM_Channel, uint16_t TIM_OCMode);
+TIM_SelectOnePulseMode(TIM_TypeDef* TIMx, uint16_t TIM_OPMode);
+TIM_SelectOutputTrigger(TIM_TypeDef* TIMx, uint16_t TIM_TRGOSource);
+TIM_SelectSlaveMode(TIM_TypeDef* TIMx, uint16_t TIM_SlaveMode);
+TIM_SetAutoreload(TIM_TypeDef* TIMx, uint32_t Autoreload);
+TIM_SetClockDivision(TIM_TypeDef* TIMx, uint16_t TIM_CKD);
+TIM_SetCompare1(TIM_TypeDef* TIMx, uint32_t Compare1);
+TIM_SetCompare2(TIM_TypeDef* TIMx, uint32_t Compare2);
+TIM_SetCompare3(TIM_TypeDef* TIMx, uint32_t Compare3);
+TIM_SetCompare4(TIM_TypeDef* TIMx, uint32_t Compare4);
+TIM_SetCounter(TIM_TypeDef* TIMx, uint32_t Counter);
+TIM_SetIC1Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
+TIM_SetIC2Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
+TIM_SetIC3Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
+TIM_SetIC4Prescaler(TIM_TypeDef* TIMx, uint16_t TIM_ICPSC);
+TIM_SlaveMode_External1
+TIM_SlaveMode_Gated
+TIM_SlaveMode_Reset
+TIM_SlaveMode_Trigger
+TIM_SMCR_ECE
+TIM_SMCR_ETF
+TIM_SMCR_ETF_0
+TIM_SMCR_ETF_1
+TIM_SMCR_ETF_2
+TIM_SMCR_ETF_3
+TIM_SMCR_ETP
+TIM_SMCR_ETPS
+TIM_SMCR_ETPS_0
+TIM_SMCR_ETPS_1
+TIM_SMCR_MSM
+TIM_SMCR_SMS
+TIM_SMCR_SMS_0
+TIM_SMCR_SMS_1
+TIM_SMCR_SMS_2
+TIM_SMCR_TS
+TIM_SMCR_TS_0
+TIM_SMCR_TS_1
+TIM_SMCR_TS_2
+TIM_SR_BIF
+TIM_SR_CC1IF
+TIM_SR_CC1OF
+TIM_SR_CC2IF
+TIM_SR_CC2OF
+TIM_SR_CC3IF
+TIM_SR_CC3OF
+TIM_SR_CC4IF
+TIM_SR_CC4OF
+TIM_SR_COMIF
+TIM_SR_TIF
+TIM_SR_UIF
+TIM_TimeBaseInit(TIM_TypeDef* TIMx, TIM_TimeBaseInitTypeDef* TIM_TimeBaseInitStruct);
+TIM_TimeBaseStructInit(TIM_TimeBaseInitTypeDef* TIM_TimeBaseInitStruct);
+TIM_TIxExternalCLK1Source_TI1
+TIM_TIxExternalCLK1Source_TI1ED
+TIM_TIxExternalCLK1Source_TI2
+TIM_TIxExternalClockConfig(TIM_TypeDef* TIMx, uint16_t TIM_TIxExternalCLKSource,
+TIM_TRGOSource_Enable
+TIM_TRGOSource_OC1
+TIM_TRGOSource_OC1Ref
+TIM_TRGOSource_OC2Ref
+TIM_TRGOSource_OC3Ref
+TIM_TRGOSource_OC4Ref
+TIM_TRGOSource_Reset
+TIM_TRGOSource_Update
+TIM_TS_ETRF
+TIM_TS_ITR0
+TIM_TS_ITR1
+TIM_TS_ITR2
+TIM_TS_ITR3
+TIM_TS_TI1F_ED
+TIM_TS_TI1FP1
+TIM_TS_TI2FP2
+TIM_UpdateDisableConfig(TIM_TypeDef* TIMx, FunctionalState NewState);
+TIM_UpdateRequestConfig(TIM_TypeDef* TIMx, uint16_t TIM_UpdateSource);
+TIM_UpdateSource_Global
+TIM_UpdateSource_Regular
+UART4_BASE            (APB1PERIPH_BASE + 0x4C00)
+UART4               ((USART_TypeDef *)
+UART5_BASE            (APB1PERIPH_BASE + 0x5000)
+UART5               ((USART_TypeDef *)
+uint32_t SystemCoreClock;          /*!< System Clock Frequency (Core Clock) */
+USART1_BASE           (APB2PERIPH_BASE + 0x1000)
+USART1              ((USART_TypeDef *)
+USART2_BASE           (APB1PERIPH_BASE + 0x4400)
+USART2              ((USART_TypeDef *)
+USART3_BASE           (APB1PERIPH_BASE + 0x4800)
+USART3              ((USART_TypeDef *)
+USART6_BASE           (APB2PERIPH_BASE + 0x1400)
+USART6              ((USART_TypeDef *)
+USART_BRR_DIV_Fraction
+USART_BRR_DIV_Mantissa
+USART_ClearFlag(USART_TypeDef* USARTx, uint16_t USART_FLAG);
+USART_ClearITPendingBit(USART_TypeDef* USARTx, uint16_t USART_IT);
+USART_Clock_Disable
+USART_Clock_Enable
+USART_ClockInit(USART_TypeDef* USARTx, USART_ClockInitTypeDef* USART_ClockInitStruct);
+USART_ClockStructInit(USART_ClockInitTypeDef* USART_ClockInitStruct);
+USART_Cmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_CPHA_1Edge
+USART_CPHA_2Edge
+USART_CPOL_High
+USART_CPOL_Low
+USART_CR1_IDLEIE
+USART_CR1_M
+USART_CR1_OVER8
+USART_CR1_PCE
+USART_CR1_PEIE
+USART_CR1_PS
+USART_CR1_RE
+USART_CR1_RWU
+USART_CR1_RXNEIE
+USART_CR1_SBK
+USART_CR1_TCIE
+USART_CR1_TE
+USART_CR1_TXEIE
+USART_CR1_UE
+USART_CR1_WAKE
+USART_CR2_ADD
+USART_CR2_CLKEN
+USART_CR2_CPHA
+USART_CR2_CPOL
+USART_CR2_LBCL
+USART_CR2_LBDIE
+USART_CR2_LBDL
+USART_CR2_LINEN
+USART_CR2_STOP
+USART_CR2_STOP_0
+USART_CR2_STOP_1
+USART_CR3_CTSE
+USART_CR3_CTSIE
+USART_CR3_DMAR
+USART_CR3_DMAT
+USART_CR3_EIE
+USART_CR3_HDSEL
+USART_CR3_IREN
+USART_CR3_IRLP
+USART_CR3_NACK
+USART_CR3_ONEBIT
+USART_CR3_RTSE
+USART_CR3_SCEN
+USART_DeInit(USART_TypeDef* USARTx);
+USART_DMACmd(USART_TypeDef* USARTx, uint16_t USART_DMAReq, FunctionalState NewState);
+USART_DMAReq_Rx
+USART_DMAReq_Tx
+USART_DR_DR
+USART_FLAG_CTS
+USART_FLAG_FE
+USART_FLAG_IDLE
+USART_FLAG_LBD
+USART_FLAG_NE
+USART_FLAG_ORE
+USART_FLAG_PE
+USART_FLAG_RXNE
+USART_FLAG_TC
+USART_FLAG_TXE
+USART_GetFlagStatus(USART_TypeDef* USARTx, uint16_t USART_FLAG);
+USART_GetITStatus(USART_TypeDef* USARTx, uint16_t USART_IT);
+USART_GTPR_GT
+USART_GTPR_PSC
+USART_GTPR_PSC_0
+USART_GTPR_PSC_1
+USART_GTPR_PSC_2
+USART_GTPR_PSC_3
+USART_GTPR_PSC_4
+USART_GTPR_PSC_5
+USART_GTPR_PSC_6
+USART_GTPR_PSC_7
+USART_HalfDuplexCmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_HardwareFlowControl_CTS
+USART_HardwareFlowControl_None
+USART_HardwareFlowControl_RTS
+USART_HardwareFlowControl_RTS_CTS
+USART_Init(USART_TypeDef* USARTx, USART_InitTypeDef* USART_InitStruct);
+USART_IrDACmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_IrDAConfig(USART_TypeDef* USARTx, uint16_t USART_IrDAMode);
+USART_IrDAMode_LowPower
+USART_IrDAMode_Normal
+USART_ITConfig(USART_TypeDef* USARTx, uint16_t USART_IT, FunctionalState NewState);
+USART_IT_CTS
+USART_IT_ERR
+USART_IT_FE
+USART_IT_IDLE
+USART_IT_LBD
+USART_IT_NE
+USART_IT_ORE
+USART_IT_ORE_ER
+USART_IT_ORE_RX
+USART_IT_PE
+USART_IT_RXNE
+USART_IT_TC
+USART_IT_TXE
+USART_LastBit_Disable
+USART_LastBit_Enable
+USART_LINBreakDetectLength_10b
+USART_LINBreakDetectLength_11b
+USART_LINBreakDetectLengthConfig(USART_TypeDef* USARTx, uint16_t USART_LINBreakDetectLength);
+USART_LINCmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_Mode_Rx
+USART_Mode_Tx
+USART_OneBitMethodCmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_OverSampling8Cmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_Parity_Even
+USART_Parity_No
+USART_Parity_Odd
+USART_ReceiveData(USART_TypeDef* USARTx);
+USART_ReceiverWakeUpCmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_SendBreak(USART_TypeDef* USARTx);
+USART_SendData(USART_TypeDef* USARTx, uint16_t Data);
+USART_SetAddress(USART_TypeDef* USARTx, uint8_t USART_Address);
+USART_SetGuardTime(USART_TypeDef* USARTx, uint8_t USART_GuardTime);
+USART_SetPrescaler(USART_TypeDef* USARTx, uint8_t USART_Prescaler);
+USART_SmartCardCmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_SmartCardNACKCmd(USART_TypeDef* USARTx, FunctionalState NewState);
+USART_SR_CTS
+USART_SR_FE
+USART_SR_IDLE
+USART_SR_LBD
+USART_SR_NE
+USART_SR_ORE
+USART_SR_PE
+USART_SR_RXNE
+USART_SR_TC
+USART_SR_TXE
+USART_StopBits_0_5
+USART_StopBits_1
+USART_StopBits_1_5
+USART_StopBits_2
+USART_StructInit(USART_InitTypeDef* USART_InitStruct);
+USART_WakeUp_AddressMark
+USART_WakeUpConfig(USART_TypeDef* USARTx, uint16_t USART_WakeUp);
+USART_WakeUp_IdleLine
+USART_WordLength_8b
+USART_WordLength_9b
+USE_FULL_ASSERT
+USER_BUTTON_EXTI_IRQn
+USER_BUTTON_EXTI_LINE
+USER_BUTTON_EXTI_PIN_SOURCE
+USER_BUTTON_EXTI_PORT_SOURCE
+USER_BUTTON_GPIO_CLK
+USER_BUTTON_GPIO_PORT
+USER_BUTTON_PIN
+USE_STDPERIPH_DRIVER"
+USE_STDPERIPH_DRIVER*/
+__Vendor_SysTickConfig
+void SystemCoreClockUpdate(void);
+void SystemInit(void);
+VoltageRange_1
+VoltageRange_2
+VoltageRange_3
+VoltageRange_4
+WRITE_REG(REG, VAL)
+WWDG_BASE             (APB1PERIPH_BASE + 0x2C00)
+WWDG_CFR_EWI
+WWDG_CFR_W
+WWDG_CFR_W0
+WWDG_CFR_W1
+WWDG_CFR_W2
+WWDG_CFR_W3
+WWDG_CFR_W4
+WWDG_CFR_W5
+WWDG_CFR_W6
+WWDG_CFR_WDGTB
+WWDG_CFR_WDGTB0
+WWDG_CFR_WDGTB1
+WWDG_ClearFlag(void);
+WWDG_CR_T
+WWDG_CR_T0
+WWDG_CR_T1
+WWDG_CR_T2
+WWDG_CR_T3
+WWDG_CR_T4
+WWDG_CR_T5
+WWDG_CR_T6
+WWDG_CR_WDGA
+WWDG_DeInit(void);
+WWDG_EnableIT(void);
+WWDG_Enable(uint8_t Counter);
+WWDG_GetFlagStatus(void);
+WWDG_Prescaler_1
+WWDG_Prescaler_2
+WWDG_Prescaler_4
+WWDG_Prescaler_8
+WWDG_SetCounter(uint8_t Counter);
+WWDG_SetPrescaler(uint32_t WWDG_Prescaler);
+WWDG_SetWindowValue(uint8_t WindowValue);
+WWDG_SR_EWIF
+WWDG                ((WWDG_TypeDef *)
